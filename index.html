@@ -11,50 +11,104 @@
 margin:0;
 padding:0;
 box-sizing:border-box;
+scroll-behavior:smooth;
 }
 
 body{
 font-family:Georgia, serif;
-background:#0f1110;
+background:#0b0f0c;
 color:#f5f0e6;
-line-height:1.6;
+line-height:1.7;
+}
+
+header{
+position:fixed;
+top:0;
+width:100%;
+z-index:1000;
+background:rgba(11,15,12,.92);
+backdrop-filter:blur(10px);
+border-bottom:1px solid rgba(212,175,55,.15);
+}
+
+nav{
+max-width:1200px;
+margin:auto;
+display:flex;
+justify-content:space-between;
+align-items:center;
+padding:18px 25px;
+}
+
+.logo{
+font-size:1.4rem;
+font-weight:bold;
+letter-spacing:2px;
+color:#d4af37;
+}
+
+nav ul{
+display:flex;
+gap:25px;
+list-style:none;
+}
+
+nav a{
+color:#e8dfc8;
+text-decoration:none;
+font-size:.95rem;
 }
 
 .hero{
 height:100vh;
-background:linear-gradient(rgba(0,0,0,.55),rgba(0,0,0,.55)),
-url('https://images.unsplash.com/photo-1518546305927-5a555bb7020d?auto=format&fit=crop&w=1600&q=80');
-background-size:cover;
-background-position:center;
 display:flex;
 justify-content:center;
 align-items:center;
 text-align:center;
 padding:20px;
+
+background:
+linear-gradient(
+135deg,
+#0b0f0c 0%,
+#102118 35%,
+#1b1812 70%,
+#0b0f0c 100%
+);
 }
 
-.hero-content h1{
-font-size:4rem;
-letter-spacing:3px;
+.hero-content{
+max-width:900px;
+}
+
+.hero h1{
+font-size:4.5rem;
 color:#d4af37;
+letter-spacing:4px;
 margin-bottom:20px;
 }
 
-.hero-content p{
+.hero p{
 font-size:1.3rem;
-max-width:800px;
-margin:auto;
+margin-bottom:20px;
+}
+
+.hero-sub{
+color:#c8b26d;
+letter-spacing:3px;
+text-transform:uppercase;
+font-size:.95rem;
 }
 
 .section{
-padding:80px 10%;
+padding:100px 10%;
 }
 
 .section-title{
 text-align:center;
-font-size:2.5rem;
-margin-bottom:50px;
+font-size:2.7rem;
 color:#d4af37;
+margin-bottom:50px;
 }
 
 .about{
@@ -68,19 +122,20 @@ font-size:1.1rem;
 display:grid;
 grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
 gap:30px;
+margin-top:40px;
 }
 
 .card{
-background:#171b19;
-border:1px solid rgba(212,175,55,.3);
-padding:30px;
+background:#121714;
+border:1px solid rgba(212,175,55,.25);
+padding:35px;
 border-radius:15px;
-text-align:center;
-transition:.3s;
+transition:.4s;
 }
 
 .card:hover{
-transform:translateY(-8px);
+transform:translateY(-10px);
+border-color:#d4af37;
 }
 
 .card h3{
@@ -88,11 +143,65 @@ color:#d4af37;
 margin-bottom:15px;
 }
 
-.footer{
+.values{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+gap:25px;
+margin-top:40px;
+}
+
+.value{
+background:#121714;
+padding:25px;
+border-radius:12px;
 text-align:center;
-padding:40px;
-border-top:1px solid rgba(255,255,255,.1);
+border:1px solid rgba(212,175,55,.2);
+}
+
+.gallery{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+gap:20px;
+}
+
+.gallery-item{
+height:220px;
+border-radius:15px;
+background:
+linear-gradient(
+135deg,
+#1a241d,
+#2a2317
+);
+display:flex;
+align-items:center;
+justify-content:center;
+color:#d4af37;
+font-size:1.1rem;
+border:1px solid rgba(212,175,55,.25);
+}
+
+.footer{
+padding:50px 20px;
+text-align:center;
+border-top:1px solid rgba(255,255,255,.08);
 color:#999;
+}
+
+@media(max-width:768px){
+
+.hero h1{
+font-size:2.6rem;
+}
+
+nav ul{
+display:none;
+}
+
+.section{
+padding:70px 7%;
+}
+
 }
 
 </style>
@@ -100,28 +209,55 @@ color:#999;
 
 <body>
 
+<header>
+<nav>
+<div class="logo">RUNESTONE RELICS</div>
+
+<ul>
+<li><a href="#about">About</a></li>
+<li><a href="#collections">Collections</a></li>
+<li><a href="#heritage">Heritage</a></li>
+<li><a href="#gallery">Gallery</a></li>
+</ul>
+
+</nav>
+</header>
+
 <section class="hero">
+
 <div class="hero-content">
+
 <h1>RUNESTONE RELICS</h1>
+
 <p>
 Timeless Heritage • Crafted Beauty • Ancient Inspiration
 </p>
+
+<div class="hero-sub">
+Premium Craftsmanship • Historical Elegance • Enduring Legacy
 </div>
+
+</div>
+
 </section>
 
-<section class="section">
+<section class="section" id="about">
+
 <h2 class="section-title">Our Story</h2>
 
 <div class="about">
-Runestone Relics celebrates timeless craftsmanship,
-natural beauty, and heritage-inspired design.
 
-Our collections are curated to reflect ancient artistry,
-premium materials, and the enduring spirit of cultural traditions.
+Runestone Relics celebrates the timeless beauty of heritage craftsmanship,
+natural materials, and historically inspired design.
+
+Each collection reflects a passion for artistry, cultural traditions,
+and enduring craftsmanship that transcends generations.
+
 </div>
+
 </section>
 
-<section class="section">
+<section class="section" id="collections">
 
 <h2 class="section-title">Featured Collections</h2>
 
@@ -129,31 +265,88 @@ premium materials, and the enduring spirit of cultural traditions.
 
 <div class="card">
 <h3>Crystals & Gemstones</h3>
-<p>Premium natural stones selected for beauty and craftsmanship.</p>
+<p>Curated natural stones selected for their beauty and timeless appeal.</p>
 </div>
 
 <div class="card">
 <h3>Handcrafted Jewelry</h3>
-<p>Elegant artisan pieces inspired by heritage and tradition.</p>
+<p>Elegant artisan pieces inspired by history, craftsmanship, and tradition.</p>
 </div>
 
 <div class="card">
 <h3>Viking Collection</h3>
-<p>Historically inspired pieces celebrating Norse culture.</p>
+<p>Heritage-inspired designs celebrating Norse culture and mythology.</p>
 </div>
 
 <div class="card">
 <h3>Medieval Artifacts</h3>
-<p>Ancient-inspired collectibles and heritage craftsmanship.</p>
+<p>Historically inspired collectibles and decorative heritage pieces.</p>
 </div>
 
 </div>
 
 </section>
 
+<section class="section" id="heritage">
+
+<h2 class="section-title">Craftsmanship & Heritage</h2>
+
+<div class="values">
+
+<div class="value">
+<h3>Authenticity</h3>
+<p>Inspired by historical traditions and timeless artistry.</p>
+</div>
+
+<div class="value">
+<h3>Craftsmanship</h3>
+<p>Attention to detail and appreciation for skilled workmanship.</p>
+</div>
+
+<div class="value">
+<h3>Quality</h3>
+<p>Premium materials and carefully curated collections.</p>
+</div>
+
+<div class="value">
+<h3>Legacy</h3>
+<p>Celebrating the beauty of heritage and cultural inspiration.</p>
+</div>
+
+</div>
+
+</section>
+
+<section class="section" id="gallery">
+
+<h2 class="section-title">Collection Gallery</h2>
+
+<div class="gallery">
+
+<div class="gallery-item">Gemstones & Crystals</div>
+
+<div class="gallery-item">Heritage Jewelry</div>
+
+<div class="gallery-item">Viking Collection</div>
+
+<div class="gallery-item">Medieval Relics</div>
+
+</div>
+
+</section>
+
 <footer class="footer">
-<p>Runestone Relics</p>
+
+<h3 style="color:#d4af37;margin-bottom:10px;">
+RUNESTONE RELICS
+</h3>
+
 <p>Heritage • Craftsmanship • Timeless Design</p>
+
+<br>
+
+<p>© 2026 Runestone Relics</p>
+
 </footer>
 
 </body>

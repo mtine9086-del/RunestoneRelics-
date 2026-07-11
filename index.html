@@ -1,10 +1,160 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>Runestone Relics</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Runestone Relics</title>
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+}
+
+body{
+font-family:Georgia, serif;
+background:#0f1110;
+color:#f5f0e6;
+line-height:1.6;
+}
+
+.hero{
+height:100vh;
+background:linear-gradient(rgba(0,0,0,.55),rgba(0,0,0,.55)),
+url('https://images.unsplash.com/photo-1518546305927-5a555bb7020d?auto=format&fit=crop&w=1600&q=80');
+background-size:cover;
+background-position:center;
+display:flex;
+justify-content:center;
+align-items:center;
+text-align:center;
+padding:20px;
+}
+
+.hero-content h1{
+font-size:4rem;
+letter-spacing:3px;
+color:#d4af37;
+margin-bottom:20px;
+}
+
+.hero-content p{
+font-size:1.3rem;
+max-width:800px;
+margin:auto;
+}
+
+.section{
+padding:80px 10%;
+}
+
+.section-title{
+text-align:center;
+font-size:2.5rem;
+margin-bottom:50px;
+color:#d4af37;
+}
+
+.about{
+max-width:900px;
+margin:auto;
+text-align:center;
+font-size:1.1rem;
+}
+
+.cards{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:30px;
+}
+
+.card{
+background:#171b19;
+border:1px solid rgba(212,175,55,.3);
+padding:30px;
+border-radius:15px;
+text-align:center;
+transition:.3s;
+}
+
+.card:hover{
+transform:translateY(-8px);
+}
+
+.card h3{
+color:#d4af37;
+margin-bottom:15px;
+}
+
+.footer{
+text-align:center;
+padding:40px;
+border-top:1px solid rgba(255,255,255,.1);
+color:#999;
+}
+
+</style>
 </head>
+
 <body>
-    <h1>Runestone Relics</h1>
-    <p>Website Coming Soon</p>
+
+<section class="hero">
+<div class="hero-content">
+<h1>RUNESTONE RELICS</h1>
+<p>
+Timeless Heritage • Crafted Beauty • Ancient Inspiration
+</p>
+</div>
+</section>
+
+<section class="section">
+<h2 class="section-title">Our Story</h2>
+
+<div class="about">
+Runestone Relics celebrates timeless craftsmanship,
+natural beauty, and heritage-inspired design.
+
+Our collections are curated to reflect ancient artistry,
+premium materials, and the enduring spirit of cultural traditions.
+</div>
+</section>
+
+<section class="section">
+
+<h2 class="section-title">Featured Collections</h2>
+
+<div class="cards">
+
+<div class="card">
+<h3>Crystals & Gemstones</h3>
+<p>Premium natural stones selected for beauty and craftsmanship.</p>
+</div>
+
+<div class="card">
+<h3>Handcrafted Jewelry</h3>
+<p>Elegant artisan pieces inspired by heritage and tradition.</p>
+</div>
+
+<div class="card">
+<h3>Viking Collection</h3>
+<p>Historically inspired pieces celebrating Norse culture.</p>
+</div>
+
+<div class="card">
+<h3>Medieval Artifacts</h3>
+<p>Ancient-inspired collectibles and heritage craftsmanship.</p>
+</div>
+
+</div>
+
+</section>
+
+<footer class="footer">
+<p>Runestone Relics</p>
+<p>Heritage • Craftsmanship • Timeless Design</p>
+</footer>
+
 </body>
 </html>

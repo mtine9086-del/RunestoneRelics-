@@ -1,586 +1,443 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="theme-color" content="#050505" />
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Runestone Relics — Timeless Heritage • Crafted Beauty • Ancient Legacy</title>
+<meta name="description" content="Runestone Relics is a luxury heritage house curating museum-grade crystals, handcrafted jewelry, Viking relics and medieval artifacts. Sotheby's-level provenance, Rolex-level craft.">
+<meta name="keywords" content="Runestone Relics, Viking jewelry, luxury gemstones, museum artifacts, medieval relics, Norse heritage">
+<meta name="author" content="Runestone Relics">
+<meta name="theme-color" content="#050505">
+<link rel="canonical" href="https://runestonerelics.com/">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Runestone Relics — Luxury Heritage House">
+<meta property="og:description" content="Museum-quality crystals, handcrafted jewelry, Viking and medieval artifacts. Curated for modern collectors.">
+<meta property="og:image" content="https://images.unsplash.com/photo-1515562141207-7a88fb7ce338?q=80&w=2070&auto=format&fit=crop">
+<meta property="og:url" content="https://runestonerelics.com/">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Runestone Relics — Timeless Heritage">
+<meta name="twitter:description" content="A cinematic luxury heritage house. Authenticity, craft, legacy.">
+<meta name="twitter:image" content="https://images.unsplash.com/photo-1515562141207-7a88fb7ce338?q=80&w=2070&auto=format&fit=crop">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600;700;800&family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"Organization","name":"Runestone Relics","url":"https://runestonerelics.com/","logo":"https://images.unsplash.com/photo-1515562141207-7a88fb7ce338","description":"Luxury heritage house curating museum-quality artifacts."}</script>
+<style>
+:root{
+  --obsidian:#050505;--dark:#0B1512;--forest:#13211B;--forest2:#1a2e26;
+  --gold:#D4AF37;--goldL:#F0D878;--goldD:#B8962e;--bronze:#B8860B;
+  --ivory:#F5F0E6;--ivory2:#D9D2C5;--ivoryM:#A89F90;
+  --glass:rgba(245,240,230,0.06);--glassB:rgba(212,175,55,0.18);
+  --easeL:cubic-bezier(0.83,0,0.17,1);--easeOut:cubic-bezier(0.16,1,0.3,1);
+}
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth;background:var(--obsidian);scrollbar-width:thin;scrollbar-color:var(--gold) var(--obsidian)}
+body{background:var(--obsidian);color:var(--ivory);font-family:'Inter',system-ui,sans-serif;line-height:1.7;-webkit-font-smoothing:antialiased;overflow-x:hidden}
+body.lock{overflow:hidden}
+::selection{background:var(--gold);color:var(--obsidian)}
+::-webkit-scrollbar{width:8px}::-webkit-scrollbar-track{background:var(--obsidian)}::-webkit-scrollbar-thumb{background:linear-gradient(var(--gold),var(--bronze));border-radius:10px}
+a{color:inherit;text-decoration:none}img{display:block;max-width:100%}button{border:0;background:none;font:inherit;cursor:pointer}
+/* PROGRESS + SPOTLIGHT */
+#progress{position:fixed;top:0;left:0;height:2px;width:0;background:linear-gradient(90deg,var(--bronze),var(--gold),var(--goldL));z-index:9999;box-shadow:0 0 12px var(--gold)}
+#spot{position:fixed;inset:0;pointer-events:none;z-index:2;mix-blend-mode:soft-light;opacity:.55;background:radial-gradient(620px circle at var(--x,50%) var(--y,50%), rgba(212,175,55,.18), transparent 80%);transition:opacity .6s}
+@media(pointer:coarse){#spot{display:none}}
+/* PRELOADER */
+#preloader{position:fixed;inset:0;z-index:10000;background:radial-gradient(120% 120% at 50% 0%,var(--forest) 0%,var(--dark) 36%,var(--obsidian) 100%);display:flex;align-items:center;justify-content:center;transition:opacity 1.1s var(--easeL),visibility 1.1s}
+#preloader.off{opacity:0;visibility:hidden;pointer-events:none}
+.runeWrap{position:relative;width:120px;height:120px;display:grid;place-items:center}
+.runeGlow{position:absolute;inset:-28px;background:radial-gradient(circle, rgba(212,175,55,.35), transparent 70%);filter:blur(12px);animation:glow 2.8s infinite}
+.runeRing{position:absolute;inset:0;border:1px solid rgba(212,175,55,.24);border-radius:50%;animation:spin 8s linear infinite}
+.runeRing:before{content:'';position:absolute;top:-2px;left:50%;width:5px;height:5px;background:var(--gold);border-radius:50%;box-shadow:0 0 10px var(--gold)}
+.runeSvg{width:64px;height:64px;filter:drop-shadow(0 0 18px rgba(212,175,55,.8))}
+.runeSvg path{stroke:var(--gold);stroke-width:1.25;fill:none;stroke-linecap:round;stroke-linejoin:round}
+.preWord{margin-top:28px;text-align:center}
+.preBrand{font-family:'Cinzel';letter-spacing:.38em;font-size:12px;color:var(--ivory)}.preSub{font-family:'Cormorant Garamond';font-style:italic;color:var(--ivoryM);font-size:12px;letter-spacing:.18em;margin-top:6px}
+.preBar{margin-top:26px;width:122px;height:1px;background:rgba(245,240,230,.12);overflow:hidden;position:relative}
+.preFill{position:absolute;left:0;top:0;height:100%;width:0;background:linear-gradient(90deg,var(--bronze),var(--gold));box-shadow:0 0 10px var(--gold);animation:load 2.2s forwards var(--easeL)}
+@keyframes glow{0%,100%{transform:scale(.9);opacity:.7}50%{transform:scale(1.15);opacity:1}}
+@keyframes spin{to{transform:rotate(360deg)}}@keyframes load{0%{width:0}65%{width:82%}100%{width:100%}}
+/* PARTICLES */
+#dust{position:absolute;inset:0;pointer-events:none;z-index:2;overflow:hidden}
+.particle{position:absolute;width:2px;height:2px;background:radial-gradient(circle, var(--goldL), var(--gold) 60%, transparent);border-radius:50%;box-shadow:0 0 6px var(--gold);opacity:0;animation:dustMove linear infinite}
+@keyframes dustMove{0%{transform:translateY(0) translateX(0);opacity:0}12%{opacity:.9}88%{opacity:.6}100%{transform:translateY(-110vh) translateX(22px);opacity:0}}
+/* HEADER */
+.header{position:fixed;top:0;left:0;width:100%;z-index:900;display:flex;align-items:center;justify-content:space-between;padding:18px 44px;transition:all .6s var(--easeOut);border-bottom:1px solid transparent}
+.header.scrolled{background:rgba(5,5,5,.72);backdrop-filter:blur(22px) saturate(1.4);-webkit-backdrop-filter:blur(22px);border-bottom:1px solid rgba(212,175,55,.12);padding:12px 44px;box-shadow:0 8px 32px rgba(0,0,0,.6)}
+.logo{display:flex;align-items:center;gap:12px}
+.logoMark{width:40px;height:40px;display:grid;place-items:center;border:1px solid rgba(212,175,55,.22);background:radial-gradient(100% at 50% 0%, rgba(212,175,55,.18), transparent 70%);box-shadow:0 0 18px rgba(212,175,55,.22) inset, 0 0 18px rgba(212,175,55,.18)}
+.logoMark svg{width:22px;height:22px;stroke:var(--gold);fill:none;stroke-width:1.1}
+.logoType{font-family:'Cinzel';font-weight:700;letter-spacing:.24em;font-size:12px;line-height:1}
+.logoType span{display:block;font-family:'Inter';font-weight:300;letter-spacing:.38em;font-size:8.5px;color:var(--gold);margin-top:2px}
+.nav{display:flex;align-items:center;gap:34px}
+.links{display:flex;gap:30px;list-style:none}
+.links a{font-size:10px;letter-spacing:.32em;text-transform:uppercase;color:var(--ivory2);position:relative;padding:4px 0;transition:color .4s}
+.links a:after{content:'';position:absolute;left:0;bottom:0;width:0;height:1px;background:linear-gradient(90deg,var(--gold),var(--goldL));box-shadow:0 0 6px var(--gold);transition:width .5s var(--easeOut)}
+.links a:hover{color:var(--ivory)}.links a:hover:after{width:100%}
+.cta{padding:11px 20px;border:1px solid rgba(212,175,55,.35);font-size:10px;letter-spacing:.32em;text-transform:uppercase;color:var(--gold);position:relative;overflow:hidden;transition:.5s}
+.cta:before{content:'';position:absolute;inset:0;background:linear-gradient(100deg,transparent,rgba(212,175,55,.25),transparent);transform:translateX(-100%);transition:transform .9s}
+.cta:hover:before{transform:translateX(100%)}.cta:hover{border-color:var(--gold);color:var(--ivory);box-shadow:0 0 20px rgba(212,175,55,.22)}
+.mToggle{display:none;width:44px;height:44px;place-items:center;border:1px solid rgba(245,240,230,.1)}
+.mToggle span,.mToggle span:before,.mToggle span:after{content:'';display:block;width:18px;height:1px;background:var(--ivory);position:absolute;left:13px;transition:.4s}
+.mToggle span{top:21px}.mToggle span:before{top:-5px;position:absolute}.mToggle span:after{top:5px;position:absolute}
+.mToggle.on span{background:transparent}.mToggle.on span:before{transform:rotate(45deg);top:0}.mToggle.on span:after{transform:rotate(-45deg);top:0}
+.mMenu{position:fixed;inset:0;z-index:850;background:radial-gradient(120% at 20% 0%,var(--forest) 0%,var(--dark) 50%,var(--obsidian) 100%);padding:96px 28px 40px;transform:translateY(-100%);transition:transform .9s var(--easeL);overflow-y:auto}
+.mMenu.on{transform:translateY(0)}
+.mMenu a{display:block;font-family:'Cinzel';font-size:26px;padding:18px 0;border-bottom:1px solid rgba(245,240,230,.06);letter-spacing:.08em;transition:.4s}
+.mMenu a:hover{color:var(--gold);padding-left:12px}.mSmall{margin-top:26px;font-size:10px;letter-spacing:.32em;text-transform:uppercase;color:var(--ivoryM);line-height:1.8}
+/* HERO */
+#hero{position:relative;width:100%;height:100svh;min-height:680px;overflow:hidden;display:grid;place-items:center;background:var(--obsidian);isolation:isolate}
+.heroBg{position:absolute;inset:0;z-index:0;overflow:hidden}
+.heroBg img{width:100%;height:100%;object-fit:cover;transform:scale(1.14);filter:brightness(.52) contrast(1.12) saturate(.9);animation:slowZoom 28s infinite alternate var(--easeL)}
+@keyframes slowZoom{from{transform:scale(1.14)}to{transform:scale(1.28) translateY(-2%)}}
+.heroGrad{position:absolute;inset:0;background:
+ radial-gradient(90% 66% at 50% 0%, rgba(19,33,27,.68) 0%, transparent 56%),
+ linear-gradient(180deg, rgba(5,5,5,.22) 0%, rgba(5,5,5,.12) 42%, rgba(5,5,5,.78) 86%, var(--obsidian) 100%),
+ linear-gradient(90deg, rgba(5,5,5,.62) 0%, transparent 34%, transparent 62%, rgba(5,5,5,.52) 100%)}
+.heroGold{position:absolute;inset:0;background:radial-gradient(640px 420px at 54% 46%, rgba(212,175,55,.11), transparent 70%);mix-blend-mode:soft-light}
+.heroContent{position:relative;z-index:3;text-align:center;padding:0 24px;max-width:980px;display:flex;flex-direction:column;align-items:center}
+.heroLogo{width:84px;height:84px;border:1px solid rgba(212,175,55,.28);background:radial-gradient(120% at 50% 0%, rgba(212,175,55,.22), rgba(5,5,5,.35));display:grid;place-items:center;box-shadow:0 0 0 1px rgba(212,175,55,.12) inset, 0 0 32px rgba(212,175,55,.35), 0 0 64px rgba(212,175,55,.12);margin-bottom:26px;animation:floatLogo 6s infinite}
+@keyframes floatLogo{0%,100%{transform:translateY(0)}50%{transform:translateY(-7px)}}
+.heroLogo svg{width:40px;height:40px;stroke:var(--gold);fill:none;stroke-width:1.1;filter:drop-shadow(0 0 10px var(--gold))}
+.kicker{display:flex;align-items:center;gap:16px;margin-bottom:20px;opacity:0;transform:translateY(10px);animation:up .9s .7s forwards var(--easeOut)}
+.kicker:before,.kicker:after{content:'';width:28px;height:1px;background:linear-gradient(90deg, transparent, var(--gold))}.kicker span{font-size:9.5px;letter-spacing:.42em;text-transform:uppercase;color:var(--gold)}
+.hTitle{font-family:'Cinzel';font-weight:800;letter-spacing:.16em;line-height:.92;font-size:clamp(38px,7vw,90px);color:var(--ivory);text-shadow:0 2px 30px rgba(0,0,0,.8),0 0 42px rgba(212,175,55,.18)}
+.hTitle .line{display:block;overflow:hidden}.hTitle .line span{display:block;transform:translateY(110%);animation:up 1.15s .95s forwards var(--easeL)}
+.hTitle .line:nth-child(2) span{animation-delay:1.1s}.hTitle .acc{background:linear-gradient(100deg,var(--gold),var(--goldL) 55%,var(--bronze));-webkit-background-clip:text;background-clip:text;color:transparent;filter:drop-shadow(0 0 16px rgba(212,175,55,.35))}
+.hTag{margin-top:20px;font-family:'Cormorant Garamond';font-size:clamp(16px,2vw,19px);font-weight:300;letter-spacing:.18em;color:var(--ivory2);opacity:0;animation:fade .9s 1.6s forwards}
+.hCtas{margin-top:38px;display:flex;gap:14px;flex-wrap:wrap;justify-content:center;opacity:0;animation:fade .9s 1.85s forwards}
+.btn{position:relative;display:inline-flex;align-items:center;justify-content:center;gap:10px;padding:16px 30px;font-size:10.5px;letter-spacing:.34em;text-transform:uppercase;transition:all .5s var(--easeOut);overflow:hidden;isolation:isolate;border:1px solid transparent}
+.btnP{background:linear-gradient(100deg,var(--gold),var(--bronze));color:var(--obsidian);font-weight:600;box-shadow:0 0 0 1px rgba(212,175,55,.2) inset,0 8px 24px rgba(212,175,55,.25)}
+.btnP:after{content:'';position:absolute;inset:0;background:linear-gradient(100deg,transparent,rgba(255,255,255,.55),transparent);transform:translateX(-100%) skewX(-12deg);transition:transform .8s}
+.btnP:hover:after{transform:translateX(100%) skewX(-12deg)}.btnP:hover{transform:translateY(-2px);box-shadow:0 0 0 1px rgba(212,175,55,.4) inset,0 14px 34px rgba(212,175,55,.36)}
+.btnS{background:rgba(245,240,230,.05);border-color:rgba(245,240,230,.18);color:var(--ivory);backdrop-filter:blur(12px)}
+.btnS:hover{background:rgba(245,240,230,.09);border-color:rgba(212,175,55,.44);transform:translateY(-2px);box-shadow:0 8px 24px rgba(0,0,0,.45),0 0 18px rgba(212,175,55,.14)}
+.scrollHint{position:absolute;bottom:28px;left:50%;transform:translateX(-50%);z-index:3;display:flex;flex-direction:column;align-items:center;gap:10px;opacity:0;animation:fade .9s 2.2s forwards}
+.scrollHint span{font-size:9px;letter-spacing:.4em;text-transform:uppercase;color:var(--ivoryM)}
+.sLine{width:1px;height:48px;background:linear-gradient(var(--gold),transparent);position:relative;overflow:hidden}
+.sLine:after{content:'';position:absolute;top:0;left:0;width:100%;height:20px;background:var(--ivory);animation:sLine 2.2s infinite;box-shadow:0 0 8px var(--ivory)}
+@keyframes sLine{0%{transform:translateY(-100%)}100%{transform:translateY(240%)}}
+@keyframes up{to{transform:translateY(0);opacity:1}}@keyframes fade{to{opacity:1}}
+/* GENERIC */
+section{position:relative}.container{width:min(1280px,92%);margin:0 auto}
+.eyebrow{display:inline-flex;align-items:center;gap:12px;font-size:9.5px;letter-spacing:.4em;text-transform:uppercase;color:var(--gold);margin-bottom:16px}
+.eyebrow:before{content:'';width:26px;height:1px;background:var(--gold);box-shadow:0 0 8px var(--gold)}
+.sTitle{font-family:'Cinzel';font-weight:600;line-height:1.08;letter-spacing:.06em;font-size:clamp(30px,4.6vw,52px);color:var(--ivory)}
+.sTitle em{font-family:'Cormorant Garamond';font-style:italic;font-weight:300;color:var(--gold);letter-spacing:.02em}
+.sDesc{font-family:'Cormorant Garamond';font-size:18.5px;line-height:1.68;color:var(--ivory2);max-width:56ch}
+.reveal{opacity:0;transform:translateY(26px);transition:all 1s var(--easeOut)}
+.reveal.in{opacity:1;transform:translateY(0)}.d1{transition-delay:.14s}.d2{transition-delay:.28s}.d3{transition-delay:.42s}
+/* LEGACY */
+#legacy{padding:124px 0 112px;background:radial-gradient(120% 80% at 0% 0%, rgba(19,33,27,.9) 0%, var(--dark) 45%, var(--obsidian) 100%);overflow:hidden}
+#legacy:before{content:'';position:absolute;inset:0;background-image:url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='0.04'/%3E%3C/svg%3E");pointer-events:none;opacity:.5}
+.legacyGrid{display:grid;grid-template-columns:1.1fr .9fr;gap:68px;align-items:start}
+.lCopy{margin-top:30px;display:grid;gap:20px;font-weight:300;color:var(--ivory2);font-size:14.5px;line-height:1.9}
+.lCopy strong{color:var(--ivory);font-weight:500}
+.stats{margin-top:44px;display:grid;grid-template-columns:repeat(3,1fr);gap:24px;border-top:1px solid rgba(245,240,230,.08);padding-top:28px}
+.sNum{font-family:'Cinzel';font-size:30px;color:var(--gold);line-height:1}.sLab{font-size:9.5px;letter-spacing:.28em;text-transform:uppercase;color:var(--ivoryM);margin-top:8px;line-height:1.6}
+.rCard{position:relative;background:linear-gradient(165deg, rgba(245,240,230,.06), rgba(245,240,230,.015));border:1px solid var(--glassB);backdrop-filter:blur(18px);padding:18px;overflow:hidden;box-shadow:0 24px 64px rgba(0,0,0,.5), inset 0 1px 0 rgba(245,240,230,.08)}
+.rCard img{width:100%;aspect-ratio:4/5;object-fit:cover;filter:brightness(.92) contrast(1.08) sepia(.12);transition:transform 1.3s var(--easeL)}
+.rCard:hover img{transform:scale(1.06)}.rOverlay{position:absolute;inset:18px;background:linear-gradient(0deg, rgba(5,5,5,.72), transparent 60%);pointer-events:none}
+.rBadge{position:absolute;left:30px;bottom:30px;display:flex;align-items:center;gap:10px;padding:9px 13px;background:rgba(5,5,5,.62);backdrop-filter:blur(10px);border:1px solid rgba(212,175,55,.24)}
+.rBadge i{width:6px;height:6px;background:var(--gold);border-radius:50%;box-shadow:0 0 10px var(--gold);animation:glow 2s infinite;display:block}.rBadge p{font-size:9px;letter-spacing:.32em;text-transform:uppercase;color:var(--ivory)}
+.wMark{position:absolute;top:44%;left:-10%;font-family:'Cinzel';font-size:11vw;color:rgba(245,240,230,.03);pointer-events:none;white-space:nowrap;transform:rotate(-8deg)}
+/* COLLECTIONS */
+#collections{padding:118px 0;background:var(--obsidian);border-top:1px solid rgba(212,175,55,.08);border-bottom:1px solid rgba(212,175,55,.08)}
+.cHead{display:flex;align-items:end;justify-content:space-between;gap:28px;flex-wrap:wrap;margin-bottom:52px}
+.cGrid{display:grid;grid-template-columns:repeat(12,1fr);gap:16px}
+.cCard{position:relative;overflow:hidden;background:var(--dark);border:1px solid rgba(212,175,55,.12);transition:all .7s var(--easeOut)}
+.cCard:hover{border-color:rgba(212,175,55,.32);transform:translateY(-4px);box-shadow:0 24px 52px rgba(0,0,0,.52), inset 0 0 0 1px rgba(212,175,55,.08)}
+.cCard img{width:100%;height:100%;object-fit:cover;transition:transform 1.4s var(--easeL), filter .8s;filter:brightness(.86) contrast(1.05)}
+.cCard:hover img{transform:scale(1.08);filter:brightness(.96)}
+.cCard:after{content:'';position:absolute;inset:0;background:linear-gradient(0deg, rgba(5,5,5,.88) 0%, rgba(5,5,5,.18) 56%, transparent 100%);pointer-events:none}
+.cCont{position:absolute;left:0;right:0;bottom:0;padding:24px 22px;z-index:2;transform:translateY(8px);transition:transform .6s var(--easeOut)}
+.cCard:hover .cCont{transform:translateY(0)}.cKick{font-size:8.5px;letter-spacing:.38em;text-transform:uppercase;color:var(--gold);display:flex;align-items:center;gap:10px}.cKick:after{content:'';width:18px;height:1px;background:var(--gold);opacity:.6}
+.cTit{font-family:'Cinzel';font-size:20px;line-height:1.15;color:var(--ivory);margin-top:8px}.cDesc{font-family:'Cormorant Garamond';font-size:14px;color:var(--ivory2);line-height:1.5;opacity:0;transform:translateY(8px);transition:.5s .08s;margin-top:8px}.cCard:hover .cDesc{opacity:1;transform:translateY(0)}
+.cArr{position:absolute;top:16px;right:16px;width:36px;height:36px;border:1px solid rgba(245,240,230,.18);display:grid;place-items:center;color:var(--ivory);z-index:3;backdrop-filter:blur(8px);background:rgba(5,5,5,.28);transition:.5s}
+.cCard:hover .cArr{background:var(--gold);border-color:var(--gold);color:var(--obsidian);transform:rotate(45deg)}.cArr svg{width:13px;height:13px;stroke:currentColor;fill:none;stroke-width:1.2;transition:transform .5s}.cCard:hover .cArr svg{transform:rotate(-45deg)}
+.cLarge{grid-column:span 7;aspect-ratio:4/3.1}.cMed{grid-column:span 5;aspect-ratio:1/1.02}.cSmall{grid-column:span 5;aspect-ratio:4/3}.cTall{grid-column:span 7;aspect-ratio:4/2.6}
+/* CRAFT */
+#craft{display:grid;grid-template-columns:1fr 1fr;min-height:86vh;background:var(--dark);overflow:hidden}
+.craftMedia{position:relative;overflow:hidden;background:var(--obsidian)}
+.craftMedia img{width:100%;height:100%;object-fit:cover;filter:brightness(.86) contrast(1.08) saturate(.95);transition:transform 2s var(--easeL)}.craftMedia:hover img{transform:scale(1.06)}
+.craftMedia:after{content:'';position:absolute;inset:0;background:linear-gradient(90deg, transparent 56%, rgba(5,5,5,.58) 100%), linear-gradient(0deg, rgba(5,5,5,.6), transparent 52%)}
+.craftContent{padding:68px 60px;display:flex;flex-direction:column;justify-content:center;background:radial-gradient(110% 90% at 15% 15%, var(--forest) 0%, var(--dark) 62%)}
+.cList{margin-top:32px;display:grid;gap:26px}
+.cItem{display:flex;gap:18px;padding-top:24px;border-top:1px solid rgba(245,240,230,.08);transition:.5s}
+.cItem:hover{border-color:rgba(212,175,55,.24);transform:translateX(6px)}
+.cIcon{flex:0 0 40px;width:40px;height:40px;border:1px solid rgba(212,175,55,.22);display:grid;place-items:center;background:rgba(212,175,55,.06);position:relative}
+.cIcon:before{content:'';position:absolute;inset:-1px;background:linear-gradient(120deg,transparent,rgba(212,175,55,.2),transparent);opacity:0;transition:.5s}.cItem:hover .cIcon:before{opacity:1}
+.cIcon svg{width:18px;height:18px;stroke:var(--gold);fill:none;stroke-width:1.1}
+.cItem h4{font-family:'Cinzel';font-size:14px;letter-spacing:.12em;color:var(--ivory);margin-bottom:6px}.cItem p{font-size:12.5px;line-height:1.7;color:var(--ivoryM);font-weight:300}
+/* TIMELINE */
+#timeline{padding:116px 0 108px;background:var(--obsidian);overflow:hidden}
+#timeline:before{content:'';position:absolute;left:50%;top:0;width:1px;height:100%;background:linear-gradient(180deg,transparent,rgba(212,175,55,.22) 14%,rgba(212,175,55,.22) 84%,transparent);transform:translateX(-50%)}
+.tHead{text-align:center;max-width:720px;margin:0 auto 68px}
+.tTrack{position:relative;width:min(960px,92%);margin:0 auto;display:grid;gap:26px}
+.tItem{display:grid;grid-template-columns:1fr 64px 1fr;align-items:center;gap:0}
+.tItem:nth-child(even){direction:rtl}.tItem:nth-child(even) *{direction:ltr}
+.tDot{position:relative;width:64px;height:64px;display:grid;place-items:center;z-index:2}
+.tDot:before{content:'';position:absolute;width:12px;height:12px;background:var(--gold);border-radius:50%;box-shadow:0 0 0 6px rgba(212,175,55,.12),0 0 16px var(--gold);transition:.6s}.tItem.in .tDot:before{width:14px;height:14px;box-shadow:0 0 0 10px rgba(212,175,55,.14),0 0 24px var(--gold)}
+.tDot:after{content:'';position:absolute;width:1px;height:84px;top:100%;left:50%;background:rgba(212,175,55,.24);transform:translateX(-50%);opacity:.6}.tItem:last-child .tDot:after{display:none}
+.tCard{padding:24px 26px;background:linear-gradient(165deg, rgba(245,240,230,.05), rgba(245,240,230,.015));border:1px solid rgba(212,175,55,.14);backdrop-filter:blur(14px);transition:all .7s var(--easeOut);position:relative;overflow:hidden}
+.tCard:before{content:'';position:absolute;top:0;left:0;width:2px;height:0;background:var(--gold);transition:height .8s var(--easeOut) .2s;box-shadow:0 0 12px var(--gold)}.tItem.in .tCard:before{height:100%}
+.tCard:hover{border-color:rgba(212,175,55,.32);transform:translateY(-3px);box-shadow:0 18px 42px rgba(0,0,0,.45)}
+.tEra{font-size:8.5px;letter-spacing:.38em;text-transform:uppercase;color:var(--gold);margin-bottom:8px;display:flex;align-items:center;gap:10px}.tEra:after{content:'';width:18px;height:1px;background:var(--gold);opacity:.5}
+.tTit{font-family:'Cinzel';font-size:17px;color:var(--ivory);margin-bottom:6px}.tDesc{font-size:12.5px;line-height:1.75;color:var(--ivoryM);font-weight:300}
+.tYear{font-family:'Cormorant Garamond';font-style:italic;font-size:46px;line-height:1;color:rgba(212,175,55,.12);position:absolute;right:12px;bottom:4px;pointer-events:none}
+/* VALUES */
+#values{padding:92px 0;background:radial-gradient(100% 100% at 30% 0%,var(--forest) 0%,var(--dark) 55%,var(--obsidian) 100%);border-top:1px solid rgba(212,175,55,.08)}
+.vGrid{display:grid;grid-template-columns:repeat(4,1fr);gap:1px;background:rgba(212,175,55,.12);border:1px solid rgba(212,175,55,.12);margin-top:44px}
+.vCard{background:var(--obsidian);padding:30px 26px;position:relative;overflow:hidden;transition:background .6s}
+.vCard:before{content:'';position:absolute;top:0;left:0;width:100%;height:1px;background:linear-gradient(90deg,transparent,var(--gold),transparent);transform:scaleX(0);transition:transform .8s var(--easeOut)}
+.vCard:hover:before{transform:scaleX(1)}.vCard:hover{background:rgba(11,21,18,.92)}
+.vIcon{width:42px;height:42px;border:1px solid rgba(212,175,55,.22);display:grid;place-items:center;margin-bottom:20px;background:radial-gradient(100% at 50% 0%, rgba(212,175,55,.12), transparent)}
+.vIcon svg{width:20px;height:20px;stroke:var(--gold);fill:none;stroke-width:1.1}
+.vCard h4{font-family:'Cinzel';font-size:13px;letter-spacing:.16em;color:var(--ivory);margin-bottom:10px}.vCard p{font-size:12px;line-height:1.8;color:var(--ivoryM);font-weight:300}
+/* GALLERY */
+#gallery{padding:112px 0;background:var(--obsidian)}
+.gHead{display:flex;align-items:end;justify-content:space-between;gap:22px;flex-wrap:wrap;margin-bottom:30px}
+.fBar{display:flex;gap:8px;flex-wrap:wrap}
+.fBtn{padding:9px 16px;border:1px solid rgba(245,240,230,.12);font-size:9.5px;letter-spacing:.28em;text-transform:uppercase;color:var(--ivoryM);transition:.4s;background:transparent}
+.fBtn.on,.fBtn:hover{border-color:var(--gold);color:var(--gold);background:rgba(212,175,55,.07);box-shadow:0 0 16px rgba(212,175,55,.12) inset}
+.masonry{display:grid;grid-template-columns:repeat(12,1fr);gap:10px;grid-auto-rows:8px}
+.mItem{position:relative;overflow:hidden;background:var(--dark);border:1px solid rgba(212,175,55,.1);transition:all .6s var(--easeOut)}
+.mItem.hide{display:none}.mItem img{width:100%;height:100%;object-fit:cover;transition:transform 1.4s var(--easeL),filter .6s;filter:brightness(.9)}.mItem:hover img{transform:scale(1.08);filter:brightness(1)}
+.mItem:after{content:'';position:absolute;inset:0;background:linear-gradient(0deg,rgba(5,5,5,.65),transparent 50%);opacity:0;transition:opacity .5s;pointer-events:none}.mItem:hover:after{opacity:1}
+.mOver{position:absolute;left:12px;right:12px;bottom:12px;display:flex;justify-content:space-between;align-items:end;gap:10px;z-index:2;opacity:0;transform:translateY(8px);transition:.5s}.mItem:hover .mOver{opacity:1;transform:translateY(0)}
+.mMeta h5{font-family:'Cinzel';font-size:11px;color:var(--ivory);letter-spacing:.08em;line-height:1.2}.mMeta p{font-size:9px;letter-spacing:.28em;text-transform:uppercase;color:var(--gold);margin-top:3px}
+.mZoom{width:32px;height:32px;border:1px solid rgba(245,240,230,.2);display:grid;place-items:center;background:rgba(5,5,5,.5);backdrop-filter:blur(6px);color:var(--ivory);transition:.4s}.mZoom:hover{background:var(--gold);color:var(--obsidian);border-color:var(--gold)}.mZoom svg{width:13px;height:13px;stroke:currentColor;fill:none;stroke-width:1.3}
+.mItem.r1{grid-column:span 4;grid-row:span 18}.mItem.r2{grid-column:span 4;grid-row:span 22}.mItem.r3{grid-column:span 4;grid-row:span 16}.mItem.r4{grid-column:span 3;grid-row:span 16}.mItem.r5{grid-column:span 5;grid-row:span 18}.mItem.r6{grid-column:span 4;grid-row:span 18}.mItem.r7{grid-column:span 6;grid-row:span 20}.mItem.r8{grid-column:span 6;grid-row:span 18}.mItem.r9{grid-column:span 4;grid-row:span 17}.mItem.r10{grid-column:span 4;grid-row:span 19}.mItem.r11{grid-column:span 4;grid-row:span 17}.mItem.r12{grid-column:span 12;grid-row:span 16}
+/* JOURNAL */
+#journal{padding:108px 0;background:var(--dark);border-top:1px solid rgba(212,175,55,.08);border-bottom:1px solid rgba(212,175,55,.08)}
+.jGrid{display:grid;grid-template-columns:repeat(3,1fr);gap:1px;background:rgba(212,175,55,.12);border:1px solid rgba(212,175,55,.12);margin-top:48px}
+.jCard{background:var(--obsidian);display:flex;flex-direction:column;transition:background .6s}
+.jCard:hover{background:#080a09}
+.jMedia{position:relative;aspect-ratio:4/2.7;overflow:hidden;background:var(--forest)}
+.jMedia img{width:100%;height:100%;object-fit:cover;filter:brightness(.9) contrast(1.05);transition:transform 1.2s var(--easeL)}.jCard:hover .jMedia img{transform:scale(1.07)}
+.jMedia:after{content:'';position:absolute;inset:0;background:linear-gradient(0deg,rgba(5,5,5,.55),transparent 55%)}
+.jTag{position:absolute;left:14px;top:14px;z-index:2;padding:5px 9px;background:rgba(5,5,5,.55);border:1px solid rgba(212,175,55,.22);backdrop-filter:blur(8px);font-size:8.5px;letter-spacing:.3em;text-transform:uppercase;color:var(--gold)}
+.jBody{padding:24px 22px;flex:1;display:flex;flex-direction:column}
+.jDate{font-size:9.5px;letter-spacing:.28em;text-transform:uppercase;color:var(--ivoryM);margin-bottom:10px}
+.jTit{font-family:'Cinzel';font-size:16px;line-height:1.35;color:var(--ivory);margin-bottom:10px;transition:color .4s}.jCard:hover .jTit{color:var(--goldL)}
+.jExc{font-size:12.5px;line-height:1.72;color:var(--ivoryM);font-weight:300;margin-bottom:16px;flex:1}
+.jLink{font-size:9.5px;letter-spacing:.32em;text-transform:uppercase;color:var(--ivory);display:inline-flex;align-items:center;gap:10px;transition:.4s;border-top:1px solid rgba(245,240,230,.08);padding-top:12px;margin-top:auto}
+.jLink:after{content:'';width:18px;height:1px;background:currentColor;transition:width .4s}.jCard:hover .jLink{color:var(--gold);gap:14px}.jCard:hover .jLink:after{width:28px}
+/* QUOTE */
+#quote{padding:122px 0 116px;background:radial-gradient(120% 120% at 50% 0%, var(--forest) 0%, var(--obsidian) 78%);text-align:center;overflow:hidden}
+#quote:before{content:'“';position:absolute;left:50%;top:20px;transform:translateX(-50%);font-family:'Cormorant Garamond';font-size:210px;line-height:1;color:rgba(212,175,55,.06);pointer-events:none}
+.qInner{width:min(860px,92%);margin:0 auto;position:relative;z-index:2}
+.qMark{margin:0 auto 28px;width:46px;height:46px;border:1px solid rgba(212,175,55,.22);display:grid;place-items:center;background:rgba(212,175,55,.06)}.qMark svg{width:18px;height:18px;fill:var(--gold);opacity:.9}
+.qText{font-family:'Cormorant Garamond';font-weight:300;font-style:italic;font-size:clamp(26px,4vw,48px);line-height:1.14;color:var(--ivory);letter-spacing:-.02em}
+.qText .gold{color:transparent;background:linear-gradient(95deg,var(--gold),var(--goldL));-webkit-background-clip:text;background-clip:text;font-style:normal;font-family:'Cinzel';font-weight:500;font-size:.92em}
+.qAuth{margin-top:26px;display:flex;align-items:center;justify-content:center;gap:14px}.qLine{width:28px;height:1px;background:var(--gold);opacity:.6}.qAuth span{font-size:9px;letter-spacing:.38em;text-transform:uppercase;color:var(--ivoryM)}
+/* NEWSLETTER */
+#newsletter{padding:92px 0;background:var(--obsidian);border-top:1px solid rgba(212,175,55,.08)}
+.nWrap{display:grid;grid-template-columns:1.1fr .9fr;gap:52px;align-items:center;padding:42px;border:1px solid rgba(212,175,55,.12);background:linear-gradient(160deg, rgba(245,240,230,.045), rgba(245,240,230,.015));backdrop-filter:blur(18px);position:relative;overflow:hidden}
+.nWrap:before{content:'';position:absolute;top:0;left:0;width:100%;height:1px;background:linear-gradient(90deg, transparent, var(--gold), transparent);opacity:.6}
+.nCopy h3{font-family:'Cinzel';font-size:clamp(22px,3vw,32px);line-height:1.15;color:var(--ivory);margin-bottom:12px}.nCopy p{font-family:'Cormorant Garamond';font-size:16.5px;color:var(--ivory2);line-height:1.6}
+.nForm{display:flex;flex-direction:column;gap:12px}.fRow{display:flex;gap:10px}
+.input{flex:1;padding:14px 16px;background:rgba(5,5,5,.6);border:1px solid rgba(245,240,230,.12);color:var(--ivory);font-family:'Inter';font-size:13px;transition:.4s;outline:none}
+.input::placeholder{color:var(--ivoryM)}.input:focus{border-color:var(--gold);box-shadow:0 0 0 3px rgba(212,175,55,.12), inset 0 0 18px rgba(212,175,55,.08)}
+.fNote{font-size:11px;color:var(--ivoryM);line-height:1.6}.fNote a{color:var(--gold);text-decoration:underline;text-underline-offset:3px}
+.fMsg{font-size:12px;min-height:18px}.fMsg.ok{color:#8fcf8a}.fMsg.err{color:#d8927a}
+/* FOOTER */
+footer{padding:80px 0 26px;background:radial-gradient(140% 100% at 0% 0%, var(--forest) 0%, var(--dark) 48%, var(--obsidian) 100%);border-top:1px solid rgba(212,175,55,.12);overflow:hidden;position:relative}
+footer:before{content:'';position:absolute;inset:0;background-image:url("data:image/svg+xml,%3Csvg viewBox='0 0 100 100' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence baseFrequency='0.8'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='0.03'/%3E%3C/svg%3E");pointer-events:none}
+.fGrid{position:relative;z-index:2;display:grid;grid-template-columns:1.6fr .9fr .9fr 1fr;gap:38px}
+.fBrand .logo{margin-bottom:16px}.fBrand p{font-size:12.5px;line-height:1.84;color:var(--ivoryM);font-weight:300;max-width:36ch}
+.fCol h5{font-size:10.5px;letter-spacing:.32em;text-transform:uppercase;color:var(--ivory);margin-bottom:20px}
+.fLinks{list-style:none;display:grid;gap:11px}.fLinks a{font-size:12.5px;color:var(--ivoryM);transition:.35s;display:inline-flex;align-items:center;gap:0}
+.fLinks a:before{content:'';width:0;height:1px;background:var(--gold);transition:width .35s;opacity:.8}.fLinks a:hover{color:var(--ivory);gap:8px}.fLinks a:hover:before{width:14px}
+.fBottom{position:relative;z-index:2;margin-top:60px;padding-top:20px;border-top:1px solid rgba(245,240,230,.08);display:flex;align-items:center;justify-content:space-between;gap:16px;flex-wrap:wrap}
+.fCopy{font-size:10.5px;color:var(--ivoryM)}.fSocial{display:flex;gap:10px}
+.sBtn{width:34px;height:34px;border:1px solid rgba(245,240,230,.12);display:grid;place-items:center;color:var(--ivoryM);transition:.4s;background:rgba(245,240,230,.02)}.sBtn:hover{border-color:var(--gold);color:var(--gold);background:rgba(212,175,55,.08);transform:translateY(-2px)}.sBtn svg{width:15px;height:15px;fill:currentColor}
+/* LIGHTBOX */
+#lightbox{position:fixed;inset:0;z-index:9500;background:rgba(5,5,5,.92);backdrop-filter:blur(16px);display:none;align-items:center;justify-content:center;padding:26px;opacity:0;transition:opacity .5s}
+#lightbox.on{display:flex;opacity:1}
+.lbInner{position:relative;width:min(1080px,96%);max-height:92vh;display:grid;grid-template-columns:1.2fr .8fr;background:var(--dark);border:1px solid rgba(212,175,55,.18);overflow:hidden;transform:translateY(18px) scale(.98);transition:transform .6s var(--easeOut)}
+#lightbox.on .lbInner{transform:translateY(0) scale(1)}
+.lbImg{position:relative;background:var(--obsidian);display:grid;place-items:center;overflow:hidden}.lbImg img{width:100%;height:100%;object-fit:contain;max-height:82vh;background:var(--obsidian)}
+.lbInfo{padding:30px 26px;display:flex;flex-direction:column;background:radial-gradient(110% 80% at 20% 0%, var(--forest) 0%, var(--dark) 70%)}
+.lbTitle{font-family:'Cinzel';font-size:22px;color:var(--ivory);line-height:1.2;margin-bottom:10px}.lbDesc{font-size:12.5px;line-height:1.8;color:var(--ivoryM);font-weight:300}
+.lbClose{position:absolute;top:14px;right:14px;width:38px;height:38px;border:1px solid rgba(245,240,230,.16);background:rgba(5,5,5,.55);backdrop-filter:blur(8px);color:var(--ivory);display:grid;place-items:center;z-index:3;transition:.4s}.lbClose:hover{background:var(--gold);border-color:var(--gold);color:var(--obsidian)}.lbClose svg{width:15px;height:15px;stroke:currentColor;fill:none;stroke-width:1.4}
+/* MAGNETIC + SHIMMER */
+.magnetic{transition:transform .2s linear;will-change:transform}.shimmer{position:relative;overflow:hidden}.shimmer:after{content:'';position:absolute;top:0;left:-120%;width:60%;height:100%;background:linear-gradient(100deg,transparent,rgba(255,255,255,.18),transparent);transform:skewX(-12deg);animation:shim 5.5s infinite}
+@keyframes shim{0%{left:-120%}22%,100%{left:140%}}
+/* RESPONSIVE */
+@media(max-width:1100px){.legacyGrid{grid-template-columns:1fr;gap:40px}.cGrid{grid-template-columns:1fr 1fr}.cLarge,.cMed,.cSmall,.cTall{grid-column:span 1;aspect-ratio:4/3}#craft{grid-template-columns:1fr}.craftContent{padding:44px 26px}.vGrid{grid-template-columns:1fr 1fr}.fGrid{grid-template-columns:1fr 1fr;gap:30px}.nWrap{grid-template-columns:1fr}.header{padding:14px 22px}.header.scrolled{padding:10px 22px}}
+@media(max-width:760px){
+.links,.cta{display:none}.mToggle{display:grid}
+.tItem{grid-template-columns:1fr;gap:10px}.tItem .tDot{order:-1;width:48px;height:48px}.tDot:after{display:none}#timeline:before{left:22px;transform:none}.tTrack{width:92%}.tItem{padding-left:14px}
+.masonry{grid-template-columns:1fr;grid-auto-rows:auto}.mItem.r1,.mItem.r2,.mItem.r3,.mItem.r4,.mItem.r5,.mItem.r6,.mItem.r7,.mItem.r8,.mItem.r9,.mItem.r10,.mItem.r11,.mItem.r12{grid-column:span 1;grid-row:auto;aspect-ratio:4/3}
+.jGrid{grid-template-columns:1fr}.vGrid{grid-template-columns:1fr}.stats{grid-template-columns:1fr;gap:16px}
+.fGrid{grid-template-columns:1fr}.lbInner{grid-template-columns:1fr}.fBottom{flex-direction:column;align-items:flex-start}
+}
+@media(prefers-reduced-motion:reduce){*,*:before,*:after{animation:none!important;transition:none!important}.heroBg img{animation:none}#dust{display:none}}
+</style>
+</head>
+<body class="lock">
 
-    <title>Runestone Relics — Timeless Heritage · Crafted Beauty · Ancient Legacy</title>
-    <meta name="description" content="Runestone Relics is a luxury heritage house celebrating ancient civilizations, Viking culture, Norse mythology and museum-quality artifacts. Explore rare gemstones, handcrafted jewelry, and medieval relics — where craftsmanship transcends time." />
-    <meta name="keywords" content="Runestone Relics, luxury heritage, viking jewelry, norse mythology, gemstones, crystals, medieval artifacts, handcrafted jewelry, museum-quality relics, ancient civilizations" />
-    <meta name="author" content="Runestone Relics" />
-    <link rel="canonical" href="https://runestonerelics.com/" />
+<div id="progress" aria-hidden="true"></div>
+<div id="spot" aria-hidden="true"></div>
 
-    <!-- Open Graph -->
-    <meta property="og:type" content="website" />
-    <meta property="og:site_name" content="Runestone Relics" />
-    <meta property="og:title" content="Runestone Relics — Timeless Heritage · Crafted Beauty · Ancient Legacy" />
-    <meta property="og:description" content="A luxury heritage house honoring ancient civilizations, Viking craftsmanship and museum-quality relics." />
-    <meta property="og:url" content="https://runestonerelics.com/" />
-    <meta property="og:image" content="https://images.pexels.com/photos/34019082/pexels-photo-34019082.jpeg?auto=compress&cs=tinysrgb&fit=crop&h=627&w=1200" />
-
-    <!-- Twitter -->
-    <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:title" content="Runestone Relics — Timeless Heritage" />
-    <meta name="twitter:description" content="Luxury heritage · Viking culture · Rare gemstones · Museum-quality relics." />
-    <meta name="twitter:image" content="https://images.pexels.com/photos/34019082/pexels-photo-34019082.jpeg?auto=compress&cs=tinysrgb&fit=crop&h=627&w=1200" />
-
-    <!-- Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600;700;800&family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet" />
-
-    <!-- Structured Data -->
-    <script type="application/ld+json">
-    {
-      "@context": "https://schema.org",
-      "@type": "Organization",
-      "name": "Runestone Relics",
-      "url": "https://runestonerelics.com/",
-      "logo": "https://runestonerelics.com/images/logo.png",
-      "description": "Luxury heritage house celebrating ancient civilizations, Viking culture and museum-quality relics.",
-      "sameAs": [
-        "https://instagram.com/runestonerelics",
-        "https://www.pinterest.com/runestonerelics"
-      ]
-    }
-    </script>
-
-    <link rel="stylesheet" href="style.css" />
-  </head>
-  <body>
-
-    <!-- ================= PRELOADER ================= -->
-    <div class="preloader" id="preloader" aria-hidden="true">
-      <div class="preloader-inner">
-        <svg class="rune-mark" viewBox="0 0 120 120" aria-hidden="true">
-          <defs>
-            <radialGradient id="rg" cx="50%" cy="50%" r="50%">
-              <stop offset="0%" stop-color="#F5D97A" stop-opacity="1" />
-              <stop offset="100%" stop-color="#D4AF37" stop-opacity="0" />
-            </radialGradient>
-          </defs>
-          <circle cx="60" cy="60" r="54" fill="none" stroke="url(#rg)" stroke-opacity="0.35" stroke-width="1"/>
-          <circle cx="60" cy="60" r="44" fill="none" stroke="#D4AF37" stroke-opacity="0.85" stroke-width="1" class="rune-ring"/>
-          <g class="rune-glyph" stroke="#F5D97A" stroke-width="2" fill="none" stroke-linecap="round">
-            <line x1="60" y1="28" x2="60" y2="92"/>
-            <line x1="60" y1="34" x2="80" y2="46"/>
-            <line x1="60" y1="46" x2="80" y2="58"/>
-            <line x1="60" y1="58" x2="40" y2="70"/>
-            <line x1="60" y1="70" x2="80" y2="82"/>
-          </g>
-        </svg>
-        <div class="preloader-brand">RUNESTONE&nbsp;RELICS</div>
-        <div class="preloader-bar"><span></span></div>
-      </div>
+<div id="preloader" role="status" aria-label="Loading">
+  <div style="display:flex;flex-direction:column;align-items:center">
+    <div class="runeWrap" aria-hidden="true"><div class="runeGlow"></div><div class="runeRing"></div>
+      <svg class="runeSvg" viewBox="0 0 64 64"><path d="M32 8 L32 56 M32 8 L50 24 M32 16 L50 32 M32 8 L14 24 M32 16 L14 32 M18 44 L32 56 L46 44"></path><circle cx="32" cy="8" r="2.2" fill="#D4AF37" stroke="none"></circle></svg>
     </div>
+    <div class="preWord"><div class="preBrand">RUNESTONE RELICS</div><div class="preSub">Ancient Legacy • Modern Curatorship</div></div>
+    <div class="preBar"><div class="preFill"></div></div>
+  </div>
+</div>
 
-    <!-- ================= SCROLL PROGRESS ================= -->
-    <div class="scroll-progress" id="scrollProgress" aria-hidden="true"></div>
+<header class="header" id="header" role="banner">
+  <a href="#hero" class="logo" aria-label="Runestone Relics Home">
+    <div class="logoMark" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M12 3 L12 20 M12 3 L18 9 M12 7 L18 13 M12 3 L6 9 M12 7 L6 13 M7 16 L12 20 L17 16"></path></svg></div>
+    <div class="logoType">RUNESTONE<span>RELICS</span></div>
+  </a>
+  <nav class="nav" aria-label="Primary"><ul class="links"><li><a href="#legacy">Legacy</a></li><li><a href="#collections">Collections</a></li><li><a href="#craft">Craft</a></li><li><a href="#gallery">Gallery</a></li><li><a href="#journal">Journal</a></li></ul><a href="#newsletter" class="cta magnetic">Inquire</a><button class="mToggle" id="mToggle" aria-label="Open menu" aria-expanded="false"><span></span></button></nav>
+</header>
 
-    <!-- ================= SPOTLIGHT / CURSOR ================= -->
-    <div class="spotlight" id="spotlight" aria-hidden="true"></div>
-    <div class="cursor-dot" id="cursorDot" aria-hidden="true"></div>
+<div class="mMenu" id="mMenu" aria-hidden="true" role="dialog">
+  <nav><a href="#legacy">Our Legacy</a><a href="#collections">Collections</a><a href="#craft">Craftsmanship</a><a href="#timeline">Timeline</a><a href="#gallery">Gallery</a><a href="#journal">Journal</a><a href="#newsletter">Private Access</a></nav>
+  <div class="mSmall">Timeless Heritage • Crafted Beauty • Ancient Legacy<br>Est. MMXXIV — Curated in the North</div>
+</div>
 
-    <!-- ================= NAVBAR ================= -->
-    <header class="nav" id="nav">
-      <div class="nav-inner">
-        <a href="#home" class="nav-logo" aria-label="Runestone Relics — Home">
-          <span class="nav-logo-mark" aria-hidden="true">
-            <svg viewBox="0 0 40 40"><path d="M20 3 L34 12 L34 28 L20 37 L6 28 L6 12 Z" fill="none" stroke="currentColor" stroke-width="1.2"/><path d="M20 10 L20 30 M20 14 L27 19 M20 22 L14 26" stroke="currentColor" stroke-width="1.2" fill="none" stroke-linecap="round"/></svg>
-          </span>
-          <span class="nav-logo-text">
-            <span class="lg-line">Runestone</span>
-            <span class="lg-sub">R E L I C S</span>
-          </span>
-        </a>
-        <nav class="nav-links" aria-label="Primary">
-          <a href="#legacy">Legacy</a>
-          <a href="#collections">Collections</a>
-          <a href="#craft">Craft</a>
-          <a href="#timeline">Heritage</a>
-          <a href="#gallery">Gallery</a>
-          <a href="#journal">Journal</a>
-        </nav>
-        <a href="#collections" class="nav-cta magnetic" data-magnetic>Enter the Archive</a>
-        <button class="nav-burger" id="navBurger" aria-label="Open menu" aria-expanded="false">
-          <span></span><span></span><span></span>
-        </button>
-      </div>
-    </header>
+<section id="hero" aria-label="Hero">
+  <div class="heroBg" aria-hidden="true"><img src="https://images.unsplash.com/photo-1448375240586-882707db888b?q=80&w=2070&auto=format&fit=crop" alt="" width="2070" height="1380"><div class="heroGrad"></div><div class="heroGold"></div></div>
+  <div id="dust" aria-hidden="true"></div>
+  <div class="heroContent">
+    <div class="heroLogo" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M12 3 L12 20 M12 3 L18 9 M12 7 L18 13 M12 3 L6 9 M12 7 L6 13 M7 16 L12 20 L17 16"></path></svg></div>
+    <div class="kicker"><span>Heritage House • Museum Grade</span></div>
+    <h1 class="hTitle"><span class="line"><span>RUNESTONE</span></span><span class="line"><span class="acc">RELICS</span></span></h1>
+    <p class="hTag">Timeless Heritage • Crafted Beauty • Ancient Legacy</p>
+    <div class="hCtas"><a href="#collections" class="btn btnP magnetic shimmer">Explore Collection<svg width="14" height="14" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.2" aria-hidden="true"><path d="M3 8h10M8 3l5 5-5 5"/></svg></a><a href="#legacy" class="btn btnS magnetic">Discover Heritage</a></div>
+  </div>
+  <div class="scrollHint" aria-hidden="true"><span>Scroll</span><div class="sLine"></div></div>
+</section>
 
-    <!-- Mobile menu -->
-    <aside class="mobile-menu" id="mobileMenu" aria-hidden="true">
-      <div class="mm-inner">
-        <a href="#legacy">Our Legacy</a>
-        <a href="#collections">Collections</a>
-        <a href="#craft">Craftsmanship</a>
-        <a href="#timeline">Heritage</a>
-        <a href="#gallery">Gallery</a>
-        <a href="#journal">Journal</a>
-        <div class="mm-foot">Timeless Heritage · Crafted Beauty</div>
-      </div>
-    </aside>
+<section id="legacy" aria-labelledby="legacyTitle">
+  <div class="wMark" aria-hidden="true">RUNESTONE • RELICS • HERITAGE</div>
+  <div class="container"><div class="legacyGrid">
+    <div><div class="eyebrow reveal">Our Legacy</div><h2 class="sTitle reveal d1" id="legacyTitle">Born from <em>stone, saga,</em> and <em>starlight.</em></h2><p class="sDesc reveal d2" style="margin-top:22px">We are not a store. We are custodians of time — rare crystals formed over millennia, jewelry forged by master hands, artifacts that once belonged to chieftains and scriptoria.</p><div class="lCopy reveal d3"><p>Each <strong>Runestone Relic</strong> is museum-vetted, provenance-traced, and curated as if for Sotheby's saleroom — yet made to live with you. Our ateliers in the North still work with charcoal, bronze hammers, and lens, while our gemologists honor deep-earth memory.</p><p>Inspired by the British Museum, the Viking Ship Museum in Roskilde, and private cabinets of European connoisseurs, we present objects that hold silence, weight and story. No mass production. No trends. Only timelessness.</p></div><div class="stats reveal"><div><div class="sNum">IV</div><div class="sLab">Curated Houses<br>Crystals / Jewelry / Viking / Medieval</div></div><div><div class="sNum">100%</div><div class="sLab">Museum-Grade<br>Provenance & Authenticity</div></div><div><div class="sNum">∞</div><div class="sLab">Timeless<br>Craftsmanship Ethos</div></div></div></div>
+    <div class="reveal d2"><div class="rCard shimmer"><img src="https://images.unsplash.com/photo-1617038220319-276d3cfab638?q=80&w=1200&auto=format&fit=crop" alt="Rare raw amethyst crystal cluster in museum lighting" loading="lazy"><div class="rOverlay"></div><div class="rBadge"><i></i><p>Specimen — Amethyst Geode • 2.4kg</p></div></div></div>
+  </div></div>
+</section>
 
-    <main>
+<section id="collections" aria-labelledby="colTitle">
+  <div class="container"><div class="cHead"><div><div class="eyebrow reveal">Houses</div><h2 class="sTitle reveal d1" id="colTitle">The Four <em>Houses of Legend</em></h2></div><p class="sDesc reveal d2">Editorial collections, each telling its own saga — from the deep earth to the northern seas.</p></div><div class="cGrid">
+    <article class="cCard cLarge reveal"><img src="https://images.unsplash.com/photo-1601821765780-754fa98637c1?q=80&w=1200&auto=format&fit=crop" alt="Luminous quartz crystals on obsidian" loading="lazy" onerror="this.src='https://images.unsplash.com/photo-1617038220319-276d3cfab638?q=80&w=1200&auto=format&fit=crop'"><div class="cArr" aria-hidden="true"><svg viewBox="0 0 16 16"><path d="M3 8H13M8 3L13 8L8 13"/></svg></div><div class="cCont"><div class="cKick">House I</div><h3 class="cTit">Crystals & Gemstones</h3><p class="cDesc">Geological poetry — amethyst, smoky quartz, labradorite. Hand-selected for clarity, energy and age.</p></div></article>
+    <article class="cCard cMed reveal d1"><img src="https://images.unsplash.com/photo-1605100804763-247f67b3557e?q=80&w=1200&auto=format&fit=crop" alt="Handcrafted gold jewelry with runic engravings" loading="lazy" onerror="this.src='https://images.unsplash.com/photo-1515562141207-7a88fb7ce338?q=80&w=1200&auto=format&fit=crop'"><div class="cArr" aria-hidden="true"><svg viewBox="0 0 16 16"><path d="M3 8H13M8 3L13 8L8 13"/></svg></div><div class="cCont"><div class="cKick">House II</div><h3 class="cTit">Handcrafted Jewelry</h3><p class="cDesc">Solid bronze and 18k gold, beaten, chased and rune-engraved by masters.</p></div></article>
+    <article class="cCard cSmall reveal"><img src="https://images.unsplash.com/photo-1599707367072-cd6ada2bc375?q=80&w=1200&auto=format&fit=crop" alt="Viking bronze tools museum" loading="lazy" onerror="this.src='https://images.unsplash.com/photo-1577083552431-6e5fd01aa342?q=80&w=1200&auto=format&fit=crop'"><div class="cArr" aria-hidden="true"><svg viewBox="0 0 16 16"><path d="M3 8H13M8 3L13 8L8 13"/></svg></div><div class="cCont"><div class="cKick">House III</div><h3 class="cTit">Viking Collection</h3><p class="cDesc">Torcs, Mjölnir pendants, seax — myth becomes metal.</p></div></article>
+    <article class="cCard cTall reveal d1"><img src="https://images.unsplash.com/photo-1516979187457-637abb4f9353?q=80&w=1200&auto=format&fit=crop" alt="Medieval illuminated manuscript" loading="lazy"><div class="cArr" aria-hidden="true"><svg viewBox="0 0 16 16"><path d="M3 8H13M8 3L13 8L8 13"/></svg></div><div class="cCont"><div class="cKick">House IV</div><h3 class="cTit">Medieval Artifacts</h3><p class="cDesc">Reliquaries, seals, manuscripts and ironwork, preserved with devotion.</p></div></article>
+  </div></div>
+</section>
 
-      <!-- ================= HERO ================= -->
-      <section class="hero" id="home">
-        <div class="hero-media">
-          <video autoplay muted loop playsinline poster="https://images.pexels.com/photos/34019082/pexels-photo-34019082.jpeg?auto=compress&cs=tinysrgb&fit=crop&h=1200&w=1920" aria-hidden="true">
-            <source src="https://videos.pexels.com/video-files/29089681/12569771_3840_2160_25fps.mp4" type="video/mp4" />
-          </video>
-          <div class="hero-veil"></div>
-          <div class="hero-vignette"></div>
-        </div>
+<section id="craft" aria-labelledby="craftTitle">
+  <div class="craftMedia"><img src="https://images.unsplash.com/photo-1515562141207-7a88fb7ce338?q=80&w=1200&auto=format&fit=crop" alt="Goldsmith atelier handcrafting" loading="lazy"></div>
+  <div class="craftContent"><div class="eyebrow reveal">Process</div><h2 class="sTitle reveal d1" id="craftTitle">Authenticity you can <em>feel in your palm.</em></h2><p class="sDesc reveal d2" style="margin-top:16px">Our atelier rejects the machine finish. Every hammer mark remains. Every gemstone is set by eye, not CAD.</p><div class="cList"><div class="cItem reveal"><div class="cIcon"><svg viewBox="0 0 24 24"><path d="M12 3L14.5 8.5L20 9.5L16 14L17 20L12 17.5L7 20L8 14L4 9.5L9.5 8.5L12 3Z"/><circle cx="12" cy="12" r="3"/></svg></div><div><h4>Authentication</h4><p>Museum provenance chain, gemological certification, metallurgical assay. Full disclosure, always.</p></div></div><div class="cItem reveal d1"><div class="cIcon"><svg viewBox="0 0 24 24"><path d="M6 12h12M6 12a3 3 0 0 0 3-3V7a3 3 0 0 0-3-3M18 12a3 3 0 0 1-3-3V7a3 3 0 0 1 3-3"/></svg></div><div><h4>Artistry</h4><p>Lost-wax casting, repoussé, rune-chasing, patination recipes from 9th-century Gotland. Masters train 8+ years.</p></div></div><div class="cItem reveal d2"><div class="cIcon"><svg viewBox="0 0 24 24"><path d="M12 2l7 4v6c0 4-3.5 7.5-7 10-3.5-2.5-7-6-7-10V6l7-4z"/><path d="M9 12l2 2 4-4"/></svg></div><div><h4>Quality</h4><p>Solid bronze, 925 silver, 18k recycled gold. Ethically mined stones. Built to be inherited.</p></div></div></div></div>
+</section>
 
-        <div class="particles" id="particles" aria-hidden="true"></div>
+<section id="timeline" aria-labelledby="timeTitle">
+  <div class="container"><div class="tHead"><div class="eyebrow reveal">Chronicle</div><h2 class="sTitle reveal d1" id="timeTitle">A lineage through <em>time itself</em></h2><p class="sDesc reveal d2" style="margin:20px auto 0">Four eras anchor our curation — each leaving its fingerprint on our vaults.</p></div><div class="tTrack">
+    <div class="tItem reveal"><div class="tCard"><div class="tEra">I • Deep Time</div><div class="tTit">Ancient Era — When Earth Dreamed</div><p class="tDesc">250M years of pressure birthing quartz, agate and obsidian. Older than memory.</p><div class="tYear">-250M</div></div><div class="tDot"></div><div></div></div>
+    <div class="tItem reveal"><div></div><div class="tDot"></div><div class="tCard"><div class="tEra">II • Saga</div><div class="tTit">Viking Era — Iron & Incantation</div><p class="tDesc">793-1066 AD. Norse smiths, runemasters and navigators. Jewelry as talisman.</p><div class="tYear">793</div></div></div>
+    <div class="tItem reveal"><div class="tCard"><div class="tEra">III • Relic</div><div class="tTit">Medieval Era — Monastery & Monolith</div><p class="tDesc">Reliquaries, seals and illuminated margins. Faith translated into gold and vellum.</p><div class="tYear">1200</div></div><div class="tDot"></div><div></div></div>
+    <div class="tItem reveal"><div></div><div class="tDot"></div><div class="tCard"><div class="tEra">IV • Now</div><div class="tTit">Modern Collectors — New Connoisseurs</div><p class="tDesc">Private salons, archival storage, lifetime care and legacy letters for next keeper.</p><div class="tYear">2026</div></div></div>
+  </div></div>
+</section>
 
-        <div class="hero-content" data-parallax>
-          <div class="hero-eyebrow">
-            <span class="hairline"></span>
-            <span>Est. in the Age of Legends</span>
-            <span class="hairline"></span>
-          </div>
+<section id="values" aria-labelledby="valTitle">
+  <div class="container"><div class="eyebrow reveal">Principles</div><h2 class="sTitle reveal d1" id="valTitle">The house <em>code</em></h2><div class="vGrid"><div class="vCard reveal"><div class="vIcon"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="8"/><path d="M9 12l2 2 4-4"/></svg></div><h4>Authenticity</h4><p>Every object arrives with a dossier: origin, assay, provenance, conservation. Forgery has no home here.</p></div><div class="vCard reveal d1"><div class="vIcon"><svg viewBox="0 0 24 24"><path d="M12 3l7 4v5c0 4-3 6-7 9-4-3-7-5-7-9V7l7-4z"/><path d="M9 12l2 2 4-4"/></svg></div><h4>Craftsmanship</h4><p>Hands over machines. Time over speed. Apprenticeship over virality. We measure in decades.</p></div><div class="vCard reveal d2"><div class="vIcon"><svg viewBox="0 0 24 24"><path d="M12 2L15 8h6l-5 4 2 6L12 14 6 18l2-6L3 8h6l3-6z"/></svg></div><h4>Quality</h4><p>Material truth — solid metals, unenhanced stones, archival finishes. Built to be inherited.</p></div><div class="vCard reveal d3"><div class="vIcon"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg></div><h4>Legacy</h4><p>We are temporary stewards of permanent beauty. Each piece includes a legacy letter.</p></div></div></div>
+</section>
 
-          <h1 class="hero-title">
-            <span class="reveal"><span>Runestone</span></span>
-            <span class="reveal delay-1"><span>Relics</span></span>
-          </h1>
+<section id="gallery" aria-labelledby="galTitle">
+  <div class="container"><div class="gHead"><div><div class="eyebrow reveal">Vault</div><h2 class="sTitle reveal d1" id="galTitle">Curated <em>excerpts</em></h2></div><div class="fBar reveal d2" role="tablist"><button class="fBtn on" data-filter="all" role="tab" aria-selected="true">All Relics</button><button class="fBtn" data-filter="gemstones" role="tab">Gemstones</button><button class="fBtn" data-filter="jewelry" role="tab">Jewelry</button><button class="fBtn" data-filter="viking" role="tab">Viking</button><button class="fBtn" data-filter="medieval" role="tab">Medieval</button></div></div><div class="masonry" id="mGrid">
+    <div class="mItem r1 reveal" data-category="gemstones" data-title="Smoky Quartz — Phantom Inclusion" data-desc="Brazilian smoky quartz, phantom growth lines. Museum mount."><img src="https://images.unsplash.com/photo-1617038220319-276d3cfab638?q=80&w=800&auto=format&fit=crop" alt="Smoky quartz" loading="lazy"><div class="mOver"><div class="mMeta"><h5>Phantom Quartz</h5><p>Gemstones</p></div><button class="mZoom" aria-label="Open"><svg viewBox="0 0 16 16"><path d="M6.5 11A4.5 4.5 0 1 1 6.5 2A4.5 4.5 0 0 1 0 9Z"/><path d="M11 11l2.5 2.5"/></svg></button></div></div>
+    <div class="mItem r2 reveal" data-category="jewelry" data-title="Rune Ouroboros — 18k Gold" data-desc="Hand-chased ouroboros bangle, interior runic inscription ᛟᚦᛚ."><img src="https://images.unsplash.com/photo-1605100804763-247f67b3557e?q=80&w=800&auto=format&fit=crop" alt="Gold bangle" loading="lazy"><div class="mOver"><div class="mMeta"><h5>Ouroboros Bangle</h5><p>Jewelry</p></div><button class="mZoom"><svg viewBox="0 0 16 16"><path d="M6.5 11A4.5 4.5 0 1 1 6.5 2A4.5 4.5 0 0 1 0 9Z"/><path d="M11 11l2.5 2.5"/></svg></button></div></div>
+    <div class="mItem r3 reveal" data-category="viking" data-title="Torshammer — Gotland Bronze" data-desc="Cast bronze Mjölnir pendant after 10th century Gotland find."><img src="https://images.unsplash.com/photo-1577083552431-6e5fd01aa342?q=80&w=800&auto=format&fit=crop" alt="Viking bronze artifact" loading="lazy" onerror="this.src='https://images.unsplash.com/photo-1599707367072-cd6ada2bc375?q=80&w=800&auto=format&fit=crop'"><div class="mOver"><div class="mMeta"><h5>Torshammer</h5><p>Viking</p></div><button class="mZoom"><svg viewBox="0 0 16 16"><path d="M6.5 11A4.5 4.5 0 1 1 6.5 2A4.5 4.5 0 0 1 0 9Z"/><path d="M11 11l2.5 2.5"/></svg></button></div></div>
+    <div class="mItem r4 reveal" data-category="medieval" data-title="Pilgrim Seal — 13th Century" data-desc="Lead pilgrim badge, Canterbury type, microcrystalline wax preservation."><img src="https://images.unsplash.com/photo-1516979187457-637abb4f9353?q=80&w=800&auto=format&fit=crop" alt="Medieval seal" loading="lazy"><div class="mOver"><div class="mMeta"><h5>Pilgrim Seal</h5><p>Medieval</p></div><button class="mZoom"><svg viewBox="0 0 16 16"><path d="M6.5 11A4.5 4.5 0 1 1 6.5 2A4.5 4.5 0 0 1 0 9Z"/><path d="M11 11l2.5 2.5"/></svg></button></div></div>
+    <div class="mItem r5 reveal" data-category="gemstones" data-title="Labradorite — Northern Light" data-desc="Madagascar labradorite flash cab, 42ct, spectral blue-green schiller."><img src="https://images.unsplash.com/photo-1573408301185-9146fe634ad0?q=80&w=800&auto=format&fit=crop" alt="Labradorite" loading="lazy"><div class="mOver"><div class="mMeta"><h5>Labradorite</h5><p>Gemstones</p></div><button class="mZoom"><svg viewBox="0 0 16 16"><path d="M6.5 11A4.5 4.5 0 1 1 6.5 2A4.5 4.5 0 0 1 0 9Z"/><path d="M11 11l2.5 2.5"/></svg></button></div></div>
+    <div class="mItem r6 reveal" data-category="jewelry" data-title="Valknut Signet — Silver" data-desc="Sterling silver signet, deep intaglio Valknut, wax-seal ready."><img src="https://images.unsplash.com/photo-1515562141207-7a88fb7ce338?q=80&w=800&auto=format&fit=crop" alt="Silver signet" loading="lazy"><div class="mOver"><div class="mMeta"><h5>Valknut Signet</h5><p>Jewelry</p></div><button class="mZoom"><svg viewBox="0 0 16 16"><path d="M6.5 11A4.5 4.5 0 1 1 6.5 2A4.5 4.5 0 0 1 0 9Z"/><path d="M11 11l2.5 2.5"/></svg></button></div></div>
+    <div class="mItem r7 reveal" data-category="viking" data-title="Ulfberht Seax — Pattern Weld" data-desc="Pattern-welded seax blade, high-carbon edge, walrus grip."><img src="https://images.unsplash.com/photo-1599707367072-cd6ada2bc375?q=80&w=800&auto=format&fit=crop" alt="Viking seax" loading="lazy"><div class="mOver"><div class="mMeta"><h5>Ulfberht Seax</h5><p>Viking</p></div><button class="mZoom"><svg viewBox="0 0 16 16"><path d="M6.5 11A4.5 4.5 0 1 1 6.5 2A4.5 4.5 0 0 1 0 9Z"/><path d="M11 11l2.5 2.5"/></svg></button></div></div>
+    <div class="mItem r8 reveal" data-category="medieval" data-title="Reliquary Fragment — Limoges" data-desc="13th century champlevé enamel fragment, gilded copper."><img src="https://images.unsplash.com/photo-1551632811-561732d1e306?q=80&w=800&auto=format&fit=crop" alt="Medieval reliquary" loading="lazy" onerror="this.src='https://images.unsplash.com/photo-1516979187457-637abb4f9353?q=80&w=800&auto=format&fit=crop'"><div class="mOver"><div class="mMeta"><h5>Limoges Fragment</h5><p>Medieval</p></div><button class="mZoom"><svg viewBox="0 0 16 16"><path d="M6.5 11A4.5 4.5 0 1 1 6.5 2A4.5 4.5 0 0 1 0 9Z"/><path d="M11 11l2.5 2.5"/></svg></button></div></div>
+    <div class="mItem r9 reveal" data-category="gemstones" data-title="Obsidian Mirror — Toltec" data-desc="Polished obsidian scrying mirror, 11cm, chamfered by hand."><img src="https://images.unsplash.com/photo-1543294001-f7cd5d7fb516?q=80&w=800&auto=format&fit=crop" alt="Obsidian mirror" loading="lazy"><div class="mOver"><div class="mMeta"><h5>Obsidian Mirror</h5><p>Gemstones</p></div><button class="mZoom"><svg viewBox="0 0 16 16"><path d="M6.5 11A4.5 4.5 0 1 1 6.5 2A4.5 4.5 0 0 1 0 9Z"/><path d="M11 11l2.5 2.5"/></svg></button></div></div>
+    <div class="mItem r10 reveal" data-category="jewelry" data-title="Serpent Torc — Bronze" data-desc="Viking age inspired torc, serpent terminals, solid bronze 180g."><img src="https://images.unsplash.com/photo-1611591437281-460bfbe1220a?q=80&w=800&auto=format&fit=crop" alt="Bronze torc" loading="lazy"><div class="mOver"><div class="mMeta"><h5>Serpent Torc</h5><p>Jewelry</p></div><button class="mZoom"><svg viewBox="0 0 16 16"><path d="M6.5 11A4.5 4.5 0 1 1 6.5 2A4.5 4.5 0 0 1 0 9Z"/><path d="M11 11l2.5 2.5"/></svg></button></div></div>
+    <div class="mItem r11 reveal" data-category="viking" data-title="Runic Stone — Replica Study" data-desc="Jelling style runestone carving study, Swedish granite."><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6a/Gotland_Museum_-_picture_stone.jpg/800px-Gotland_Museum_-_picture_stone.jpg" alt="Runic stone" loading="lazy" onerror="this.src='https://images.unsplash.com/photo-1448375240586-882707db888b?q=80&w=800&auto=format&fit=crop'"><div class="mOver"><div class="mMeta"><h5>Runic Study</h5><p>Viking</p></div><button class="mZoom"><svg viewBox="0 0 16 16"><path d="M6.5 11A4.5 4.5 0 1 1 6.5 2A4.5 4.5 0 0 1 0 9Z"/><path d="M11 11l2.5 2.5"/></svg></button></div></div>
+    <div class="mItem r12 reveal" data-category="medieval" data-title="Scriptorium — Illuminated Initial" data-desc="Vellum initial, gold leaf, lapis lazuli pigment, Stavelot."><img src="https://images.unsplash.com/photo-1516979187457-637abb4f9353?q=80&w=800&auto=format&fit=crop" alt="Illuminated manuscript" loading="lazy"><div class="mOver"><div class="mMeta"><h5>Illuminated Initial</h5><p>Medieval</p></div><button class="mZoom"><svg viewBox="0 0 16 16"><path d="M6.5 11A4.5 4.5 0 1 1 6.5 2A4.5 4.5 0 0 1 0 9Z"/><path d="M11 11l2.5 2.5"/></svg></button></div></div>
+  </div></div>
+</section>
 
-          <p class="hero-tagline reveal delay-2">
-            <span>Timeless Heritage &nbsp;·&nbsp; Crafted Beauty &nbsp;·&nbsp; Ancient Legacy</span>
-          </p>
+<section id="journal" aria-labelledby="jTitle">
+  <div class="container"><div class="eyebrow reveal">Journal</div><h2 class="sTitle reveal d1" id="jTitle">Field notes from the <em>North</em></h2><div class="jGrid"><article class="jCard reveal"><div class="jMedia"><img src="https://images.unsplash.com/photo-1515562141207-7a88fb7ce338?q=80&w=800&auto=format&fit=crop" alt="Artisan hands metal" loading="lazy"><div class="jTag">Craft</div></div><div class="jBody"><div class="jDate">XII • 2025 — Atelier</div><h3 class="jTit">Ancient Craftsmanship — Why Hammer Marks Matter</h3><p class="jExc">Perfection erased history. Each strike is left intentional — a fingerprint of the maker, readable centuries later like tree rings.</p><a href="#journal" class="jLink">Read Essay</a></div></article><article class="jCard reveal d1"><div class="jMedia"><img src="https://images.unsplash.com/photo-1448375240586-882707db888b?q=80&w=800&auto=format&fit=crop" alt="Runes stone" loading="lazy"><div class="jTag">Mythology</div></div><div class="jBody"><div class="jDate">IX • 2025 — Research</div><h3 class="jTit">Viking Symbolism — Beyond the Pop Culture Mjölnir</h3><p class="jExc">The Valknut, Algiz and Vegvísir were not fashion — they were memory devices, protection charms, navigational poetry.</p><a href="#journal" class="jLink">Read Essay</a></div></article><article class="jCard reveal d2"><div class="jMedia"><img src="https://images.unsplash.com/photo-1617038220319-276d3cfab638?q=80&w=800&auto=format&fit=crop" alt="Crystals macro" loading="lazy"><div class="jTag">Gemology</div></div><div class="jBody"><div class="jDate">VIII • 2025 — Earth</div><h3 class="jTit">Natural Gemstones Guide — Reading Inclusions</h3><p class="jExc">A flawless stone is often a treated stone. Learn to love feathers, veils and gardens — proof of deep time and truth.</p><a href="#journal" class="jLink">Read Essay</a></div></article></div></div>
+</section>
 
-          <div class="hero-ctas reveal delay-3">
-            <a href="#collections" class="btn btn-gold magnetic" data-magnetic>
-              <span>Explore the Collection</span>
-              <em class="btn-arrow" aria-hidden="true">→</em>
-            </a>
-            <a href="#legacy" class="btn btn-ghost magnetic" data-magnetic>
-              <span>Discover Heritage</span>
-            </a>
-          </div>
-        </div>
+<section id="quote" aria-label="Quote"><div class="qInner reveal"><div class="qMark" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M6 10V7a1 1 0 0 1 1-1h1a1 1 0 0 1 1 1v3a4 4 0 0 1-2 3.4V15a1 1 0 0 0 1 1h1M14 10V7a1 1 0 0 1 1-1h1a1 1 0 0 1 1 1v3a4 4 0 0 1-2 3.4V15a1 1 0 0 0 1 1h1"/></svg></div><blockquote class="qText">“True craftsmanship <span class="gold">transcends time.</span> It does not follow seasons—it becomes ancestry.”</blockquote><div class="qAuth"><div class="qLine"></div><span>Runestone Relics — House Manifesto</span><div class="qLine"></div></div></div></section>
 
-        <div class="hero-scroll" aria-hidden="true">
-          <span>Scroll</span>
-          <span class="line"></span>
-        </div>
+<section id="newsletter" aria-labelledby="nTitle"><div class="container"><div class="nWrap reveal"><div class="nCopy"><div class="eyebrow">Private Salon</div><h3 id="nTitle">Receive our <em style="font-family:'Cormorant Garamond';font-style:italic;font-weight:300;color:var(--gold)">chamber</em> letters</h3><p>Two dispatches per year. New vault acquisitions, atelier studies, collector salons. No spam. Unsubscribe remains a single rune.</p></div><form class="nForm" id="nForm" novalidate><div class="fRow"><input class="input" type="email" id="nEmail" placeholder="your@email — private access" required aria-label="Email"><button type="submit" class="btn btnP magnetic">Join</button></div><div class="fMsg" id="fMsg" role="status" aria-live="polite"></div><p class="fNote">We respect your privacy as we respect provenance. <a href="#">Privacy</a></p></form></div></div></section>
 
-        <div class="hero-corner tl">N · 59.9°</div>
-        <div class="hero-corner tr">E · 10.7°</div>
-        <div class="hero-corner bl">MMXXV</div>
-        <div class="hero-corner br">Vol. I</div>
-      </section>
+<footer role="contentinfo"><div class="container"><div class="fGrid"><div class="fBrand"><a href="#hero" class="logo" aria-label="Runestone Relics"><div class="logoMark"><svg viewBox="0 0 24 24"><path d="M12 3 L12 20 M12 3 L18 9 M12 7 L18 13 M12 3 L6 9 M12 7 L6 13 M7 16 L12 20 L17 16"/></svg></div><div class="logoType">RUNESTONE<span>RELICS</span></div></a><p>Runestone Relics is a luxury heritage house curating museum-quality crystals, jewelry and artifacts. Each object is vetted, storied and built to become heirloom. We preserve time itself.</p></div><div class="fCol"><h5>Houses</h5><ul class="fLinks"><li><a href="#collections">Crystals & Gemstones</a></li><li><a href="#collections">Handcrafted Jewelry</a></li><li><a href="#collections">Viking Collection</a></li><li><a href="#collections">Medieval Artifacts</a></li></ul></div><div class="fCol"><h5>Atelier</h5><ul class="fLinks"><li><a href="#legacy">Our Legacy</a></li><li><a href="#craft">Craftsmanship</a></li><li><a href="#timeline">Timeline</a></li><li><a href="#values">House Code</a></li></ul></div><div class="fCol"><h5>Vault</h5><ul class="fLinks"><li><a href="#gallery">Gallery & Archive</a></li><li><a href="#journal">Journal / Field Notes</a></li><li><a href="#newsletter">Private Access</a></li><li><a href="#">Provenance Policy</a></li></ul></div></div><div class="fBottom"><div class="fCopy">© 2026 Runestone Relics • Luxury Heritage House • Obsidian • Emerald • Gold • All artifacts ethically curated</div><div class="fSocial"><a href="#" class="sBtn" aria-label="Instagram"><svg viewBox="0 0 24 24"><path d="M12 2.2c3.2 0 3.6 0 4.9.1 1.2.1 2 .3 2.5.5.6.2 1 .5 1.5 1 .4.4.7.9 1 1.5.2.5.4 1.3.5 2.5.1 1.3.1 1.7.1 4.9s0 3.6-.1 4.9c-.1 1.2-.3 2-.5 2.5-.2.6-.5 1-1 1.5-.4.4-.9.7-1.5 1-.5.2-1.3.4-2.5.5-1.3.1-1.7.1-4.9.1s-3.6 0-4.9-.1c-1.2-.1-2-.3-2.5-.5-.6-.2-1-.5-1.5-1-.4-.4-.7-.9-1-1.5-.2-.5-.4-1.3-.5-2.5C2.2 15.6 2.2 15.2 2.2 12s0-3.6.1-4.9c.1-1.2.3-2 .5-2.5.2-.6.5-1 1-1.5.4-.4.9-.7 1.5-1 .5-.2 1.3-.4 2.5-.5C8.4 2.2 8.8 2.2 12 2.2m0-2.2C8.7 0 8.3 0 7 0.1 5.7.2 4.8.4 4 .7c-.9.3-1.6.8-2.3 1.5C1 2.9.5 3.6.2 4.5.1 5.3 0 6.2 0 7.5 0 8.8 0 9.2 0 12.5s0 3.7.1 5c.1 1.3.3 2.2.6 3 .3.9.8 1.6 1.5 2.3.7.7 1.4 1.2 2.3 1.5.8.3 1.7.5 3 .6 1.3.1 1.7.1 5 .1s3.7 0 5-.1c1.3-.1 2.2-.3 3-.6.9-.3 1.6-.8 2.3-1.5.7-.7 1.2-1.4 1.5-2.3.3-.8.5-1.7.6-3 .1-1.3.1-1.7.1-5s0-3.7-.1-5c-.1-1.3-.3-2.2-.6-3-.3-.9-.8-1.6-1.5-2.3-.7-.7-1.4-1.2-2.3-1.5-.8-.3-1.7-.5-3-.6C15.7 0 15.3 0 12 0zm0 5.8a6.2 6.2 0 1 0 0 12.4 6.2 6.2 0 0 0 0-12.4zm0 10.2a4 4 0 1 1 0-8 4 4 0 0 1 0 8zm6.4-11.6a1.4 1.4 0 1 0 0 2.8 1.4 1.4 0 0 0 0-2.8z"/></svg></a><a href="#" class="sBtn" aria-label="Pinterest"><svg viewBox="0 0 24 24"><path d="M12 0C5.4 0 0 5.4 0 12c0 5 3.1 9.3 7.5 11-.1-.9-.2-2.3 0-3.3.2-.9 1.5-6 1.5-6s-.4-.8-.4-1.9c0-1.8 1-3.1 2.3-3.1.6 0 1.3.3 1.3 1.1 0 .8-.5 1.9-.7 2.9-.2.9.4 1.6 1.2 1.6 1.5 0 2.6-1.6 2.6-3.8 0-2-1.4-3.4-3.4-3.4-2.3 0-3.7 1.7-3.7 3.5 0 .6.2 1.3.4 1.7.1.1.1.2 0 .3l-.2.7c0 .2-.1.2-.3.1-1-.5-1.6-1.9-1.6-3 0-2.4 1.7-4.6 5-4.6 2.6 0 4.6 1.9 4.6 4.4 0 2.6-1.6 4.7-3.9 4.7-.8 0-1.5-.4-1.8-.9l-.5 1.9c-.2.7-.6 1.4-.9 1.9.8.2 1.6.4 2.5.4 6.6 0 12-5.4 12-12S18.6 0 12 0z"/></svg></a><a href="#" class="sBtn" aria-label="YouTube"><svg viewBox="0 0 24 24"><path d="M23 12c0-1.5-.1-3-.3-4.5l-1.2-1A107 107 0 0 0 12 6a107 107 0 0 0-9.5.5l-1.2 1A48 48 0 0 0 1 12a48 48 0 0 0 .3 4.5l1.2 1A107 107 0 0 0 12 18a107 107 0 0 0 9.5-.5l1.2-1c.2-1.5.3-3 .3-4.5zM10 15.5v-7l6 3.5-6 3.5z"/></svg></a></div></div></div></footer>
 
-      <!-- ================= MARQUEE ================= -->
-      <div class="marquee" aria-hidden="true">
-        <div class="marquee-track">
-          <span>Sotheby's Provenance</span><span>◆</span>
-          <span>Museum-Grade Craftsmanship</span><span>◆</span>
-          <span>Ethically Sourced Gemstones</span><span>◆</span>
-          <span>Handforged in Scandinavia</span><span>◆</span>
-          <span>Featured in Heritage Quarterly</span><span>◆</span>
-          <span>Since Time Immemorial</span><span>◆</span>
-          <span>Sotheby's Provenance</span><span>◆</span>
-          <span>Museum-Grade Craftsmanship</span><span>◆</span>
-          <span>Ethically Sourced Gemstones</span><span>◆</span>
-          <span>Handforged in Scandinavia</span><span>◆</span>
-          <span>Featured in Heritage Quarterly</span><span>◆</span>
-          <span>Since Time Immemorial</span><span>◆</span>
-        </div>
-      </div>
+<div id="lightbox" role="dialog" aria-modal="true" aria-label="Artifact viewer"><div class="lbInner"><button class="lbClose" id="lbClose" aria-label="Close"><svg viewBox="0 0 16 16"><path d="M3 3l10 10M13 3L3 13"/></svg></button><div class="lbImg"><img id="lbImg" alt="" src=""></div><div class="lbInfo"><div class="eyebrow" id="lbKick">Artifact</div><h3 class="lbTitle" id="lbTit"></h3><p class="lbDesc" id="lbDesc"></p><div style="margin-top:auto;padding-top:20px;border-top:1px solid rgba(245,240,230,.08);font-size:8.5px;letter-spacing:.3em;text-transform:uppercase;color:var(--ivoryM)">Archived • Museum Grade • Provenance Secured</div></div></div></div>
 
-      <!-- ================= LEGACY / STORY ================= -->
-      <section class="section legacy" id="legacy">
-        <div class="section-head">
-          <span class="eyebrow">Chapter I</span>
-          <h2 class="display reveal-up">Our Legacy</h2>
-          <p class="lede reveal-up delay-1">
-            A house built on reverence for the makers who came before us — the smith
-            at the fjord, the lapidary in the Byzantine quarter, the rune-carver at
-            the edge of the world.
-          </p>
-        </div>
+<script>
+(() => {
+  const $ = (s,c=document)=>c.querySelector(s), $$=(s,c=document)=>[...c.querySelectorAll(s)];
+  const pre=$('#preloader'); const finish=()=>{ setTimeout(()=>{ pre&&pre.classList.add('off'); document.body.classList.remove('lock'); initReveal(); }, 320); };
+  window.addEventListener('load',()=>setTimeout(finish, 900)); setTimeout(()=>{ if(pre && !pre.classList.contains('off')) finish(); }, 3600);
 
-        <div class="legacy-grid">
-          <article class="legacy-card reveal-up">
-            <div class="lc-num">I.</div>
-            <h3>Heritage</h3>
-            <p>
-              Every relic we curate carries an unbroken thread — from the hand that
-              first shaped it to the collector who guards it now. We do not sell
-              objects. We entrust legacies.
-            </p>
-          </article>
-          <article class="legacy-card reveal-up delay-1">
-            <div class="lc-num">II.</div>
-            <h3>Craftsmanship</h3>
-            <p>
-              Forged in fire, chased in gold, polished by patience. Our master
-              artisans practice methods unchanged since the Iron Age — because
-              some things were perfected long ago.
-            </p>
-          </article>
-          <article class="legacy-card reveal-up delay-2">
-            <div class="lc-num">III.</div>
-            <h3>Legacy</h3>
-            <p>
-              To wear a Runestone Relic is to inherit a story older than any
-              nation. It is to become the next chapter in a saga carved in stone
-              and gold.
-            </p>
-          </article>
-        </div>
-      </section>
+  // progress + header
+  const prog=$('#progress'); let tick=false;
+  const onScroll=()=>{ if(!tick){ requestAnimationFrame(()=>{ const h=document.documentElement; const pct=(h.scrollTop/(h.scrollHeight-h.clientHeight))*100; if(prog) prog.style.width=pct+'%'; const hdr=$('#header'); if(hdr){ if(scrollY>40) hdr.classList.add('scrolled'); else hdr.classList.remove('scrolled'); } tick=false; }); tick=true; } };
+  addEventListener('scroll', onScroll, {passive:true}); onScroll();
 
-      <!-- ================= FEATURED COLLECTIONS ================= -->
-      <section class="section collections" id="collections">
-        <div class="section-head">
-          <span class="eyebrow">Chapter II</span>
-          <h2 class="display reveal-up">Featured Collections</h2>
-          <p class="lede reveal-up delay-1">
-            Four archives. Four ages. Each piece hand-selected for provenance,
-            rarity, and the silence it commands in a room.
-          </p>
-        </div>
+  // spotlight + hero parallax
+  const spot=$('#spot');
+  addEventListener('mousemove', e=>{ if(spot){ spot.style.setProperty('--x', e.clientX+'px'); spot.style.setProperty('--y', e.clientY+'px'); } const hc=$('.heroContent'); if(hc){ const rx=(e.clientX-innerWidth/2)*0.02, ry=(e.clientY-innerHeight/2)*-0.02; hc.style.transform=`translate3d(${rx}px,${ry}px,0)`; } });
 
-        <div class="collections-grid">
-          <a href="#gallery" class="col-card reveal-up" style="--img:url('https://images.pexels.com/photos/34703308/pexels-photo-34703308.jpeg?auto=compress&cs=tinysrgb&h=1200&w=1600')">
-            <div class="col-img" role="img" aria-label="Amethyst geode"></div>
-            <div class="col-body">
-              <span class="col-index">01 — Naturalia</span>
-              <h3>Crystals &amp; Gemstones</h3>
-              <p>Museum-grade specimens drawn from the earth's oldest veins.</p>
-              <span class="col-cta">View Archive <em>→</em></span>
-            </div>
-          </a>
+  // dust particles
+  (function(){ const c=$('#dust'); if(!c) return; const n=innerWidth<768?18:36; for(let i=0;i<n;i++){ const d=document.createElement('div'); d.className='particle'; d.style.left=(Math.random()*100)+'%'; d.style.bottom=(-5-Math.random()*10)+'%'; d.style.width=(1+Math.random()*2.2)+'px'; d.style.height=d.style.width; d.style.animationDelay=(Math.random()*12)+'s'; d.style.animationDuration=(14+Math.random()*18)+'s'; c.appendChild(d); } })();
 
-          <a href="#gallery" class="col-card reveal-up delay-1" style="--img:url('https://images.pexels.com/photos/32988525/pexels-photo-32988525.jpeg?auto=compress&cs=tinysrgb&h=1200&w=1600')">
-            <div class="col-img" role="img" aria-label="Emerald and diamond necklace"></div>
-            <div class="col-body">
-              <span class="col-index">02 — Atelier</span>
-              <h3>Handcrafted Jewelry</h3>
-              <p>Goldsmithing in the tradition of the great European ateliers.</p>
-              <span class="col-cta">View Archive <em>→</em></span>
-            </div>
-          </a>
+  // reveal
+  let obs; function initReveal(){ const els=$$('.reveal'); if('IntersectionObserver' in window){ obs=new IntersectionObserver(es=>{ es.forEach(en=>{ if(en.isIntersecting){ en.target.classList.add('in'); obs.unobserve(en.target); } }); },{threshold:.14, rootMargin:'0px 0px -60px 0px'}); els.forEach(el=>obs.observe(el)); $$('.tItem').forEach(el=>obs.observe(el)); } else { els.forEach(el=>el.classList.add('in')); } }
+  if(document.readyState!=='loading') setTimeout(initReveal,400); else addEventListener('DOMContentLoaded',()=>setTimeout(initReveal,400));
 
-          <a href="#gallery" class="col-card tall reveal-up delay-2" style="--img:url('https://images.pexels.com/photos/10068861/pexels-photo-10068861.jpeg?auto=compress&cs=tinysrgb&h=1400&w=1200')">
-            <div class="col-img" role="img" aria-label="Viking warrior in armor"></div>
-            <div class="col-body">
-              <span class="col-index">03 — Nordica</span>
-              <h3>The Viking Collection</h3>
-              <p>Runes, silver, and the iron-song of the Northern seas.</p>
-              <span class="col-cta">View Archive <em>→</em></span>
-            </div>
-          </a>
+  // magnetic
+  $$('.magnetic').forEach(b=>{ b.addEventListener('mousemove', e=>{ const r=b.getBoundingClientRect(); const x=e.clientX-r.left-r.width/2, y=e.clientY-r.top-r.height/2; b.style.transform=`translate(${x*0.28}px,${y*0.4}px)`; }); b.addEventListener('mouseleave',()=>b.style.transform='translate(0,0)'); });
 
-          <a href="#gallery" class="col-card reveal-up delay-3" style="--img:url('https://images.pexels.com/photos/14645000/pexels-photo-14645000.jpeg?auto=compress&cs=tinysrgb&h=1200&w=1600')">
-            <div class="col-img" role="img" aria-label="Medieval swords and armor"></div>
-            <div class="col-body">
-              <span class="col-index">04 — Militaria</span>
-              <h3>Medieval Artifacts</h3>
-              <p>Relics of chivalry — steel, leather, and cathedral silver.</p>
-              <span class="col-cta">View Archive <em>→</em></span>
-            </div>
-          </a>
-        </div>
-      </section>
+  // smooth scroll
+  $$('a[href^=\"#\"]').forEach(a=>{ a.addEventListener('click', e=>{ const id=a.getAttribute('href'); if(id.length<=1) return; const t=$(id); if(t){ e.preventDefault(); const top=t.getBoundingClientRect().top+scrollY-70; scrollTo({top, behavior:'smooth'}); closeM(); } }); });
 
-      <!-- ================= CRAFTSMANSHIP ================= -->
-      <section class="section craft" id="craft">
-        <div class="craft-grid">
-          <figure class="craft-image reveal-up">
-            <img loading="lazy" src="https://images.pexels.com/photos/1383766/pexels-photo-1383766.jpeg?auto=compress&cs=tinysrgb&h=1400&w=1000" alt="Detail of an aged medieval sword hilt, showing centuries of craftsmanship" />
-            <figcaption>Hilt · Northern Europe · c. 11th century</figcaption>
-          </figure>
+  // mobile
+  const tog=$('#mToggle'), menu=$('#mMenu');
+  function openM(){ menu.classList.add('on'); menu.setAttribute('aria-hidden','false'); tog.classList.add('on'); tog.setAttribute('aria-expanded','true'); document.body.style.overflow='hidden'; }
+  function closeM(){ menu.classList.remove('on'); menu.setAttribute('aria-hidden','true'); tog.classList.remove('on'); tog.setAttribute('aria-expanded','false'); document.body.style.overflow=''; }
+  tog&&tog.addEventListener('click',()=>{ menu.classList.contains('on')?closeM():openM(); });
+  $$('#mMenu a').forEach(a=>a.addEventListener('click',closeM));
+  addEventListener('keydown', e=>{ if(e.key==='Escape'){ closeM(); closeLb(); } });
 
-          <div class="craft-copy">
-            <span class="eyebrow reveal-up">Chapter III</span>
-            <h2 class="display reveal-up delay-1">The Discipline<br/>of the Hand.</h2>
-            <p class="reveal-up delay-2">
-              Nothing at Runestone Relics is manufactured. Every gemstone is cut by
-              lapidaries who trained under the last living masters of Idar-Oberstein.
-              Every ring is chased, engraved, and stone-set in a single atelier by
-              a single pair of hands.
-            </p>
-            <ul class="craft-list">
-              <li class="reveal-up delay-2"><em>◆</em><span><strong>Authenticity.</strong> Provenance vetted by an independent council of curators.</span></li>
-              <li class="reveal-up delay-3"><em>◆</em><span><strong>Artistry.</strong> Techniques preserved from Iron Age, Byzantine and Gothic ateliers.</span></li>
-              <li class="reveal-up delay-3"><em>◆</em><span><strong>Quality.</strong> Only 1 in 400 specimens surveyed enters the archive.</span></li>
-            </ul>
-            <a href="#gallery" class="btn btn-outline magnetic reveal-up delay-3" data-magnetic>
-              <span>Enter the Atelier</span><em class="btn-arrow">→</em>
-            </a>
-          </div>
-        </div>
-      </section>
+  // gallery filter
+  const fBtns=$$('.fBtn'), mItems=$$('.mItem');
+  fBtns.forEach(b=>{ b.addEventListener('click',()=>{ fBtns.forEach(x=>{ x.classList.remove('on'); x.setAttribute('aria-selected','false'); }); b.classList.add('on'); b.setAttribute('aria-selected','true'); const f=b.dataset.filter; mItems.forEach(it=>{ const ok=f==='all'||it.dataset.category===f; it.classList.toggle('hide', !ok); if(ok) requestAnimationFrame(()=>it.classList.add('in')); }); }); });
 
-      <!-- ================= TIMELINE ================= -->
-      <section class="section timeline" id="timeline">
-        <div class="section-head">
-          <span class="eyebrow">Chapter IV</span>
-          <h2 class="display reveal-up">A Thread Across Ages</h2>
-          <p class="lede reveal-up delay-1">
-            Four thousand years of makers, seekers and keepers — bound by a single
-            devotion to beauty that outlives us.
-          </p>
-        </div>
+  // lightbox
+  const lb=$('#lightbox'), lbImg=$('#lbImg'), lbT=$('#lbTit'), lbD=$('#lbDesc'), lbK=$('#lbKick'), lbC=$('#lbClose');
+  function openLb(src,title,desc,kick){ if(!lb) return; lbImg.src=src; lbImg.alt=title||'Artifact'; if(lbT) lbT.textContent=title||''; if(lbD) lbD.textContent=desc||''; if(lbK) lbK.textContent=kick||'Artifact'; lb.classList.add('on'); document.body.style.overflow='hidden'; lbC&&lbC.focus(); }
+  function closeLb(){ if(!lb) return; lb.classList.remove('on'); document.body.style.overflow=''; setTimeout(()=>lbImg.src='',400); }
+  mItems.forEach(it=>{ const img=$('img',it); const act=()=>{ const src=img?img.src.replace('w=800','w=1600'):''; openLb(src, it.dataset.title, it.dataset.desc, (it.dataset.category||'').toUpperCase()); }; const btn=$('.mZoom',it); if(btn) btn.addEventListener('click', e=>{ e.stopPropagation(); act(); }); it.addEventListener('click', act); it.style.cursor='zoom-in'; it.setAttribute('tabindex','0'); it.setAttribute('role','button'); it.setAttribute('aria-label','Open '+(it.dataset.title||'artifact')); it.addEventListener('keydown', e=>{ if(e.key==='Enter'||e.key===' '){ e.preventDefault(); act(); } }); });
+  lbC&&lbC.addEventListener('click',closeLb); lb&&lb.addEventListener('click', e=>{ if(e.target===lb) closeLb(); });
 
-        <ol class="tl-list">
-          <li class="tl-item reveal-up">
-            <div class="tl-year">— 2000 BC</div>
-            <div class="tl-body">
-              <h3>The Ancient Era</h3>
-              <p>Lapis from Afghanistan, gold from Nubia. The first artisans learn that stone remembers what men forget.</p>
-            </div>
-          </li>
-          <li class="tl-item reveal-up delay-1">
-            <div class="tl-year">793 — 1066</div>
-            <div class="tl-body">
-              <h3>The Viking Age</h3>
-              <p>Silver arm-rings and rune-carved amulets sail from the fjords to Constantinople. The North speaks in metal.</p>
-            </div>
-          </li>
-          <li class="tl-item reveal-up delay-2">
-            <div class="tl-year">1100 — 1500</div>
-            <div class="tl-body">
-              <h3>The Medieval Era</h3>
-              <p>Cathedrals rise. Reliquaries are gilded. The lapidary and the smith become the chroniclers of faith and dynasty.</p>
-            </div>
-          </li>
-          <li class="tl-item reveal-up delay-3">
-            <div class="tl-year">MMXXV</div>
-            <div class="tl-body">
-              <h3>The Modern Keeper</h3>
-              <p>Runestone Relics inherits the discipline of the makers before us — and entrusts these artifacts to a new generation of collectors.</p>
-            </div>
-          </li>
-        </ol>
-      </section>
+  // newsletter
+  const form=$('#nForm'), email=$('#nEmail'), fmsg=$('#fMsg');
+  if(form){ form.addEventListener('submit', e=>{ e.preventDefault(); const v=email.value.trim(); const re=/^[^\s@]+@[^\s@]+\.[^\s@]+$/; if(!re.test(v)){ if(fmsg){ fmsg.textContent='Enter a valid private email.'; fmsg.className='fMsg err'; } email.focus(); email.style.borderColor='#d8927a'; return; } if(fmsg){ fmsg.textContent='Access granted — welcome to the private salon. Vault letter incoming.'; fmsg.className='fMsg ok'; } email.style.borderColor='rgba(212,175,55,.6)'; email.value=''; try{localStorage.setItem('rr',v);}catch{} }); email.addEventListener('input',()=>{ email.style.borderColor=''; if(fmsg){ fmsg.textContent=''; fmsg.className='fMsg'; } }); }
 
-      <!-- ================= VALUES ================= -->
-      <section class="section values">
-        <div class="section-head">
-          <span class="eyebrow">Chapter V</span>
-          <h2 class="display reveal-up">Heritage Values</h2>
-        </div>
-        <div class="values-grid">
-          <div class="value-card reveal-up">
-            <div class="value-icon"><svg viewBox="0 0 40 40"><path d="M20 4 L34 10 V22 C34 30 27 35 20 37 C13 35 6 30 6 22 V10 Z" fill="none" stroke="currentColor" stroke-width="1.2"/><path d="M14 20 L18 24 L26 16" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round"/></svg></div>
-            <h3>Authenticity</h3>
-            <p>Every relic accompanied by a hand-signed certificate of provenance.</p>
-          </div>
-          <div class="value-card reveal-up delay-1">
-            <div class="value-icon"><svg viewBox="0 0 40 40"><circle cx="20" cy="20" r="14" fill="none" stroke="currentColor" stroke-width="1.2"/><path d="M20 8 V32 M8 20 H32 M12 12 L28 28 M28 12 L12 28" stroke="currentColor" stroke-width="1" fill="none"/></svg></div>
-            <h3>Craftsmanship</h3>
-            <p>Made slowly, made once. Never reproduced, never replicated.</p>
-          </div>
-          <div class="value-card reveal-up delay-2">
-            <div class="value-icon"><svg viewBox="0 0 40 40"><path d="M20 6 L24 16 L34 17 L26 24 L28 34 L20 29 L12 34 L14 24 L6 17 L16 16 Z" fill="none" stroke="currentColor" stroke-width="1.2" stroke-linejoin="round"/></svg></div>
-            <h3>Quality</h3>
-            <p>Only the top percentile of surveyed specimens enters the archive.</p>
-          </div>
-          <div class="value-card reveal-up delay-3">
-            <div class="value-icon"><svg viewBox="0 0 40 40"><path d="M8 34 V14 L20 6 L32 14 V34" fill="none" stroke="currentColor" stroke-width="1.2"/><path d="M14 34 V22 H26 V34" fill="none" stroke="currentColor" stroke-width="1.2"/></svg></div>
-            <h3>Legacy</h3>
-            <p>Objects meant to be inherited — a story you pass, not consume.</p>
-          </div>
-        </div>
-      </section>
+  // hero zoom on scroll
+  let lastY=0; addEventListener('scroll', ()=>{ const bg=$('.heroBg img'); if(!bg) return; const y=scrollY; if(Math.abs(y-lastY)<2) return; lastY=y; if(y<innerHeight){ const sc=1.14+y*0.00014; const tr=y*0.08; bg.style.transform=`scale(${sc}) translateY(${tr}px)`; } }, {passive:true});
 
-      <!-- ================= GALLERY ================= -->
-      <section class="section gallery" id="gallery">
-        <div class="section-head">
-          <span class="eyebrow">Chapter VI</span>
-          <h2 class="display reveal-up">The Archive</h2>
-          <p class="lede reveal-up delay-1">A curated visual index. Click any piece to enter.</p>
-        </div>
+  // image error fallback global
+  $$('img').forEach(im=>{ im.addEventListener('error', ()=>{ if(!im.dataset.fallback){ im.dataset.fallback='1'; im.src='https://images.unsplash.com/photo-1515562141207-7a88fb7ce338?q=80&w=800&auto=format&fit=crop'; } }); });
 
-        <div class="gallery-filters" role="tablist" aria-label="Gallery filters">
-          <button class="gf active" data-filter="all" role="tab" aria-selected="true">All</button>
-          <button class="gf" data-filter="gemstones" role="tab">Gemstones</button>
-          <button class="gf" data-filter="jewelry" role="tab">Jewelry</button>
-          <button class="gf" data-filter="viking" role="tab">Viking</button>
-          <button class="gf" data-filter="medieval" role="tab">Medieval</button>
-        </div>
-
-        <div class="masonry" id="masonry">
-          <figure class="m-item" data-cat="gemstones">
-            <img loading="lazy" src="https://images.pexels.com/photos/34703308/pexels-photo-34703308.jpeg?auto=compress&cs=tinysrgb&h=900&w=700" alt="Amethyst geode specimen" />
-            <figcaption><span>Amethyst Geode</span><em>Naturalia · No. 001</em></figcaption>
-          </figure>
-          <figure class="m-item" data-cat="jewelry">
-            <img loading="lazy" src="https://images.pexels.com/photos/17068456/pexels-photo-17068456.jpeg?auto=compress&cs=tinysrgb&h=900&w=700" alt="Emerald and diamond rings" />
-            <figcaption><span>Emerald Trilogy</span><em>Atelier · No. 014</em></figcaption>
-          </figure>
-          <figure class="m-item" data-cat="viking">
-            <img loading="lazy" src="https://images.pexels.com/photos/10068857/pexels-photo-10068857.jpeg?auto=compress&cs=tinysrgb&h=900&w=700" alt="Warrior in helmet holding a sword" />
-            <figcaption><span>Silvered Helm</span><em>Nordica · No. 022</em></figcaption>
-          </figure>
-          <figure class="m-item" data-cat="medieval">
-            <img loading="lazy" src="https://images.pexels.com/photos/14644992/pexels-photo-14644992.jpeg?auto=compress&cs=tinysrgb&h=900&w=700" alt="Knight armor on display" />
-            <figcaption><span>Full Plate Harness</span><em>Militaria · No. 031</em></figcaption>
-          </figure>
-          <figure class="m-item" data-cat="gemstones">
-            <img loading="lazy" src="https://images.pexels.com/photos/8926390/pexels-photo-8926390.jpeg?auto=compress&cs=tinysrgb&h=900&w=700" alt="Amethyst crystal cluster" />
-            <figcaption><span>Cluster Specimen</span><em>Naturalia · No. 007</em></figcaption>
-          </figure>
-          <figure class="m-item" data-cat="jewelry">
-            <img loading="lazy" src="https://images.pexels.com/photos/28179316/pexels-photo-28179316.jpeg?auto=compress&cs=tinysrgb&h=900&w=700" alt="Stacked gold rings" />
-            <figcaption><span>Ancient Gold Rings</span><em>Atelier · No. 019</em></figcaption>
-          </figure>
-          <figure class="m-item" data-cat="viking">
-            <img loading="lazy" src="https://images.pexels.com/photos/34019082/pexels-photo-34019082.jpeg?auto=compress&cs=tinysrgb&h=900&w=700" alt="Prehistoric rock carving of a ship" />
-            <figcaption><span>Ship Petroglyph</span><em>Nordica · No. 004</em></figcaption>
-          </figure>
-          <figure class="m-item" data-cat="medieval">
-            <img loading="lazy" src="https://images.pexels.com/photos/33889077/pexels-photo-33889077.jpeg?auto=compress&cs=tinysrgb&h=900&w=700" alt="Historic armory display" />
-            <figcaption><span>The Armory</span><em>Militaria · No. 040</em></figcaption>
-          </figure>
-          <figure class="m-item" data-cat="jewelry">
-            <img loading="lazy" src="https://images.pexels.com/photos/15838171/pexels-photo-15838171.jpeg?auto=compress&cs=tinysrgb&h=900&w=700" alt="Ouroboros snake rings" />
-            <figcaption><span>Ouroboros Band</span><em>Atelier · No. 026</em></figcaption>
-          </figure>
-          <figure class="m-item" data-cat="gemstones">
-            <img loading="lazy" src="https://images.pexels.com/photos/19895205/pexels-photo-19895205.jpeg?auto=compress&cs=tinysrgb&h=900&w=700" alt="Emerald cut diamond on velvet" />
-            <figcaption><span>Emerald-Cut Stone</span><em>Naturalia · No. 012</em></figcaption>
-          </figure>
-          <figure class="m-item" data-cat="viking">
-            <img loading="lazy" src="https://images.pexels.com/photos/9500889/pexels-photo-9500889.jpeg?auto=compress&cs=tinysrgb&h=900&w=700" alt="Rune stone in a field" />
-            <figcaption><span>Standing Rune-Stone</span><em>Nordica · No. 009</em></figcaption>
-          </figure>
-          <figure class="m-item" data-cat="medieval">
-            <img loading="lazy" src="https://images.pexels.com/photos/9366111/pexels-photo-9366111.jpeg?auto=compress&cs=tinysrgb&h=900&w=700" alt="Weathered carved stone" />
-            <figcaption><span>Chapter Stone</span><em>Militaria · No. 044</em></figcaption>
-          </figure>
-        </div>
-      </section>
-
-      <!-- ================= JOURNAL ================= -->
-      <section class="section journal" id="journal">
-        <div class="section-head">
-          <span class="eyebrow">Chapter VII</span>
-          <h2 class="display reveal-up">The Journal</h2>
-          <p class="lede reveal-up delay-1">Essays from our curators, artisans and historians.</p>
-        </div>
-
-        <div class="journal-grid">
-          <article class="j-card reveal-up">
-            <div class="j-image"><img loading="lazy" src="https://images.pexels.com/photos/28179316/pexels-photo-28179316.jpeg?auto=compress&cs=tinysrgb&h=900&w=1200" alt="Gold rings on a dark surface"/></div>
-            <div class="j-meta">Essay · 9 min read</div>
-            <h3>The Return of Ancient Craftsmanship</h3>
-            <p>Why the slow disciplines of the pre-industrial atelier are quietly reclaiming the world of luxury.</p>
-            <span class="j-more">Read Essay <em>→</em></span>
-          </article>
-          <article class="j-card reveal-up delay-1">
-            <div class="j-image"><img loading="lazy" src="https://images.pexels.com/photos/34019082/pexels-photo-34019082.jpeg?auto=compress&cs=tinysrgb&h=900&w=1200" alt="Ancient petroglyph of a viking ship"/></div>
-            <div class="j-meta">History · 12 min read</div>
-            <h3>Reading the Runes: A Field Guide to Viking Symbolism</h3>
-            <p>From Algiz to Yggdrasil — a curator's introduction to the visual language of the North.</p>
-            <span class="j-more">Read Essay <em>→</em></span>
-          </article>
-          <article class="j-card reveal-up delay-2">
-            <div class="j-image"><img loading="lazy" src="https://images.pexels.com/photos/6757423/pexels-photo-6757423.jpeg?auto=compress&cs=tinysrgb&h=900&w=1200" alt="Amethyst crystal macro"/></div>
-            <div class="j-meta">Guide · 7 min read</div>
-            <h3>A Collector's Guide to Natural Gemstones</h3>
-            <p>How to distinguish the museum-grade specimen from the merely beautiful.</p>
-            <span class="j-more">Read Essay <em>→</em></span>
-          </article>
-        </div>
-      </section>
-
-      <!-- ================= QUOTE ================= -->
-      <section class="section quote-section">
-        <div class="quote-inner">
-          <span class="q-mark" aria-hidden="true">"</span>
-          <blockquote class="q-text reveal-up">
-            <span>True</span> <span>craftsmanship</span> <span>transcends</span> <span>time.</span>
-          </blockquote>
-          <cite class="q-cite reveal-up delay-2">— The Curator's Note, Vol. I</cite>
-        </div>
-      </section>
-
-      <!-- ================= NEWSLETTER ================= -->
-      <section class="section newsletter" id="newsletter">
-        <div class="nl-panel">
-          <div class="nl-copy">
-            <span class="eyebrow">The Correspondence</span>
-            <h2 class="display reveal-up">Enter the Private Archive</h2>
-            <p class="reveal-up delay-1">
-              A quiet dispatch, four times a year. New acquisitions, private
-              viewings and essays from our curators — reserved for our
-              correspondents.
-            </p>
-          </div>
-          <form class="nl-form" id="newsletterForm" novalidate>
-            <label class="sr" for="nlEmail">Email address</label>
-            <input id="nlEmail" name="email" type="email" required autocomplete="email" placeholder="your@address.com" />
-            <button type="submit" class="btn btn-gold magnetic" data-magnetic>
-              <span>Subscribe</span><em class="btn-arrow">→</em>
-            </button>
-            <p class="nl-note" id="nlNote">By subscribing you agree to our discreet correspondence policy.</p>
-          </form>
-        </div>
-      </section>
-
-    </main>
-
-    <!-- ================= FOOTER ================= -->
-    <footer class="footer">
-      <div class="footer-top">
-        <div class="f-brand">
-          <div class="f-logo">
-            <svg viewBox="0 0 40 40" aria-hidden="true"><path d="M20 3 L34 12 L34 28 L20 37 L6 28 L6 12 Z" fill="none" stroke="currentColor" stroke-width="1.2"/><path d="M20 10 L20 30 M20 14 L27 19 M20 22 L14 26" stroke="currentColor" stroke-width="1.2" fill="none" stroke-linecap="round"/></svg>
-            <div>
-              <div class="fl-1">Runestone Relics</div>
-              <div class="fl-2">Timeless Heritage · Crafted Beauty</div>
-            </div>
-          </div>
-          <p class="f-story">
-            A luxury heritage house founded to preserve the artistry of the ancient
-            world — the smiths, lapidaries and rune-carvers whose work outlived
-            empires. We do not sell; we entrust.
-          </p>
-        </div>
-
-        <nav class="f-col" aria-label="The House">
-          <h4>The House</h4>
-          <a href="#legacy">Our Legacy</a>
-          <a href="#craft">Craftsmanship</a>
-          <a href="#timeline">Heritage</a>
-          <a href="#journal">Journal</a>
-        </nav>
-        <nav class="f-col" aria-label="Archive">
-          <h4>Archive</h4>
-          <a href="#collections">Gemstones</a>
-          <a href="#collections">Jewelry</a>
-          <a href="#collections">Viking</a>
-          <a href="#collections">Medieval</a>
-        </nav>
-        <nav class="f-col" aria-label="Correspondence">
-          <h4>Correspondence</h4>
-          <a href="#newsletter">The Dispatch</a>
-          <a href="#" aria-label="Instagram">Instagram</a>
-          <a href="#" aria-label="Pinterest">Pinterest</a>
-          <a href="#" aria-label="Behance">Behance</a>
-        </nav>
-      </div>
-
-      <div class="footer-bottom">
-        <div>© <span id="year"></span> Runestone Relics. All rights reserved.</div>
-        <div class="f-legal">
-          <a href="#">Provenance Policy</a>
-          <a href="#">Terms of Custodianship</a>
-          <a href="#">Privacy</a>
-        </div>
-      </div>
-
-      <div class="footer-wordmark" aria-hidden="true">RUNESTONE&nbsp;·&nbsp;RELICS</div>
-    </footer>
-
-    <script src="script.js"></script>
-  </body>
+  console.log('%c RUNESTONE RELICS — Luxury Heritage House — All-in-One Flagship ', 'background:#0B1512;color:#D4AF37;padding:8px 14px;border:1px solid #D4AF37;letter-spacing:.18em;font-family:serif;');
+})();
+</script>
+</body>
 </html>

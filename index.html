@@ -1,3605 +1,586 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
-    <meta name="description" content="Runestone Relics — Purveyors of rare gemstones, handcrafted heritage jewelry, Viking artifacts, and medieval relics. Curated luxury collections of timeless artistry.">
-    <meta name="keywords" content="luxury heritage jewelry, rare gemstones, Viking artifacts, medieval relics, handcrafted jewelry, antique collections, heritage luxury brand, crystals, gemstones">
-    <meta name="author" content="Runestone Relics">
-    <meta name="robots" content="index, follow">
-    <meta property="og:type" content="website">
-    <meta property="og:title" content="Runestone Relics — Timeless Heritage & Crafted Beauty">
-    <meta property="og:description" content="Purveyors of rare gemstones, handcrafted heritage jewelry, Viking artifacts, and medieval relics. Where ancient legacy meets contemporary elegance.">
-    <meta property="og:image" content="images/og-image.jpg">
-    <meta property="og:url" content="https://runestonerelics.com">
-    <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="Runestone Relics — Timeless Heritage & Crafted Beauty">
-    <meta name="twitter:description" content="Purveyors of rare gemstones, handcrafted heritage jewelry, Viking artifacts, and medieval relics.">
-    <meta name="theme-color" content="#050505">
-    <link rel="canonical" href="https://runestonerelics.com">
-    <title>Runestone Relics — Timeless Heritage | Crafted Beauty | Ancient Legacy</title>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#050505" />
 
-    <!-- Preconnect for fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600;700&family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400;1,500&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+    <title>Runestone Relics — Timeless Heritage · Crafted Beauty · Ancient Legacy</title>
+    <meta name="description" content="Runestone Relics is a luxury heritage house celebrating ancient civilizations, Viking culture, Norse mythology and museum-quality artifacts. Explore rare gemstones, handcrafted jewelry, and medieval relics — where craftsmanship transcends time." />
+    <meta name="keywords" content="Runestone Relics, luxury heritage, viking jewelry, norse mythology, gemstones, crystals, medieval artifacts, handcrafted jewelry, museum-quality relics, ancient civilizations" />
+    <meta name="author" content="Runestone Relics" />
+    <link rel="canonical" href="https://runestonerelics.com/" />
 
-    <style>
-        /* ============================================================
-           RUNESTONE RELICS V3.0 — LUXURY HERITAGE REDESIGN
-           Sotheby's · Christie's · Rolex caliber
-           ============================================================ */
+    <!-- Open Graph -->
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="Runestone Relics" />
+    <meta property="og:title" content="Runestone Relics — Timeless Heritage · Crafted Beauty · Ancient Legacy" />
+    <meta property="og:description" content="A luxury heritage house honoring ancient civilizations, Viking craftsmanship and museum-quality relics." />
+    <meta property="og:url" content="https://runestonerelics.com/" />
+    <meta property="og:image" content="https://images.pexels.com/photos/34019082/pexels-photo-34019082.jpeg?auto=compress&cs=tinysrgb&fit=crop&h=627&w=1200" />
 
-        /* === CSS CUSTOM PROPERTIES === */
-        :root {
-            --obsidian: #050505;
-            --dark-emerald: #0B1512;
-            --forest-green: #13211B;
-            --antique-gold: #D4AF37;
-            --antique-gold-dim: #C49B20;
-            --rich-bronze: #B8860B;
-            --warm-ivory: #F5F0E6;
-            --warm-ivory-dim: #E8E0D0;
-            --text-primary: #F5F0E6;
-            --text-secondary: rgba(245, 240, 230, 0.72);
-            --text-muted: rgba(245, 240, 230, 0.42);
-            --gold-alpha-04: rgba(212, 175, 55, 0.04);
-            --gold-alpha-08: rgba(212, 175, 55, 0.08);
-            --gold-alpha-12: rgba(212, 175, 55, 0.12);
-            --gold-alpha-20: rgba(212, 175, 55, 0.20);
-            --gold-alpha-30: rgba(212, 175, 55, 0.30);
-            --gold-alpha-50: rgba(212, 175, 55, 0.50);
-            --black-alpha-40: rgba(5, 5, 5, 0.40);
-            --black-alpha-70: rgba(5, 5, 5, 0.70);
-            --black-alpha-90: rgba(5, 5, 5, 0.90);
-            --ease-luxury: cubic-bezier(0.16, 1, 0.3, 1);
-            --ease-smooth: cubic-bezier(0.4, 0, 0.2, 1);
-            --ease-out-expo: cubic-bezier(0.16, 1, 0.3, 1);
-            --font-display: 'Cinzel', Georgia, 'Times New Roman', serif;
-            --font-editorial: 'Cormorant Garamond', Georgia, 'Times New Roman', serif;
-            --font-body: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
-            --space-xs: 8px;
-            --space-sm: 16px;
-            --space-md: 24px;
-            --space-lg: 40px;
-            --space-xl: 80px;
-            --space-2xl: 120px;
-            --space-3xl: 160px;
-            --nav-height: 72px;
-            --container-max: 1320px;
-            --container-pad: 48px;
-            --transition-fast: 180ms;
-            --transition-base: 300ms;
-            --transition-slow: 600ms;
-            --transition-xslow: 900ms;
-            --radius-none: 0px;
-        }
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Runestone Relics — Timeless Heritage" />
+    <meta name="twitter:description" content="Luxury heritage · Viking culture · Rare gemstones · Museum-quality relics." />
+    <meta name="twitter:image" content="https://images.pexels.com/photos/34019082/pexels-photo-34019082.jpeg?auto=compress&cs=tinysrgb&fit=crop&h=627&w=1200" />
 
-        /* === RESET === */
-        *,
-        *::before,
-        *::after {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600;700;800&family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet" />
 
-        html {
-            scroll-behavior: smooth;
-            text-size-adjust: 100%;
-            -webkit-text-size-adjust: 100%;
-        }
-
-        body {
-            font-family: var(--font-body);
-            font-size: 16px;
-            font-weight: 300;
-            line-height: 1.75;
-            color: var(--text-primary);
-            background-color: var(--obsidian);
-            overflow-x: hidden;
-            -webkit-font-smoothing: antialiased;
-            -moz-osx-font-smoothing: grayscale;
-            text-rendering: optimizeLegibility;
-        }
-
-        img,
-        video {
-            max-width: 100%;
-            height: auto;
-            display: block;
-        }
-        a {
-            text-decoration: none;
-            color: inherit;
-        }
-        ul,
-        ol {
-            list-style: none;
-        }
-        button {
-            cursor: pointer;
-            border: none;
-            background: none;
-            font-family: inherit;
-        }
-        input {
-            font-family: inherit;
-        }
-
-        ::selection {
-            background: var(--antique-gold);
-            color: var(--obsidian);
-        }
-        :focus-visible {
-            outline: 1.5px solid var(--antique-gold);
-            outline-offset: 3px;
-        }
-
-        /* === SKIP LINK === */
-        .skip-link {
-            position: absolute;
-            top: -100%;
-            left: 16px;
-            padding: 8px 16px;
-            background: var(--antique-gold);
-            color: var(--obsidian);
-            font-family: var(--font-display);
-            font-size: 0.7rem;
-            letter-spacing: 0.15em;
-            z-index: 99999;
-            transition: top 0.2s;
-        }
-        .skip-link:focus {
-            top: 16px;
-        }
-
-        /* === CONTAINER === */
-        .container {
-            max-width: var(--container-max);
-            margin: 0 auto;
-            padding: 0 var(--container-pad);
-        }
-
-        /* === PARTICLES CANVAS === */
-        #particles-canvas {
-            position: fixed;
-            inset: 0;
-            width: 100%;
-            height: 100%;
-            z-index: 0;
-            pointer-events: none;
-            opacity: 0.5;
-        }
-
-        /* ============================================================
-           PRELOADER — Luxury house standard
-           ============================================================ */
-        #preloader {
-            position: fixed;
-            inset: 0;
-            background: var(--obsidian);
-            z-index: 99999;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
-            gap: 32px;
-            transition: opacity var(--transition-slow) var(--ease-luxury),
-                visibility var(--transition-slow);
-        }
-        #preloader.loaded {
-            opacity: 0;
-            visibility: hidden;
-            pointer-events: none;
-        }
-        .preloader-emblem {
-            width: 64px;
-            height: 64px;
-            position: relative;
-        }
-        .preloader-ring-outer {
-            width: 64px;
-            height: 64px;
-            border: 1px solid var(--gold-alpha-12);
-            border-top-color: var(--antique-gold);
-            border-radius: 50%;
-            animation: spinRing 1.4s linear infinite;
-            position: absolute;
-            inset: 0;
-        }
-        .preloader-ring-inner {
-            width: 42px;
-            height: 42px;
-            border: 1px solid var(--gold-alpha-08);
-            border-bottom-color: var(--antique-gold);
-            border-radius: 50%;
-            animation: spinRing 1.8s linear infinite reverse;
-            position: absolute;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%, -50%);
-        }
-        @keyframes spinRing {
-            to {
-                transform: rotate(360deg);
-            }
-        }
-        .preloader-wordmark {
-            font-family: var(--font-display);
-            font-size: 0.72rem;
-            letter-spacing: 0.45em;
-            color: var(--antique-gold);
-            text-transform: uppercase;
-            opacity: 0.7;
-        }
-        .preloader-progress {
-            width: 160px;
-            height: 1px;
-            background: var(--gold-alpha-12);
-            position: relative;
-            overflow: hidden;
-        }
-        .preloader-progress-bar {
-            width: 0%;
-            height: 100%;
-            background: var(--antique-gold);
-            transition: width 0.6s var(--ease-luxury);
-        }
-
-        /* ============================================================
-           NAVIGATION — Refined, museum-grade
-           ============================================================ */
-        .navbar {
-            position: fixed;
-            top: 0;
-            left: 0;
-            width: 100%;
-            z-index: 9000;
-            height: var(--nav-height);
-            transition: background var(--transition-slow) var(--ease-smooth),
-                height var(--transition-base) var(--ease-smooth);
-        }
-        .navbar::after {
-            content: '';
-            position: absolute;
-            bottom: 0;
-            left: 0;
-            width: 100%;
-            height: 1px;
-            background: linear-gradient(90deg, transparent, var(--gold-alpha-12), transparent);
-            opacity: 0;
-            transition: opacity var(--transition-slow) var(--ease-smooth);
-        }
-        .navbar.scrolled {
-            background: rgba(5, 5, 5, 0.85);
-            backdrop-filter: blur(24px) saturate(1.2);
-            -webkit-backdrop-filter: blur(24px) saturate(1.2);
-            height: 60px;
-        }
-        .navbar.scrolled::after {
-            opacity: 1;
-        }
-
-        .navbar-container {
-            max-width: var(--container-max);
-            margin: 0 auto;
-            padding: 0 var(--container-pad);
-            width: 100%;
-            display: grid;
-            grid-template-columns: 1fr auto 1fr;
-            align-items: center;
-            height: 100%;
-        }
-
-        /* Logo */
-        .navbar-logo {
-            grid-column: 2;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            position: relative;
-            z-index: 9001;
-        }
-        .navbar-logo-img {
-            height: 34px;
-            width: auto;
-            filter: drop-shadow(0 0 10px var(--gold-alpha-20));
-            transition: filter var(--transition-base) var(--ease-smooth),
-                transform var(--transition-base) var(--ease-smooth);
-        }
-        .navbar-logo:hover .navbar-logo-img {
-            filter: drop-shadow(0 0 20px var(--gold-alpha-50));
-            transform: scale(1.03);
-        }
-        .navbar-logo-text {
-            font-family: var(--font-display);
-            font-size: 0.78rem;
-            font-weight: 400;
-            letter-spacing: 0.38em;
-            color: var(--antique-gold);
-            text-shadow: 0 0 20px var(--gold-alpha-30);
-            white-space: nowrap;
-        }
-
-        /* Nav links */
-        .navbar-nav-left {
-            grid-column: 1;
-            display: flex;
-            align-items: center;
-            gap: 32px;
-        }
-        .navbar-nav-right {
-            grid-column: 3;
-            display: flex;
-            align-items: center;
-            justify-content: flex-end;
-            gap: 32px;
-        }
-
-        .nav-link {
-            font-family: var(--font-display);
-            font-size: 0.62rem;
-            font-weight: 400;
-            letter-spacing: 0.22em;
-            text-transform: uppercase;
-            color: var(--text-secondary);
-            position: relative;
-            padding: 4px 0;
-            transition: color var(--transition-base) var(--ease-smooth);
-            white-space: nowrap;
-        }
-        .nav-link::after {
-            content: '';
-            position: absolute;
-            bottom: -2px;
-            left: 0;
-            width: 0;
-            height: 1px;
-            background: var(--antique-gold);
-            transition: width var(--transition-slow) var(--ease-luxury);
-        }
-        .nav-link:hover,
-        .nav-link.active {
-            color: var(--antique-gold);
-        }
-        .nav-link:hover::after,
-        .nav-link.active::after {
-            width: 100%;
-        }
-
-        /* Hamburger */
-        .navbar-toggle {
-            display: none;
-            flex-direction: column;
-            gap: 5px;
-            padding: 8px;
-            z-index: 9001;
-            grid-column: 3;
-            justify-self: end;
-        }
-        .toggle-line {
-            width: 22px;
-            height: 1.5px;
-            background: var(--warm-ivory);
-            transition: transform var(--transition-base) var(--ease-smooth),
-                opacity var(--transition-base) var(--ease-smooth);
-            transform-origin: center;
-        }
-        .navbar-toggle.active .toggle-line:nth-child(1) {
-            transform: translateY(6.5px) rotate(45deg);
-        }
-        .navbar-toggle.active .toggle-line:nth-child(2) {
-            opacity: 0;
-        }
-        .navbar-toggle.active .toggle-line:nth-child(3) {
-            transform: translateY(-6.5px) rotate(-45deg);
-        }
-
-        /* Mobile overlay */
-        .mobile-overlay {
-            position: fixed;
-            inset: 0;
-            z-index: 8999;
-            background: rgba(5, 5, 5, 0.97);
-            backdrop-filter: blur(20px);
-            -webkit-backdrop-filter: blur(20px);
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
-            opacity: 0;
-            visibility: hidden;
-            transition: opacity var(--transition-slow) var(--ease-luxury),
-                visibility var(--transition-slow) var(--ease-luxury);
-        }
-        .mobile-overlay.active {
-            opacity: 1;
-            visibility: visible;
-        }
-        .mobile-nav-list {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            gap: 8px;
-            width: 100%;
-            padding: 0 40px;
-        }
-        .mobile-nav-item {
-            width: 100%;
-            text-align: center;
-            border-bottom: 1px solid var(--gold-alpha-08);
-            padding: 20px 0;
-            transform: translateY(20px);
-            opacity: 0;
-            transition: transform var(--transition-slow) var(--ease-luxury),
-                opacity var(--transition-slow) var(--ease-luxury);
-        }
-        .mobile-overlay.active .mobile-nav-item:nth-child(1) {
-            transition-delay: 0.05s;
-            transform: translateY(0);
-            opacity: 1;
-        }
-        .mobile-overlay.active .mobile-nav-item:nth-child(2) {
-            transition-delay: 0.10s;
-            transform: translateY(0);
-            opacity: 1;
-        }
-        .mobile-overlay.active .mobile-nav-item:nth-child(3) {
-            transition-delay: 0.15s;
-            transform: translateY(0);
-            opacity: 1;
-        }
-        .mobile-overlay.active .mobile-nav-item:nth-child(4) {
-            transition-delay: 0.20s;
-            transform: translateY(0);
-            opacity: 1;
-        }
-        .mobile-overlay.active .mobile-nav-item:nth-child(5) {
-            transition-delay: 0.25s;
-            transform: translateY(0);
-            opacity: 1;
-        }
-        .mobile-nav-link {
-            font-family: var(--font-display);
-            font-size: 1rem;
-            font-weight: 400;
-            letter-spacing: 0.35em;
-            text-transform: uppercase;
-            color: var(--text-secondary);
-            transition: color var(--transition-base);
-            display: inline-block;
-        }
-        .mobile-nav-link:hover {
-            color: var(--antique-gold);
-        }
-        .mobile-nav-foot {
-            position: absolute;
-            bottom: 48px;
-            font-family: var(--font-display);
-            font-size: 0.55rem;
-            letter-spacing: 0.45em;
-            color: var(--text-muted);
-            text-transform: uppercase;
-        }
-
-        /* ============================================================
-           SECTION SHARED ELEMENTS
-           ============================================================ */
-        .section-eyebrow {
-            display: block;
-            font-family: var(--font-editorial);
-            font-size: 1rem;
-            font-weight: 400;
-            font-style: italic;
-            letter-spacing: 0.12em;
-            color: var(--antique-gold);
-            margin-bottom: 10px;
-        }
-        .section-heading {
-            font-family: var(--font-display);
-            font-size: clamp(1.8rem, 3.5vw, 2.8rem);
-            font-weight: 400;
-            letter-spacing: 0.12em;
-            line-height: 1.15;
-            color: var(--warm-ivory);
-        }
-        .section-rule {
-            display: flex;
-            align-items: center;
-            gap: 14px;
-            margin: 20px 0 28px;
-        }
-        .section-rule.centered {
-            justify-content: center;
-        }
-        .rule-line {
-            flex: 1;
-            max-width: 48px;
-            height: 1px;
-            background: var(--antique-gold);
-            opacity: 0.6;
-        }
-        .rule-diamond {
-            width: 5px;
-            height: 5px;
-            background: var(--antique-gold);
-            transform: rotate(45deg);
-            flex-shrink: 0;
-        }
-        .section-lead {
-            font-family: var(--font-body);
-            font-size: 0.95rem;
-            font-weight: 300;
-            line-height: 1.85;
-            color: var(--text-secondary);
-            max-width: 560px;
-        }
-        .section-header-block {
-            text-align: center;
-            margin-bottom: 64px;
-        }
-        .section-header-block .section-lead {
-            margin: 0 auto;
-        }
-
-        /* ============================================================
-           BUTTONS — Rolex-caliber restraint
-           ============================================================ */
-        .btn {
-            display: inline-flex;
-            align-items: center;
-            justify-content: center;
-            gap: 12px;
-            font-family: var(--font-display);
-            font-size: 0.62rem;
-            font-weight: 400;
-            letter-spacing: 0.28em;
-            text-transform: uppercase;
-            padding: 15px 38px;
-            position: relative;
-            overflow: hidden;
-            transition: background var(--transition-base) var(--ease-smooth),
-                color var(--transition-base) var(--ease-smooth),
-                border-color var(--transition-base) var(--ease-smooth),
-                transform var(--transition-base) var(--ease-luxury),
-                box-shadow var(--transition-base) var(--ease-smooth);
-            cursor: pointer;
-        }
-        .btn::before {
-            content: '';
-            position: absolute;
-            inset: 0;
-            background: linear-gradient(105deg, transparent 40%, rgba(255, 255, 255, 0.08) 50%, transparent 60%);
-            transform: translateX(-100%);
-            transition: transform 0.7s var(--ease-smooth);
-        }
-        .btn:hover::before {
-            transform: translateX(150%);
-        }
-        .btn-primary {
-            background: var(--antique-gold);
-            color: var(--obsidian);
-            border: 1px solid var(--antique-gold);
-        }
-        .btn-primary:hover {
-            background: var(--rich-bronze);
-            border-color: var(--rich-bronze);
-            transform: translateY(-2px);
-            box-shadow: 0 8px 32px rgba(212, 175, 55, 0.25);
-        }
-        .btn-ghost {
-            background: transparent;
-            color: var(--warm-ivory);
-            border: 1px solid var(--gold-alpha-30);
-        }
-        .btn-ghost:hover {
-            background: var(--gold-alpha-08);
-            border-color: var(--antique-gold);
-            transform: translateY(-2px);
-            box-shadow: 0 8px 32px rgba(212, 175, 55, 0.10);
-        }
-        .btn-arrow {
-            display: inline-block;
-            transition: transform var(--transition-base) var(--ease-luxury);
-        }
-        .btn:hover .btn-arrow {
-            transform: translateX(4px);
-        }
-
-        /* ============================================================
-           HERO — Cinematic luxury
-           ============================================================ */
-        .hero {
-            position: relative;
-            width: 100%;
-            height: 100svh;
-            min-height: 700px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            overflow: hidden;
-        }
-        .hero-atmosphere {
-            position: absolute;
-            inset: -12% -6%;
-            width: 112%;
-            height: 124%;
-            will-change: transform;
-            background:
-                radial-gradient(ellipse 80% 60% at 15% 50%, rgba(19, 33, 27, 0.7) 0%, transparent 65%),
-                radial-gradient(ellipse 60% 80% at 85% 20%, rgba(11, 21, 18, 0.6) 0%, transparent 55%),
-                radial-gradient(ellipse 50% 40% at 50% 90%, rgba(212, 175, 55, 0.03) 0%, transparent 50%),
-                linear-gradient(160deg, #050505 0%, #0B1512 28%, #13211B 55%, #0B1512 78%, #050505 100%);
-        }
-        .hero-overlay {
-            position: absolute;
-            inset: 0;
-            background: linear-gradient(180deg,
-                    rgba(5, 5, 5, 0.30) 0%,
-                    rgba(5, 5, 5, 0.10) 35%,
-                    rgba(5, 5, 5, 0.20) 65%,
-                    rgba(5, 5, 5, 0.85) 100%);
-            z-index: 1;
-        }
-        .hero-vignette {
-            position: absolute;
-            inset: 0;
-            background: radial-gradient(ellipse 80% 70% at 50% 50%, transparent 35%, rgba(5, 5, 5, 0.55) 100%);
-            z-index: 2;
-        }
-
-        /* Hero grid lines — architectural */
-        .hero-lines {
-            position: absolute;
-            inset: 0;
-            z-index: 2;
-            pointer-events: none;
-            opacity: 0.08;
-        }
-        .hero-line-h {
-            position: absolute;
-            left: 10%;
-            right: 10%;
-            height: 1px;
-            background: var(--warm-ivory);
-        }
-        .hero-line-h:nth-child(1) {
-            top: 25%;
-        }
-        .hero-line-h:nth-child(2) {
-            top: 75%;
-        }
-        .hero-line-v {
-            position: absolute;
-            top: 15%;
-            bottom: 15%;
-            width: 1px;
-            background: var(--warm-ivory);
-        }
-        .hero-line-v:nth-child(3) {
-            left: 25%;
-        }
-        .hero-line-v:nth-child(4) {
-            left: 75%;
-        }
-
-        .hero-body {
-            position: relative;
-            z-index: 5;
-            text-align: center;
-            max-width: 860px;
-            padding: 0 24px;
-        }
-        .hero-emblem {
-            margin-bottom: 28px;
-        }
-        .hero-logo-img {
-            height: 72px;
-            width: auto;
-            filter: drop-shadow(0 0 18px var(--gold-alpha-20));
-            animation: emblemPulse 3.5s var(--ease-smooth) infinite alternate;
-            display: inline-block;
-        }
-        @keyframes emblemPulse {
-            0% {
-                filter: drop-shadow(0 0 18px var(--gold-alpha-20));
-            }
-            100% {
-                filter: drop-shadow(0 0 40px rgba(212, 175, 55, 0.55));
-            }
-        }
-        .hero-logo-svg {
-            filter: drop-shadow(0 0 28px var(--gold-alpha-30));
-        }
-
-        .hero-eyebrow {
-            font-family: var(--font-display);
-            font-size: 0.58rem;
-            font-weight: 400;
-            letter-spacing: 0.55em;
-            text-transform: uppercase;
-            color: var(--antique-gold);
-            display: block;
-            margin-bottom: 18px;
-            opacity: 0;
-            transform: translateY(16px);
-            transition: opacity 0.9s var(--ease-out-expo), transform 0.9s var(--ease-out-expo);
-        }
-        .hero-eyebrow.visible {
-            opacity: 1;
-            transform: translateY(0);
-        }
-
-        .hero-wordmark {
-            font-family: var(--font-display);
-            font-size: clamp(1.8rem, 5.5vw, 4.2rem);
-            font-weight: 400;
-            letter-spacing: 0.35em;
-            line-height: 1;
-            color: var(--warm-ivory);
-            text-shadow: 0 2px 40px rgba(212, 175, 55, 0.08);
-            margin-bottom: 22px;
-            opacity: 0;
-            transform: translateY(20px);
-            transition: opacity 1s var(--ease-out-expo), transform 1s var(--ease-out-expo);
-        }
-        .hero-wordmark.visible {
-            opacity: 1;
-            transform: translateY(0);
-        }
-
-        .hero-ornament {
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            gap: 18px;
-            margin-bottom: 22px;
-            opacity: 0;
-            transition: opacity 0.9s var(--ease-out-expo) 0.2s;
-        }
-        .hero-ornament.visible {
-            opacity: 1;
-        }
-        .ornament-line {
-            width: 72px;
-            height: 1px;
-            background: linear-gradient(90deg, transparent, var(--antique-gold));
-        }
-        .ornament-line.rev {
-            background: linear-gradient(270deg, transparent, var(--antique-gold));
-        }
-        .ornament-center {
-            display: flex;
-            align-items: center;
-            gap: 8px;
-        }
-        .ornament-dot {
-            width: 4px;
-            height: 4px;
-            border: 1px solid var(--antique-gold);
-            transform: rotate(45deg);
-            flex-shrink: 0;
-        }
-        .ornament-dot.lg {
-            width: 6px;
-            height: 6px;
-        }
-
-        .hero-tagline {
-            font-family: var(--font-editorial);
-            font-size: clamp(1rem, 2.2vw, 1.35rem);
-            font-weight: 300;
-            font-style: italic;
-            letter-spacing: 0.1em;
-            color: var(--antique-gold);
-            margin-bottom: 20px;
-            opacity: 0;
-            transform: translateY(12px);
-            transition: opacity 0.9s var(--ease-out-expo) 0.35s, transform 0.9s var(--ease-out-expo) 0.35s;
-        }
-        .hero-tagline.visible {
-            opacity: 1;
-            transform: translateY(0);
-        }
-
-        .hero-description {
-            font-size: 0.92rem;
-            font-weight: 300;
-            line-height: 1.85;
-            color: var(--text-secondary);
-            max-width: 560px;
-            margin: 0 auto 40px;
-            opacity: 0;
-            transform: translateY(12px);
-            transition: opacity 0.9s var(--ease-out-expo) 0.5s, transform 0.9s var(--ease-out-expo) 0.5s;
-        }
-        .hero-description.visible {
-            opacity: 1;
-            transform: translateY(0);
-        }
-
-        .hero-actions {
-            display: flex;
-            gap: 16px;
-            justify-content: center;
-            flex-wrap: wrap;
-            margin-bottom: 56px;
-            opacity: 0;
-            transform: translateY(12px);
-            transition: opacity 0.9s var(--ease-out-expo) 0.65s, transform 0.9s var(--ease-out-expo) 0.65s;
-        }
-        .hero-actions.visible {
-            opacity: 1;
-            transform: translateY(0);
-        }
-
-        /* Scroll cue */
-        .hero-scroll {
-            position: absolute;
-            bottom: 36px;
-            left: 50%;
-            transform: translateX(-50%);
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            gap: 10px;
-            z-index: 10;
-            opacity: 0;
-            animation: scrollFadeIn 1s 2.5s var(--ease-luxury) forwards;
-        }
-        @keyframes scrollFadeIn {
-            to {
-                opacity: 1;
-            }
-        }
-        .scroll-track {
-            width: 1px;
-            height: 52px;
-            background: var(--gold-alpha-20);
-            position: relative;
-            overflow: hidden;
-        }
-        .scroll-fill {
-            width: 100%;
-            height: 50%;
-            background: var(--antique-gold);
-            position: absolute;
-            top: -50%;
-            animation: scrollFill 2s var(--ease-smooth) infinite;
-        }
-        @keyframes scrollFill {
-            0% {
-                top: -50%;
-            }
-            100% {
-                top: 150%;
-            }
-        }
-        .scroll-label {
-            font-family: var(--font-display);
-            font-size: 0.48rem;
-            letter-spacing: 0.4em;
-            text-transform: uppercase;
-            color: var(--text-muted);
-            writing-mode: vertical-lr;
-        }
-
-        /* ============================================================
-           STORY / LEGACY — Editorial narrative
-           ============================================================ */
-        .story-section {
-            padding: var(--space-3xl) 0;
-            background: linear-gradient(180deg, var(--obsidian) 0%, var(--dark-emerald) 45%, var(--obsidian) 100%);
-            position: relative;
-            z-index: 2;
-        }
-        .story-section::before {
-            content: '';
-            position: absolute;
-            top: 0;
-            left: 0;
-            right: 0;
-            height: 1px;
-            background: linear-gradient(90deg, transparent, var(--gold-alpha-12), transparent);
-        }
-        .story-layout {
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            gap: 100px;
-            align-items: center;
-        }
-        .story-imagery {
-            position: relative;
-            padding-bottom: 50px;
-            padding-right: 30px;
-        }
-        .story-img-primary-wrap {
-            position: relative;
-            overflow: hidden;
-        }
-        .story-img-primary-wrap::before {
-            content: '';
-            position: absolute;
-            top: 20px;
-            right: -20px;
-            bottom: -20px;
-            left: 20px;
-            border: 1px solid var(--gold-alpha-12);
-            z-index: 0;
-            pointer-events: none;
-        }
-        .story-img-primary {
-            width: 100%;
-            height: 520px;
-            object-fit: cover;
-            object-position: center;
-            filter: brightness(0.82) saturate(0.85) contrast(1.05);
-            transition: filter var(--transition-xslow) var(--ease-luxury),
-                transform var(--transition-xslow) var(--ease-luxury);
-            display: block;
-            position: relative;
-            z-index: 1;
-        }
-        .story-img-primary-wrap:hover .story-img-primary {
-            filter: brightness(0.92) saturate(1) contrast(1.02);
-            transform: scale(1.03);
-        }
-
-        .story-img-secondary {
-            position: absolute;
-            bottom: 0;
-            right: -20px;
-            width: 188px;
-            height: 250px;
-            overflow: hidden;
-            border: 1px solid var(--gold-alpha-20);
-            box-shadow: 0 24px 64px rgba(0, 0, 0, 0.6);
-            z-index: 2;
-        }
-        .story-img-secondary img {
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
-            filter: brightness(0.82) saturate(0.85);
-        }
-
-        .story-year-badge {
-            position: absolute;
-            top: -20px;
-            left: -20px;
-            width: 88px;
-            height: 88px;
-            border: 1px solid var(--gold-alpha-20);
-            background: var(--dark-emerald);
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
-            gap: 2px;
-            z-index: 3;
-        }
-        .badge-est {
-            font-family: var(--font-display);
-            font-size: 0.45rem;
-            letter-spacing: 0.3em;
-            color: var(--text-muted);
-            text-transform: uppercase;
-        }
-        .badge-year {
-            font-family: var(--font-editorial);
-            font-size: 1.1rem;
-            font-style: italic;
-            color: var(--antique-gold);
-            letter-spacing: 0.1em;
-        }
-
-        .story-content {
-            padding-top: 8px;
-        }
-        .story-body {
-            font-size: 0.95rem;
-            font-weight: 300;
-            line-height: 1.9;
-            color: var(--text-secondary);
-            margin-bottom: 20px;
-        }
-        .story-body:first-of-type::first-letter {
-            font-family: var(--font-editorial);
-            font-size: 3.2rem;
-            font-weight: 300;
-            line-height: 0.8;
-            float: left;
-            margin-right: 10px;
-            margin-top: 6px;
-            color: var(--antique-gold);
-            padding-right: 2px;
-        }
-
-        .story-stat-row {
-            display: grid;
-            grid-template-columns: repeat(3, 1fr);
-            gap: 1px;
-            margin-top: 36px;
-            background: var(--gold-alpha-08);
-            border: 1px solid var(--gold-alpha-08);
-        }
-        .story-stat {
-            padding: 22px 16px;
-            text-align: center;
-            border-right: 1px solid var(--gold-alpha-08);
-            background: rgba(5, 5, 5, 0.3);
-        }
-        .story-stat:last-child {
-            border-right: none;
-        }
-        .stat-num {
-            font-family: var(--font-editorial);
-            font-size: 1.8rem;
-            font-weight: 300;
-            color: var(--antique-gold);
-            display: block;
-            letter-spacing: 0.05em;
-        }
-        .stat-label {
-            font-family: var(--font-display);
-            font-size: 0.5rem;
-            letter-spacing: 0.25em;
-            text-transform: uppercase;
-            color: var(--text-muted);
-            display: block;
-            margin-top: 4px;
-        }
-
-        /* ============================================================
-           COLLECTIONS — Editorial magazine layout
-           ============================================================ */
-        .collections-section {
-            padding: var(--space-3xl) 0;
-            background: var(--obsidian);
-            position: relative;
-            z-index: 2;
-        }
-        .collections-section::before {
-            content: '';
-            position: absolute;
-            top: 0;
-            left: 0;
-            right: 0;
-            height: 1px;
-            background: linear-gradient(90deg, transparent, var(--gold-alpha-12), transparent);
-        }
-        .collections-grid {
-            display: grid;
-            grid-template-columns: repeat(4, 1fr);
-            gap: 2px;
-            background: var(--gold-alpha-08);
-            border: 1px solid var(--gold-alpha-08);
-        }
-        .collection-card {
-            background: var(--dark-emerald);
-            position: relative;
-            overflow: hidden;
-            display: flex;
-            flex-direction: column;
-            transition: background var(--transition-base) var(--ease-smooth);
-        }
-        .collection-card:hover {
-            background: var(--forest-green);
-        }
-        .collection-img-wrap {
-            position: relative;
-            overflow: hidden;
-            height: 400px;
-            flex-shrink: 0;
-        }
-        .collection-img {
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
-            object-position: center;
-            filter: brightness(0.72) saturate(0.8) contrast(1.08);
-            transition: filter var(--transition-xslow) var(--ease-luxury),
-                transform var(--transition-xslow) var(--ease-luxury);
-            display: block;
-        }
-        .collection-card:hover .collection-img {
-            filter: brightness(0.85) saturate(1) contrast(1.04);
-            transform: scale(1.07);
-        }
-        .collection-img-overlay {
-            position: absolute;
-            inset: 0;
-            background: linear-gradient(180deg, transparent 45%, rgba(5, 5, 5, 0.7) 100%);
-            z-index: 1;
-        }
-        .collection-numeral {
-            position: absolute;
-            top: 18px;
-            left: 18px;
-            font-family: var(--font-editorial);
-            font-size: 1.1rem;
-            font-style: italic;
-            color: var(--antique-gold);
-            z-index: 2;
-            letter-spacing: 0.05em;
-            opacity: 0.75;
-        }
-        .collection-view-btn {
-            position: absolute;
-            bottom: 20px;
-            left: 50%;
-            transform: translateX(-50%) translateY(10px);
-            opacity: 0;
-            font-family: var(--font-display);
-            font-size: 0.55rem;
-            letter-spacing: 0.3em;
-            text-transform: uppercase;
-            color: var(--antique-gold);
-            border: 1px solid var(--gold-alpha-30);
-            padding: 9px 22px;
-            background: rgba(5, 5, 5, 0.5);
-            backdrop-filter: blur(10px);
-            transition: opacity var(--transition-base) var(--ease-smooth),
-                transform var(--transition-base) var(--ease-luxury);
-            white-space: nowrap;
-            z-index: 3;
-        }
-        .collection-card:hover .collection-view-btn {
-            opacity: 1;
-            transform: translateX(-50%) translateY(0);
-        }
-        .collection-body {
-            padding: 26px 24px 30px;
-            flex: 1;
-            display: flex;
-            flex-direction: column;
-            border-top: 1px solid var(--gold-alpha-08);
-        }
-        .collection-index {
-            font-family: var(--font-editorial);
-            font-size: 0.78rem;
-            font-style: italic;
-            color: var(--antique-gold);
-            letter-spacing: 0.05em;
-            margin-bottom: 6px;
-            opacity: 0.7;
-        }
-        .collection-name {
-            font-family: var(--font-display);
-            font-size: 0.95rem;
-            font-weight: 400;
-            letter-spacing: 0.12em;
-            color: var(--warm-ivory);
-            line-height: 1.3;
-            margin-bottom: 12px;
-        }
-        .collection-desc {
-            font-size: 0.82rem;
-            font-weight: 300;
-            line-height: 1.75;
-            color: var(--text-muted);
-            flex: 1;
-            margin-bottom: 18px;
-        }
-        .collection-cta {
-            font-family: var(--font-display);
-            font-size: 0.58rem;
-            letter-spacing: 0.22em;
-            text-transform: uppercase;
-            color: var(--antique-gold);
-            display: inline-flex;
-            align-items: center;
-            gap: 10px;
-            transition: gap var(--transition-base) var(--ease-luxury),
-                opacity var(--transition-base);
-            opacity: 0.7;
-        }
-        .collection-cta:hover {
-            opacity: 1;
-            gap: 16px;
-        }
-        .cta-arrow {
-            display: inline-block;
-            font-size: 0.9em;
-            transition: transform var(--transition-base) var(--ease-luxury);
-        }
-        .collection-cta:hover .cta-arrow {
-            transform: translateX(3px);
-        }
-
-        /* ============================================================
-           HERITAGE VALUES — Refined icon cards
-           ============================================================ */
-        .heritage-section {
-            padding: var(--space-3xl) 0;
-            position: relative;
-            z-index: 2;
-            overflow: hidden;
-        }
-        .heritage-section::before,
-        .heritage-section::after {
-            content: '';
-            position: absolute;
-            left: 0;
-            right: 0;
-            height: 1px;
-            background: linear-gradient(90deg, transparent, var(--gold-alpha-12), transparent);
-        }
-        .heritage-section::before {
-            top: 0;
-        }
-        .heritage-section::after {
-            bottom: 0;
-        }
-        .heritage-bg {
-            position: absolute;
-            inset: 0;
-            background:
-                radial-gradient(ellipse 60% 50% at 25% 50%, rgba(19, 33, 27, 0.35) 0%, transparent 60%),
-                radial-gradient(ellipse 60% 50% at 75% 50%, rgba(11, 21, 18, 0.35) 0%, transparent 60%),
-                linear-gradient(180deg, var(--obsidian) 0%, var(--dark-emerald) 50%, var(--obsidian) 100%);
-        }
-        .heritage-grid {
-            display: grid;
-            grid-template-columns: repeat(4, 1fr);
-            gap: 2px;
-            background: var(--gold-alpha-08);
-            border: 1px solid var(--gold-alpha-08);
-            position: relative;
-        }
-        .heritage-card {
-            background: rgba(5, 5, 5, 0.6);
-            padding: 52px 28px 44px;
-            text-align: center;
-            position: relative;
-            transition: background var(--transition-slow) var(--ease-smooth);
-        }
-        .heritage-card::before {
-            content: '';
-            position: absolute;
-            top: 0;
-            left: 50%;
-            transform: translateX(-50%);
-            width: 0;
-            height: 2px;
-            background: var(--antique-gold);
-            transition: width var(--transition-slow) var(--ease-luxury);
-        }
-        .heritage-card:hover {
-            background: rgba(11, 21, 18, 0.7);
-        }
-        .heritage-card:hover::before {
-            width: 50%;
-        }
-        .heritage-icon-wrap {
-            width: 64px;
-            height: 64px;
-            border: 1px solid var(--gold-alpha-12);
-            border-radius: 50%;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            margin: 0 auto 24px;
-            transition: border-color var(--transition-base) var(--ease-smooth),
-                box-shadow var(--transition-base) var(--ease-smooth);
-        }
-        .heritage-card:hover .heritage-icon-wrap {
-            border-color: var(--gold-alpha-30);
-            box-shadow: 0 0 20px var(--gold-alpha-12);
-        }
-        .heritage-icon-wrap svg {
-            transition: filter var(--transition-base) var(--ease-smooth);
-        }
-        .heritage-card:hover .heritage-icon-wrap svg {
-            filter: drop-shadow(0 0 8px var(--gold-alpha-30));
-        }
-        .heritage-title {
-            font-family: var(--font-display);
-            font-size: 0.78rem;
-            font-weight: 400;
-            letter-spacing: 0.2em;
-            text-transform: uppercase;
-            color: var(--warm-ivory);
-            margin-bottom: 14px;
-        }
-        .heritage-text {
-            font-size: 0.83rem;
-            font-weight: 300;
-            line-height: 1.85;
-            color: var(--text-muted);
-        }
-
-        /* ============================================================
-           INTERLUDE / STATISTICS BAND
-           ============================================================ */
-        .interlude-section {
-            padding: 80px 0;
-            background: var(--forest-green);
-            border-top: 1px solid var(--gold-alpha-08);
-            border-bottom: 1px solid var(--gold-alpha-08);
-            position: relative;
-            z-index: 2;
-            overflow: hidden;
-        }
-        .interlude-section::before {
-            content: '';
-            position: absolute;
-            inset: 0;
-            background: radial-gradient(ellipse 80% 100% at 50% 50%, rgba(212, 175, 55, 0.02) 0%, transparent 70%);
-            pointer-events: none;
-        }
-        .interlude-inner {
-            display: grid;
-            grid-template-columns: repeat(4, 1fr);
-            gap: 1px;
-            background: var(--gold-alpha-08);
-            border: 1px solid var(--gold-alpha-08);
-        }
-        .interlude-stat {
-            background: var(--forest-green);
-            text-align: center;
-            padding: 36px 20px;
-            position: relative;
-        }
-        .interlude-num {
-            font-family: var(--font-editorial);
-            font-size: clamp(2.2rem, 4vw, 3rem);
-            font-weight: 300;
-            font-style: italic;
-            color: var(--antique-gold);
-            display: block;
-            letter-spacing: 0.04em;
-            line-height: 1;
-            margin-bottom: 10px;
-        }
-        .interlude-label {
-            font-family: var(--font-display);
-            font-size: 0.55rem;
-            letter-spacing: 0.3em;
-            text-transform: uppercase;
-            color: var(--text-muted);
-        }
-
-        /* ============================================================
-           GALLERY — True masonry with sophistication
-           ============================================================ */
-        .gallery-section {
-            padding: var(--space-3xl) 0;
-            background: var(--obsidian);
-            position: relative;
-            z-index: 2;
-        }
-        .gallery-section::before {
-            content: '';
-            position: absolute;
-            top: 0;
-            left: 0;
-            right: 0;
-            height: 1px;
-            background: linear-gradient(90deg, transparent, var(--gold-alpha-12), transparent);
-        }
-        .gallery-filter-bar {
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            gap: 0;
-            margin-bottom: 52px;
-            border: 1px solid var(--gold-alpha-12);
-            flex-wrap: wrap;
-        }
-        .filter-btn {
-            font-family: var(--font-display);
-            font-size: 0.58rem;
-            letter-spacing: 0.22em;
-            text-transform: uppercase;
-            padding: 12px 24px;
-            color: var(--text-muted);
-            border-right: 1px solid var(--gold-alpha-12);
-            background: transparent;
-            transition: color var(--transition-base), background var(--transition-base);
-            white-space: nowrap;
-        }
-        .filter-btn:last-child {
-            border-right: none;
-        }
-        .filter-btn:hover {
-            color: var(--antique-gold);
-            background: var(--gold-alpha-08);
-        }
-        .filter-btn.active {
-            color: var(--obsidian);
-            background: var(--antique-gold);
-        }
-
-        .gallery-masonry {
-            columns: 3;
-            column-gap: 16px;
-        }
-        .gallery-item {
-            break-inside: avoid;
-            margin-bottom: 16px;
-            transition: opacity 0.5s var(--ease-smooth), transform 0.5s var(--ease-smooth);
-        }
-        .gallery-item.hidden {
-            display: none;
-        }
-        .gallery-item-inner {
-            position: relative;
-            overflow: hidden;
-            cursor: pointer;
-        }
-        .gallery-item-inner::after {
-            content: '';
-            position: absolute;
-            inset: 0;
-            border: 1px solid transparent;
-            transition: border-color var(--transition-base) var(--ease-smooth);
-            pointer-events: none;
-            z-index: 2;
-        }
-        .gallery-item-inner:hover::after {
-            border-color: var(--gold-alpha-30);
-        }
-        .gallery-img {
-            width: 100%;
-            display: block;
-            filter: brightness(0.75) saturate(0.8) contrast(1.05);
-            transition: filter var(--transition-xslow) var(--ease-luxury),
-                transform var(--transition-xslow) var(--ease-luxury);
-        }
-        .gallery-item-inner:hover .gallery-img {
-            filter: brightness(0.9) saturate(1) contrast(1.02);
-            transform: scale(1.05);
-        }
-        .gallery-caption {
-            position: absolute;
-            inset: 0;
-            background: linear-gradient(180deg, transparent 35%, rgba(5, 5, 5, 0.88) 100%);
-            display: flex;
-            flex-direction: column;
-            justify-content: flex-end;
-            padding: 22px;
-            opacity: 0;
-            transition: opacity var(--transition-slow) var(--ease-smooth);
-            z-index: 1;
-        }
-        .gallery-item-inner:hover .gallery-caption {
-            opacity: 1;
-        }
-        .gallery-cat {
-            font-family: var(--font-editorial);
-            font-size: 0.78rem;
-            font-style: italic;
-            color: var(--antique-gold);
-            letter-spacing: 0.08em;
-            margin-bottom: 3px;
-        }
-        .gallery-name {
-            font-family: var(--font-display);
-            font-size: 0.8rem;
-            letter-spacing: 0.1em;
-            color: var(--warm-ivory);
-        }
-        .gallery-expand {
-            position: absolute;
-            top: 14px;
-            right: 14px;
-            width: 40px;
-            height: 40px;
-            border: 1px solid var(--gold-alpha-20);
-            border-radius: 50%;
-            background: rgba(5, 5, 5, 0.55);
-            backdrop-filter: blur(10px);
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            color: var(--antique-gold);
-            transition: border-color var(--transition-base), background var(--transition-base), transform var(--transition-base);
-            z-index: 3;
-            opacity: 0;
-        }
-        .gallery-item-inner:hover .gallery-expand {
-            opacity: 1;
-        }
-        .gallery-expand:hover {
-            border-color: var(--antique-gold);
-            background: var(--gold-alpha-12);
-            transform: scale(1.05);
-        }
-
-        /* Lightbox */
-        .lightbox {
-            position: fixed;
-            inset: 0;
-            z-index: 99999;
-            background: rgba(5, 5, 5, 0.92);
-            backdrop-filter: blur(20px);
-            -webkit-backdrop-filter: blur(20px);
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            opacity: 0;
-            visibility: hidden;
-            transition: opacity var(--transition-slow) var(--ease-luxury),
-                visibility var(--transition-slow) var(--ease-luxury);
-            padding: 40px;
-        }
-        .lightbox.open {
-            opacity: 1;
-            visibility: visible;
-        }
-        .lightbox-inner {
-            max-width: 1200px;
-            width: 100%;
-            position: relative;
-        }
-        .lightbox-img {
-            width: 100%;
-            height: auto;
-            max-height: 80vh;
-            object-fit: contain;
-            display: block;
-        }
-        .lightbox-caption {
-            margin-top: 18px;
-            font-family: var(--font-display);
-            font-size: 0.62rem;
-            letter-spacing: 0.3em;
-            color: var(--antique-gold);
-            text-align: center;
-            text-transform: uppercase;
-        }
-        .lightbox-close {
-            position: absolute;
-            top: -52px;
-            right: 0;
-            width: 44px;
-            height: 44px;
-            border: 1px solid var(--gold-alpha-20);
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            color: var(--antique-gold);
-            font-size: 1.4rem;
-            font-weight: 300;
-            line-height: 1;
-            transition: border-color var(--transition-base), background var(--transition-base);
-        }
-        .lightbox-close:hover {
-            border-color: var(--antique-gold);
-            background: var(--gold-alpha-08);
-        }
-
-        /* ============================================================
-           JOURNAL — Editorial card design
-           ============================================================ */
-        .journal-section {
-            padding: var(--space-3xl) 0;
-            background: linear-gradient(180deg, var(--obsidian) 0%, var(--dark-emerald) 50%, var(--obsidian) 100%);
-            position: relative;
-            z-index: 2;
-        }
-        .journal-section::before {
-            content: '';
-            position: absolute;
-            top: 0;
-            left: 0;
-            right: 0;
-            height: 1px;
-            background: linear-gradient(90deg, transparent, var(--gold-alpha-12), transparent);
-        }
-        .journal-grid {
-            display: grid;
-            grid-template-columns: 1.4fr 1fr 1fr;
-            gap: 20px;
-            align-items: stretch;
-        }
-        .journal-card {
-            background: rgba(5, 5, 5, 0.4);
-            border: 1px solid var(--gold-alpha-08);
-            transition: border-color var(--transition-base), background var(--transition-base);
-            display: flex;
-            flex-direction: column;
-        }
-        .journal-card:hover {
-            border-color: var(--gold-alpha-20);
-            background: rgba(5, 5, 5, 0.6);
-        }
-        .journal-card-featured {
-            grid-row: span 2;
-        }
-        .journal-img-wrap {
-            position: relative;
-            overflow: hidden;
-            flex-shrink: 0;
-        }
-        .journal-card-featured .journal-img-wrap {
-            height: 320px;
-        }
-        .journal-card:not(.journal-card-featured) .journal-img-wrap {
-            height: 200px;
-        }
-        .journal-img {
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
-            filter: brightness(0.7) saturate(0.8);
-            transition: filter var(--transition-xslow) var(--ease-luxury),
-                transform var(--transition-xslow) var(--ease-luxury);
-        }
-        .journal-card:hover .journal-img {
-            filter: brightness(0.85) saturate(1);
-            transform: scale(1.04);
-        }
-        .journal-img-overlay {
-            position: absolute;
-            inset: 0;
-            background: linear-gradient(180deg, transparent 40%, rgba(5, 5, 5, 0.7) 100%);
-            z-index: 1;
-        }
-        .journal-tag {
-            position: absolute;
-            top: 16px;
-            left: 16px;
-            font-family: var(--font-display);
-            font-size: 0.48rem;
-            letter-spacing: 0.25em;
-            text-transform: uppercase;
-            color: var(--antique-gold);
-            border: 1px solid var(--gold-alpha-20);
-            padding: 4px 14px;
-            background: rgba(5, 5, 5, 0.5);
-            backdrop-filter: blur(8px);
-            z-index: 2;
-        }
-        .journal-body {
-            padding: 26px 28px 32px;
-            flex: 1;
-            display: flex;
-            flex-direction: column;
-        }
-        .journal-card-featured .journal-body {
-            padding: 32px 32px 40px;
-        }
-        .journal-meta {
-            display: flex;
-            align-items: center;
-            gap: 10px;
-            margin-bottom: 12px;
-        }
-        .journal-date {
-            font-family: var(--font-editorial);
-            font-size: 0.82rem;
-            font-style: italic;
-            color: var(--antique-gold);
-            letter-spacing: 0.05em;
-        }
-        .journal-meta-sep {
-            width: 20px;
-            height: 1px;
-            background: var(--gold-alpha-30);
-        }
-        .journal-read-time {
-            font-family: var(--font-display);
-            font-size: 0.52rem;
-            letter-spacing: 0.2em;
-            text-transform: uppercase;
-            color: var(--text-muted);
-        }
-        .journal-title {
-            font-family: var(--font-display);
-            font-weight: 400;
-            letter-spacing: 0.06em;
-            line-height: 1.3;
-            color: var(--warm-ivory);
-            margin-bottom: 12px;
-            transition: color var(--transition-base);
-        }
-        .journal-card-featured .journal-title {
-            font-size: clamp(1rem, 2vw, 1.3rem);
-            margin-bottom: 14px;
-        }
-        .journal-card:not(.journal-card-featured) .journal-title {
-            font-size: 0.88rem;
-        }
-        .journal-card:hover .journal-title {
-            color: var(--antique-gold);
-        }
-        .journal-excerpt {
-            font-size: 0.85rem;
-            font-weight: 300;
-            line-height: 1.8;
-            color: var(--text-muted);
-            margin-bottom: 18px;
-        }
-        .journal-card:not(.journal-card-featured) .journal-excerpt {
-            display: none;
-        }
-        .journal-link {
-            font-family: var(--font-display);
-            font-size: 0.58rem;
-            letter-spacing: 0.22em;
-            text-transform: uppercase;
-            color: var(--antique-gold);
-            display: inline-flex;
-            align-items: center;
-            gap: 10px;
-            opacity: 0.7;
-            transition: opacity var(--transition-base), gap var(--transition-base) var(--ease-luxury);
-            margin-top: auto;
-        }
-        .journal-link:hover {
-            opacity: 1;
-            gap: 16px;
-        }
-
-        /* ============================================================
-           MANIFESTO — Cinematic impact
-           ============================================================ */
-        .manifesto-section {
-            padding: var(--space-3xl) 0;
-            position: relative;
-            overflow: hidden;
-            z-index: 2;
-        }
-        .manifesto-bg {
-            position: absolute;
-            inset: 0;
-            background:
-                radial-gradient(ellipse 70% 60% at 50% 50%, rgba(19, 33, 27, 0.5) 0%, transparent 65%),
-                linear-gradient(180deg, var(--obsidian), var(--forest-green) 50%, var(--obsidian));
-        }
-        .manifesto-section::before,
-        .manifesto-section::after {
-            content: '';
-            position: absolute;
-            left: 0;
-            right: 0;
-            height: 1px;
-            background: linear-gradient(90deg, transparent, var(--gold-alpha-12), transparent);
-            z-index: 1;
-        }
-        .manifesto-section::before {
-            top: 0;
-        }
-        .manifesto-section::after {
-            bottom: 0;
-        }
-        .manifesto-inner {
-            position: relative;
-            text-align: center;
-            max-width: 860px;
-            margin: 0 auto;
-            padding: 0 40px;
-            z-index: 2;
-        }
-        .manifesto-quote-mark {
-            font-family: var(--font-editorial);
-            font-size: clamp(4rem, 8vw, 7rem);
-            line-height: 0.6;
-            color: var(--antique-gold);
-            opacity: 0.18;
-            display: block;
-            margin-bottom: 8px;
-            user-select: none;
-        }
-        .manifesto-text {
-            font-family: var(--font-editorial);
-            font-size: clamp(1.6rem, 4vw, 3.2rem);
-            font-weight: 300;
-            font-style: italic;
-            color: var(--warm-ivory);
-            line-height: 1.35;
-            letter-spacing: 0.02em;
-            margin-bottom: 36px;
-        }
-        .manifesto-text em {
-            color: var(--antique-gold);
-            font-style: normal;
-        }
-        .manifesto-attribution {
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            gap: 18px;
-        }
-        .manifesto-line {
-            width: 56px;
-            height: 1px;
-            background: var(--gold-alpha-30);
-        }
-        .manifesto-author {
-            font-family: var(--font-display);
-            font-size: 0.58rem;
-            letter-spacing: 0.4em;
-            text-transform: uppercase;
-            color: var(--antique-gold);
-            opacity: 0.75;
-        }
-
-        /* ============================================================
-           NEWSLETTER — Elevated trust signals
-           ============================================================ */
-        .newsletter-section {
-            padding: var(--space-3xl) 0;
-            background: var(--obsidian);
-            position: relative;
-            z-index: 2;
-        }
-        .newsletter-section::before {
-            content: '';
-            position: absolute;
-            top: 0;
-            left: 0;
-            right: 0;
-            height: 1px;
-            background: linear-gradient(90deg, transparent, var(--gold-alpha-12), transparent);
-        }
-        .newsletter-inner {
-            max-width: 640px;
-            margin: 0 auto;
-            text-align: center;
-        }
-        .newsletter-heading {
-            font-family: var(--font-display);
-            font-size: clamp(1.5rem, 3vw, 2.2rem);
-            font-weight: 400;
-            letter-spacing: 0.15em;
-            color: var(--warm-ivory);
-            margin-bottom: 14px;
-        }
-        .newsletter-sub {
-            font-size: 0.9rem;
-            font-weight: 300;
-            line-height: 1.85;
-            color: var(--text-secondary);
-            margin-bottom: 36px;
-        }
-        .newsletter-form {
-            width: 100%;
-        }
-        .newsletter-field-group {
-            display: flex;
-            border: 1px solid var(--gold-alpha-20);
-            transition: border-color var(--transition-base);
-        }
-        .newsletter-field-group:focus-within {
-            border-color: var(--gold-alpha-50);
-        }
-        .newsletter-input {
-            flex: 1;
-            background: rgba(11, 21, 18, 0.5);
-            border: none;
-            padding: 17px 22px;
-            font-family: var(--font-body);
-            font-size: 0.88rem;
-            font-weight: 300;
-            color: var(--warm-ivory);
-            outline: none;
-            min-width: 0;
-        }
-        .newsletter-input::placeholder {
-            color: var(--text-muted);
-        }
-        .newsletter-submit {
-            background: var(--antique-gold);
-            color: var(--obsidian);
-            font-family: var(--font-display);
-            font-size: 0.58rem;
-            letter-spacing: 0.25em;
-            text-transform: uppercase;
-            padding: 17px 28px;
-            white-space: nowrap;
-            transition: background var(--transition-base);
-            flex-shrink: 0;
-        }
-        .newsletter-submit:hover {
-            background: var(--rich-bronze);
-        }
-        .newsletter-legal {
-            font-size: 0.72rem;
-            font-weight: 300;
-            color: var(--text-muted);
-            margin-top: 14px;
-            line-height: 1.6;
-        }
-        .newsletter-trust {
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            gap: 28px;
-            margin-top: 32px;
-            flex-wrap: wrap;
-        }
-        .trust-item {
-            display: flex;
-            align-items: center;
-            gap: 8px;
-            font-family: var(--font-display);
-            font-size: 0.52rem;
-            letter-spacing: 0.2em;
-            text-transform: uppercase;
-            color: var(--text-muted);
-        }
-        .trust-icon {
-            width: 16px;
-            height: 16px;
-            color: var(--antique-gold);
-            opacity: 0.6;
-        }
-        .newsletter-success {
-            display: none;
-            flex-direction: column;
-            align-items: center;
-            gap: 12px;
-            padding: 32px;
-            border: 1px solid var(--gold-alpha-12);
-        }
-        .newsletter-success.show {
-            display: flex;
-        }
-        .success-check {
-            width: 40px;
-            height: 40px;
-            border: 1px solid var(--antique-gold);
-            border-radius: 50%;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            color: var(--antique-gold);
-        }
-        .success-text {
-            font-family: var(--font-editorial);
-            font-size: 1.05rem;
-            font-style: italic;
-            color: var(--antique-gold);
-        }
-        .success-sub {
-            font-size: 0.8rem;
-            font-weight: 300;
-            color: var(--text-muted);
-        }
-
-        /* ============================================================
-           FOOTER — Refined heritage
-           ============================================================ */
-        .footer {
-            background: var(--obsidian);
-            border-top: 1px solid var(--gold-alpha-08);
-            padding: 60px 0 0;
-            position: relative;
-            z-index: 2;
-        }
-        .footer-main {
-            display: grid;
-            grid-template-columns: 2fr 1fr 1fr 1fr;
-            gap: 60px;
-            padding-bottom: 40px;
-            border-bottom: 1px solid var(--gold-alpha-08);
-        }
-        .footer-brand {
-            display: flex;
-            flex-direction: column;
-        }
-        .footer-brand-logo {
-            height: 32px;
-            width: auto;
-            filter: drop-shadow(0 0 10px var(--gold-alpha-20));
-            margin-bottom: 14px;
-            display: block;
-        }
-        .footer-wordmark {
-            font-family: var(--font-display);
-            font-size: 0.72rem;
-            letter-spacing: 0.38em;
-            color: var(--antique-gold);
-            margin-bottom: 8px;
-        }
-        .footer-tagline {
-            font-family: var(--font-editorial);
-            font-size: 0.85rem;
-            font-style: italic;
-            color: var(--text-secondary);
-            margin-bottom: 16px;
-        }
-        .footer-brand-desc {
-            font-size: 0.82rem;
-            font-weight: 300;
-            line-height: 1.8;
-            color: var(--text-muted);
-            max-width: 340px;
-        }
-        .footer-social-row {
-            display: flex;
-            gap: 12px;
-            margin-top: 20px;
-        }
-        .footer-social-btn {
-            width: 38px;
-            height: 38px;
-            border: 1px solid var(--gold-alpha-12);
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            color: var(--text-muted);
-            transition: border-color var(--transition-base), color var(--transition-base),
-                transform var(--transition-base) var(--ease-luxury);
-        }
-        .footer-social-btn:hover {
-            border-color: var(--antique-gold);
-            color: var(--antique-gold);
-            transform: translateY(-3px);
-        }
-
-        .footer-col-heading {
-            font-family: var(--font-display);
-            font-size: 0.58rem;
-            letter-spacing: 0.3em;
-            text-transform: uppercase;
-            color: var(--antique-gold);
-            margin-bottom: 24px;
-            padding-bottom: 14px;
-            border-bottom: 1px solid var(--gold-alpha-08);
-        }
-        .footer-col-links {
-            display: flex;
-            flex-direction: column;
-            gap: 12px;
-        }
-        .footer-col-link {
-            font-size: 0.82rem;
-            font-weight: 300;
-            color: var(--text-muted);
-            transition: color var(--transition-base), padding-left var(--transition-base) var(--ease-luxury);
-            display: inline-block;
-        }
-        .footer-col-link:hover {
-            color: var(--antique-gold);
-            padding-left: 8px;
-        }
-
-        .footer-bottom {
-            padding: 24px 0;
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
-            flex-wrap: wrap;
-            gap: 12px;
-        }
-        .footer-copyright {
-            font-family: var(--font-display);
-            font-size: 0.55rem;
-            letter-spacing: 0.2em;
-            color: var(--text-muted);
-            text-transform: uppercase;
-        }
-        .footer-legal-links {
-            display: flex;
-            gap: 24px;
-        }
-        .footer-legal-link {
-            font-family: var(--font-display);
-            font-size: 0.52rem;
-            letter-spacing: 0.18em;
-            text-transform: uppercase;
-            color: var(--text-muted);
-            transition: color var(--transition-base);
-        }
-        .footer-legal-link:hover {
-            color: var(--antique-gold);
-        }
-
-        /* ============================================================
-           REVEAL ANIMATIONS (scroll-triggered)
-           ============================================================ */
-        .reveal {
-            opacity: 0;
-            transform: translateY(40px);
-            transition: opacity 0.9s var(--ease-out-expo), transform 0.9s var(--ease-out-expo);
-        }
-        .reveal.visible {
-            opacity: 1;
-            transform: translateY(0);
-        }
-        .reveal.from-left {
-            transform: translateX(-40px);
-        }
-        .reveal.from-left.visible {
-            transform: translateX(0);
-        }
-        .reveal.from-right {
-            transform: translateX(40px);
-        }
-        .reveal.from-right.visible {
-            transform: translateX(0);
-        }
-
-        /* ============================================================
-           RESPONSIVE
-           ============================================================ */
-        @media (max-width: 1200px) {
-            :root {
-                --container-pad: 36px;
-            }
-            .collections-grid {
-                grid-template-columns: repeat(2, 1fr);
-            }
-            .heritage-grid {
-                grid-template-columns: repeat(2, 1fr);
-            }
-            .gallery-masonry {
-                columns: 2;
-            }
-            .footer-main {
-                grid-template-columns: 2fr 1fr 1fr;
-                gap: 40px;
-            }
-            .footer-col:last-child {
-                grid-column: 1 / -1;
-            }
-            .interlude-inner {
-                grid-template-columns: repeat(2, 1fr);
-            }
-            .journal-grid {
-                grid-template-columns: 1fr 1fr;
-                grid-template-rows: auto auto;
-            }
-            .journal-card-featured {
-                grid-column: 1 / -1;
-                grid-row: auto;
-            }
-            .journal-card-featured .journal-img-wrap {
-                height: 320px;
-            }
-            .journal-card:not(.journal-card-featured) .journal-img-wrap {
-                height: 200px;
-            }
-            .journal-card:not(.journal-card-featured) .journal-excerpt {
-                display: block;
-            }
-        }
-
-        @media (max-width: 992px) {
-            :root {
-                --container-pad: 28px;
-                --space-3xl: 120px;
-            }
-            .navbar-nav-left,
-            .navbar-nav-right {
-                display: none;
-            }
-            .navbar-container {
-                grid-template-columns: auto 1fr;
-            }
-            .navbar-logo {
-                grid-column: 1;
-                justify-content: flex-start;
-            }
-            .navbar-toggle {
-                display: flex;
-                grid-column: 2;
-            }
-            .story-layout {
-                grid-template-columns: 1fr;
-                gap: 60px;
-            }
-            .story-imagery {
-                padding-bottom: 50px;
-                padding-right: 20px;
-            }
-            .story-img-primary {
-                height: 420px;
-            }
-            .story-stat-row {
-                grid-template-columns: repeat(3, 1fr);
-            }
-            .footer-main {
-                grid-template-columns: 1fr 1fr;
-                gap: 36px;
-            }
-            .footer-brand {
-                grid-column: 1 / -1;
-            }
-        }
-
-        @media (max-width: 768px) {
-            :root {
-                --container-pad: 20px;
-                --space-3xl: 90px;
-            }
-            .collections-grid {
-                grid-template-columns: 1fr;
-                max-width: 480px;
-                margin: 0 auto;
-            }
-            .collection-img-wrap {
-                height: 320px;
-            }
-            .heritage-grid {
-                grid-template-columns: 1fr;
-                max-width: 400px;
-                margin: 0 auto;
-            }
-            .gallery-masonry {
-                columns: 2;
-                column-gap: 10px;
-            }
-            .gallery-item {
-                margin-bottom: 10px;
-            }
-            .hero-actions {
-                flex-direction: column;
-                align-items: center;
-            }
-            .btn {
-                width: 240px;
-            }
-            .story-stat-row {
-                grid-template-columns: 1fr;
-                gap: 1px;
-            }
-            .manifesto-section {
-                padding: 80px 0;
-            }
-            .newsletter-field-group {
-                flex-direction: column;
-            }
-            .newsletter-submit {
-                padding: 15px;
-                text-align: center;
-            }
-            .newsletter-trust {
-                gap: 16px;
-            }
-            .footer-main {
-                grid-template-columns: 1fr;
-                gap: 32px;
-            }
-            .footer-bottom {
-                flex-direction: column;
-                align-items: center;
-                text-align: center;
-            }
-            .footer-legal-links {
-                justify-content: center;
-                flex-wrap: wrap;
-                gap: 16px;
-            }
-            .interlude-inner {
-                grid-template-columns: 1fr 1fr;
-            }
-            .gallery-filter-bar {
-                flex-wrap: wrap;
-                width: 100%;
-                justify-content: center;
-            }
-            .filter-btn {
-                border-right: none;
-                border-bottom: 1px solid var(--gold-alpha-12);
-            }
-            .filter-btn:last-child {
-                border-bottom: none;
-            }
-            .journal-grid {
-                grid-template-columns: 1fr;
-            }
-            .journal-card-featured .journal-img-wrap {
-                height: 220px;
-            }
-            .journal-card:not(.journal-card-featured) .journal-img-wrap {
-                height: 180px;
-            }
-        }
-
-        @media (max-width: 480px) {
-            .gallery-masonry {
-                columns: 1;
-            }
-            .hero-wordmark {
-                letter-spacing: 0.18em;
-            }
-            .story-img-primary {
-                height: 300px;
-            }
-            .story-img-secondary {
-                display: none;
-            }
-            .story-year-badge {
-                display: none;
-            }
-            .interlude-inner {
-                grid-template-columns: 1fr;
-            }
-            .hero-logo-img {
-                height: 52px;
-            }
-            .hero-line-h,
-            .hero-line-v {
-                display: none;
-            }
-        }
-
-        @media (prefers-reduced-motion: reduce) {
-            html {
-                scroll-behavior: auto;
-            }
-            *,
-            *::before,
-            *::after {
-                animation-duration: 1ms !important;
-                animation-iteration-count: 1 !important;
-                transition-duration: 1ms !important;
-            }
-            .reveal,
-            .hero-eyebrow,
-            .hero-wordmark,
-            .hero-ornament,
-            .hero-tagline,
-            .hero-description,
-            .hero-actions {
-                opacity: 1 !important;
-                transform: none !important;
-            }
-        }
-    </style>
-</head>
-
-<body>
-    <!-- ===== ACCESSIBILITY SKIP LINK ===== -->
-    <a href="#main-content" class="skip-link">Skip to main content</a>
-
-    <!-- ===== SCHEMA.ORG STRUCTURED DATA ===== -->
+    <!-- Structured Data -->
     <script type="application/ld+json">
-        {
-            "@context": "https://schema.org",
-            "@type": "Store",
-            "name": "Runestone Relics",
-            "description": "Purveyors of rare gemstones, handcrafted heritage jewelry, Viking artifacts, and medieval relics. Curated luxury collections of timeless artistry.",
-            "url": "https://runestonerelics.com",
-            "logo": "https://runestonerelics.com/images/logo.png",
-            "sameAs": [
-                "https://www.instagram.com/runestonerelics",
-                "https://www.pinterest.com/runestonerelics"
-            ],
-            "offers": {
-                "@type": "AggregateOffer",
-                "priceCurrency": "USD",
-                "category": "Luxury Heritage Jewelry and Artifacts"
-            }
-        }
+    {
+      "@context": "https://schema.org",
+      "@type": "Organization",
+      "name": "Runestone Relics",
+      "url": "https://runestonerelics.com/",
+      "logo": "https://runestonerelics.com/images/logo.png",
+      "description": "Luxury heritage house celebrating ancient civilizations, Viking culture and museum-quality relics.",
+      "sameAs": [
+        "https://instagram.com/runestonerelics",
+        "https://www.pinterest.com/runestonerelics"
+      ]
+    }
     </script>
 
-    <!-- ===== PRELOADER ===== -->
-    <div id="preloader" role="status" aria-label="Loading Runestone Relics">
-        <div class="preloader-emblem">
-            <div class="preloader-ring-outer"></div>
-            <div class="preloader-ring-inner"></div>
-        </div>
-        <span class="preloader-wordmark">Runestone Relics</span>
-        <div class="preloader-progress">
-            <div class="preloader-progress-bar" id="preloader-bar"></div>
-        </div>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+
+    <!-- ================= PRELOADER ================= -->
+    <div class="preloader" id="preloader" aria-hidden="true">
+      <div class="preloader-inner">
+        <svg class="rune-mark" viewBox="0 0 120 120" aria-hidden="true">
+          <defs>
+            <radialGradient id="rg" cx="50%" cy="50%" r="50%">
+              <stop offset="0%" stop-color="#F5D97A" stop-opacity="1" />
+              <stop offset="100%" stop-color="#D4AF37" stop-opacity="0" />
+            </radialGradient>
+          </defs>
+          <circle cx="60" cy="60" r="54" fill="none" stroke="url(#rg)" stroke-opacity="0.35" stroke-width="1"/>
+          <circle cx="60" cy="60" r="44" fill="none" stroke="#D4AF37" stroke-opacity="0.85" stroke-width="1" class="rune-ring"/>
+          <g class="rune-glyph" stroke="#F5D97A" stroke-width="2" fill="none" stroke-linecap="round">
+            <line x1="60" y1="28" x2="60" y2="92"/>
+            <line x1="60" y1="34" x2="80" y2="46"/>
+            <line x1="60" y1="46" x2="80" y2="58"/>
+            <line x1="60" y1="58" x2="40" y2="70"/>
+            <line x1="60" y1="70" x2="80" y2="82"/>
+          </g>
+        </svg>
+        <div class="preloader-brand">RUNESTONE&nbsp;RELICS</div>
+        <div class="preloader-bar"><span></span></div>
+      </div>
     </div>
 
-    <!-- ===== PARTICLE CANVAS ===== -->
-    <canvas id="particles-canvas" aria-hidden="true"></canvas>
+    <!-- ================= SCROLL PROGRESS ================= -->
+    <div class="scroll-progress" id="scrollProgress" aria-hidden="true"></div>
 
-    <!-- ===== NAVIGATION ===== -->
-    <header id="navbar" class="navbar" role="banner">
-        <div class="navbar-container">
-            <!-- Left nav -->
-            <nav class="navbar-nav-left" aria-label="Primary navigation left">
-                <a href="#hero" class="nav-link active" data-section="hero">Home</a>
-                <a href="#collections" class="nav-link" data-section="collections">Collections</a>
-                <a href="#heritage" class="nav-link" data-section="heritage">Heritage</a>
-            </nav>
+    <!-- ================= SPOTLIGHT / CURSOR ================= -->
+    <div class="spotlight" id="spotlight" aria-hidden="true"></div>
+    <div class="cursor-dot" id="cursorDot" aria-hidden="true"></div>
 
-            <!-- Logo -->
-            <a href="#hero" class="navbar-logo" aria-label="Runestone Relics — Return to homepage">
-                <img src="images/logo.png" alt="Runestone Relics" class="navbar-logo-img" width="120" height="34"
-                onerror="this.style.display='none';this.nextElementSibling.style.display='block';">
-                <span class="navbar-logo-text" style="display:none;">RUNESTONE RELICS</span>
-            </a>
-
-            <!-- Right nav -->
-            <nav class="navbar-nav-right" aria-label="Primary navigation right">
-                <a href="#gallery" class="nav-link" data-section="gallery">Gallery</a>
-                <a href="#journal" class="nav-link" data-section="journal">Journal</a>
-            </nav>
-
-            <!-- Hamburger -->
-            <button class="navbar-toggle" id="navbar-toggle" aria-label="Open navigation menu" aria-expanded="false"
-            aria-controls="mobile-overlay">
-            <span class="toggle-line"></span>
-            <span class="toggle-line"></span>
-            <span class="toggle-line"></span>
+    <!-- ================= NAVBAR ================= -->
+    <header class="nav" id="nav">
+      <div class="nav-inner">
+        <a href="#home" class="nav-logo" aria-label="Runestone Relics — Home">
+          <span class="nav-logo-mark" aria-hidden="true">
+            <svg viewBox="0 0 40 40"><path d="M20 3 L34 12 L34 28 L20 37 L6 28 L6 12 Z" fill="none" stroke="currentColor" stroke-width="1.2"/><path d="M20 10 L20 30 M20 14 L27 19 M20 22 L14 26" stroke="currentColor" stroke-width="1.2" fill="none" stroke-linecap="round"/></svg>
+          </span>
+          <span class="nav-logo-text">
+            <span class="lg-line">Runestone</span>
+            <span class="lg-sub">R E L I C S</span>
+          </span>
+        </a>
+        <nav class="nav-links" aria-label="Primary">
+          <a href="#legacy">Legacy</a>
+          <a href="#collections">Collections</a>
+          <a href="#craft">Craft</a>
+          <a href="#timeline">Heritage</a>
+          <a href="#gallery">Gallery</a>
+          <a href="#journal">Journal</a>
+        </nav>
+        <a href="#collections" class="nav-cta magnetic" data-magnetic>Enter the Archive</a>
+        <button class="nav-burger" id="navBurger" aria-label="Open menu" aria-expanded="false">
+          <span></span><span></span><span></span>
         </button>
-    </div>
-</header>
+      </div>
+    </header>
 
-<!-- ===== MOBILE MENU ===== -->
-<div class="mobile-overlay" id="mobile-overlay" role="dialog" aria-modal="true" aria-label="Navigation menu">
-    <ul class="mobile-nav-list" role="list">
-        <li class="mobile-nav-item"><a href="#hero" class="mobile-nav-link">Home</a></li>
-        <li class="mobile-nav-item"><a href="#collections" class="mobile-nav-link">Collections</a></li>
-        <li class="mobile-nav-item"><a href="#heritage" class="mobile-nav-link">Heritage</a></li>
-        <li class="mobile-nav-item"><a href="#gallery" class="mobile-nav-link">Gallery</a></li>
-        <li class="mobile-nav-item"><a href="#journal" class="mobile-nav-link">Journal</a></li>
-    </ul>
-    <span class="mobile-nav-foot">Runestone Relics &mdash; Est. MMXIV</span>
-</div>
+    <!-- Mobile menu -->
+    <aside class="mobile-menu" id="mobileMenu" aria-hidden="true">
+      <div class="mm-inner">
+        <a href="#legacy">Our Legacy</a>
+        <a href="#collections">Collections</a>
+        <a href="#craft">Craftsmanship</a>
+        <a href="#timeline">Heritage</a>
+        <a href="#gallery">Gallery</a>
+        <a href="#journal">Journal</a>
+        <div class="mm-foot">Timeless Heritage · Crafted Beauty</div>
+      </div>
+    </aside>
 
-<!-- ===== MAIN CONTENT ===== -->
-<main id="main-content">
+    <main>
 
-    <!-- ============================================================
-    HERO SECTION
-    ============================================================ -->
-    <section id="hero" class="hero" aria-label="Hero — Runestone Relics">
-        <div class="hero-atmosphere" id="hero-atmosphere" aria-hidden="true"></div>
-        <div class="hero-overlay" aria-hidden="true"></div>
-        <div class="hero-vignette" aria-hidden="true"></div>
-
-        <!-- Architectural grid lines -->
-        <div class="hero-lines" aria-hidden="true">
-            <span class="hero-line-h"></span>
-            <span class="hero-line-h"></span>
-            <span class="hero-line-v"></span>
-            <span class="hero-line-v"></span>
+      <!-- ================= HERO ================= -->
+      <section class="hero" id="home">
+        <div class="hero-media">
+          <video autoplay muted loop playsinline poster="https://images.pexels.com/photos/34019082/pexels-photo-34019082.jpeg?auto=compress&cs=tinysrgb&fit=crop&h=1200&w=1920" aria-hidden="true">
+            <source src="https://videos.pexels.com/video-files/29089681/12569771_3840_2160_25fps.mp4" type="video/mp4" />
+          </video>
+          <div class="hero-veil"></div>
+          <div class="hero-vignette"></div>
         </div>
 
-        <div class="hero-body">
-            <!-- Emblem -->
-            <div class="hero-emblem hero-item">
-                <img src="images/logo.png" alt="Runestone Relics crest" class="hero-logo-img" width="176" height="88"
-                onerror="this.style.display='none';this.nextElementSibling.style.display='block';">
-                <svg class="hero-logo-svg" style="display:none;" width="88" height="88" viewBox="0 0 88 88" fill="none"
-                aria-hidden="true">
-                <polygon points="44,4 82,26 82,62 44,84 6,62 6,26" stroke="#D4AF37" stroke-width="1.5" fill="none"/>
-                <polygon points="44,16 70,31 70,57 44,72 18,57 18,31" stroke="#D4AF37" stroke-width="0.75" fill="none" opacity="0.45"/>
-                <circle cx="44" cy="44" r="10" stroke="#D4AF37" stroke-width="1" fill="none"/>
-                <circle cx="44" cy="44" r="3.5" fill="#D4AF37"/>
-                <line x1="44" y1="16" x2="44" y2="34" stroke="#D4AF37" stroke-width="0.75" opacity="0.5"/>
-                <line x1="44" y1="54" x2="44" y2="72" stroke="#D4AF37" stroke-width="0.75" opacity="0.5"/>
-                <line x1="16" y1="44" x2="34" y2="44" stroke="#D4AF37" stroke-width="0.75" opacity="0.5"/>
-                <line x1="54" y1="44" x2="72" y2="44" stroke="#D4AF37" stroke-width="0.75" opacity="0.5"/>
-            </svg>
-        </div>
+        <div class="particles" id="particles" aria-hidden="true"></div>
 
-        <span class="hero-eyebrow hero-item">Est. MMXIV &mdash; Heritage Luxury</span>
-        <h1 class="hero-wordmark hero-item">RUNESTONE RELICS</h1>
+        <div class="hero-content" data-parallax>
+          <div class="hero-eyebrow">
+            <span class="hairline"></span>
+            <span>Est. in the Age of Legends</span>
+            <span class="hairline"></span>
+          </div>
 
-        <div class="hero-ornament hero-item" aria-hidden="true">
-            <span class="ornament-line rev"></span>
-            <div class="ornament-center">
-                <span class="ornament-dot"></span>
-                <span class="ornament-dot lg"></span>
-                <span class="ornament-dot"></span>
-            </div>
-            <span class="ornament-line"></span>
-        </div>
+          <h1 class="hero-title">
+            <span class="reveal"><span>Runestone</span></span>
+            <span class="reveal delay-1"><span>Relics</span></span>
+          </h1>
 
-        <p class="hero-tagline hero-item">Timeless Heritage &bull; Crafted Beauty &bull; Ancient Legacy</p>
-        <p class="hero-description hero-item">
-            Purveyors of rare gemstones, handcrafted heritage jewelry, Viking artifacts, and medieval relics — curated
-            with reverence for history and devotion to the finest craftsmanship.
-        </p>
+          <p class="hero-tagline reveal delay-2">
+            <span>Timeless Heritage &nbsp;·&nbsp; Crafted Beauty &nbsp;·&nbsp; Ancient Legacy</span>
+          </p>
 
-        <div class="hero-actions hero-item">
-            <a href="#collections" class="btn btn-primary">
-                Explore Collections
-                <span class="btn-arrow" aria-hidden="true">&rarr;</span>
+          <div class="hero-ctas reveal delay-3">
+            <a href="#collections" class="btn btn-gold magnetic" data-magnetic>
+              <span>Explore the Collection</span>
+              <em class="btn-arrow" aria-hidden="true">→</em>
             </a>
-            <a href="#story" class="btn btn-ghost">
-                Our Heritage
-                <span class="btn-arrow" aria-hidden="true">&rarr;</span>
+            <a href="#legacy" class="btn btn-ghost magnetic" data-magnetic>
+              <span>Discover Heritage</span>
             </a>
-        </div>
-    </div>
-
-    <!-- Scroll cue -->
-    <div class="hero-scroll" aria-hidden="true">
-        <div class="scroll-track"><div class="scroll-fill"></div></div>
-        <span class="scroll-label">Scroll</span>
-    </div>
-</section>
-
-<!-- ============================================================
-STORY / LEGACY SECTION
-============================================================ -->
-<section id="story" class="story-section" aria-labelledby="story-heading">
-    <div class="container">
-        <div class="story-layout">
-            <!-- Imagery -->
-            <div class="story-imagery reveal from-left">
-                <div class="story-year-badge" aria-hidden="true">
-                    <span class="badge-est">Est.</span>
-                    <span class="badge-year">2014</span>
-                </div>
-                <div class="story-img-primary-wrap">
-                    <img src="https://images.unsplash.com/photo-1602751584552-8ba73aad10e1?w=800&h=600&fit=crop&q=85"
-                    alt="Heritage jewelry craftsmanship and gemstone collection"
-                    class="story-img-primary" loading="lazy" width="800" height="600">
-                    <div class="story-img-secondary">
-                        <img src="https://images.unsplash.com/photo-1515562141589-67f0d4e2f4b6?w=400&h=500&fit=crop&q=85"
-                        alt="Gold and gemstone ring detail" loading="lazy" width="400" height="500">
-                    </div>
-                </div>
-            </div>
-
-            <!-- Content -->
-            <div class="story-content reveal from-right">
-                <span class="section-eyebrow">Our Legacy</span>
-                <h2 class="section-heading" id="story-heading">A Lineage of<br>Timeless Artistry</h2>
-                <div class="section-rule">
-                    <span class="rule-line"></span>
-                    <span class="rule-diamond"></span>
-                    <span class="rule-line"></span>
-                </div>
-
-                <p class="story-body">
-                    At Runestone Relics, we stand at the crossroads of antiquity and artistry. Our journey began with a
-                    profound reverence for the ancient world — its symbols, its mastery, and the enduring beauty it left
-                    behind. Every piece in our collection serves as a bridge between civilizations past and the
-                    discerning collectors of today.
-                </p>
-                <p class="story-body">
-                    We source only the finest natural gemstones, ethically obtained from the world's most remarkable
-                    mineral deposits. Our handcrafted jewelry draws inspiration from Viking rune traditions, medieval
-                    goldsmithing techniques, and the timeless elegance of Europe's great heritage houses.
-                </p>
-                <p class="story-body">
-                    We believe true luxury is not defined by price alone, but by the authenticity, heritage, and meaning
-                    that is embodied in every single piece we bring to the world.
-                </p>
-
-                <!-- Credentials -->
-                <div class="story-stat-row" role="list" aria-label="Brand credentials">
-                    <div class="story-stat" role="listitem">
-                        <span class="stat-num">10+</span>
-                        <span class="stat-label">Years Curating</span>
-                    </div>
-                    <div class="story-stat" role="listitem">
-                        <span class="stat-num">840+</span>
-                        <span class="stat-label">Pieces Archived</span>
-                    </div>
-                    <div class="story-stat" role="listitem">
-                        <span class="stat-num">38</span>
-                        <span class="stat-label">Countries Sourced</span>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
-
-<!-- ============================================================
-COLLECTIONS SECTION
-============================================================ -->
-<section id="collections" class="collections-section" aria-labelledby="collections-heading">
-    <div class="container">
-        <div class="section-header-block reveal">
-            <span class="section-eyebrow">Curated Selection</span>
-            <h2 class="section-heading" id="collections-heading">Featured Collections</h2>
-            <div class="section-rule centered">
-                <span class="rule-line"></span>
-                <span class="rule-diamond"></span>
-                <span class="rule-line"></span>
-            </div>
-            <p class="section-lead">Each collection represents a distinct chapter in the grand narrative of human artistry —
-                painstakingly researched, expertly sourced, and presented with scholarly care.</p>
+          </div>
         </div>
 
-        <div class="collections-grid" role="list">
-            <!-- Collection I -->
-            <article class="collection-card reveal" style="--delay:0.05s;" role="listitem">
-                <div class="collection-img-wrap">
-                    <img src="https://images.unsplash.com/photo-1551122089-4e3e72477432?w=600&h=800&fit=crop&q=85"
-                    alt="Rare natural amethyst geode and gemstone formation"
-                    class="collection-img" loading="lazy" width="600" height="800">
-                    <div class="collection-img-overlay"></div>
-                    <span class="collection-numeral" aria-hidden="true">I</span>
-                    <span class="collection-view-btn" aria-hidden="true">View Collection</span>
-                </div>
-                <div class="collection-body">
-                    <span class="collection-index" aria-hidden="true">Collection I</span>
-                    <h3 class="collection-name">Crystals &amp; Gemstones</h3>
-                    <p class="collection-desc">Rare, naturally formed gemstones sourced from the world's most extraordinary mineral deposits — each chosen for its unique geological character and exceptional beauty.</p>
-                    <a href="#" class="collection-cta" aria-label="Explore Crystals and Gemstones collection">
-                        Explore <span class="cta-arrow" aria-hidden="true">&rarr;</span>
-                    </a>
-                </div>
-            </article>
-
-            <!-- Collection II -->
-            <article class="collection-card reveal" style="--delay:0.12s;" role="listitem">
-                <div class="collection-img-wrap">
-                    <img src="https://images.unsplash.com/photo-1515562141589-67f0d4e2f4b6?w=600&h=800&fit=crop&q=85"
-                    alt="Handcrafted gold and gemstone heritage jewelry pieces"
-                    class="collection-img" loading="lazy" width="600" height="800">
-                    <div class="collection-img-overlay"></div>
-                    <span class="collection-numeral" aria-hidden="true">II</span>
-                    <span class="collection-view-btn" aria-hidden="true">View Collection</span>
-                </div>
-                <div class="collection-body">
-                    <span class="collection-index" aria-hidden="true">Collection II</span>
-                    <h3 class="collection-name">Handcrafted Jewelry</h3>
-                    <p class="collection-desc">Exquisite pieces wrought by master artisans using time-honored techniques, marrying precious metals with exceptional gemstones in compositions of enduring elegance.</p>
-                    <a href="#" class="collection-cta" aria-label="Explore Handcrafted Jewelry collection">
-                        Explore <span class="cta-arrow" aria-hidden="true">&rarr;</span>
-                    </a>
-                </div>
-            </article>
-
-            <!-- Collection III -->
-            <article class="collection-card reveal" style="--delay:0.19s;" role="listitem">
-                <div class="collection-img-wrap">
-                    <img src="https://images.unsplash.com/photo-1583119022894-919a68a3d0e3?w=600&h=800&fit=crop&q=85"
-                    alt="Viking Norse rune artifacts and heritage pieces"
-                    class="collection-img" loading="lazy" width="600" height="800">
-                    <div class="collection-img-overlay"></div>
-                    <span class="collection-numeral" aria-hidden="true">III</span>
-                    <span class="collection-view-btn" aria-hidden="true">View Collection</span>
-                </div>
-                <div class="collection-body">
-                    <span class="collection-index" aria-hidden="true">Collection III</span>
-                    <h3 class="collection-name">Viking Heritage</h3>
-                    <p class="collection-desc">Authentic Norse-inspired artifacts and jewelry, echoing the power and mystery of the Viking age. Each piece is a testament to the bold spirit and intricate craftsmanship of the North.</p>
-                    <a href="#" class="collection-cta" aria-label="Explore Viking Heritage collection">
-                        Explore <span class="cta-arrow" aria-hidden="true">&rarr;</span>
-                    </a>
-                </div>
-            </article>
-
-            <!-- Collection IV -->
-            <article class="collection-card reveal" style="--delay:0.26s;" role="listitem">
-                <div class="collection-img-wrap">
-                    <img src="https://images.unsplash.com/photo-1461360370896-922624d12a74?w=600&h=800&fit=crop&q=85"
-                    alt="Medieval armor and shield artifact detail"
-                    class="collection-img" loading="lazy" width="600" height="800">
-                    <div class="collection-img-overlay"></div>
-                    <span class="collection-numeral" aria-hidden="true">IV</span>
-                    <span class="collection-view-btn" aria-hidden="true">View Collection</span>
-                </div>
-                <div class="collection-body">
-                    <span class="collection-index" aria-hidden="true">Collection IV</span>
-                    <h3 class="collection-name">Medieval Relics</h3>
-                    <p class="collection-desc">Curated artifacts from the medieval period — authentic reproductions and genuine relics that celebrate the grandeur, mystery, and refined artistry of a magnificent era.</p>
-                    <a href="#" class="collection-cta" aria-label="Explore Medieval Relics collection">
-                        Explore <span class="cta-arrow" aria-hidden="true">&rarr;</span>
-                    </a>
-                </div>
-            </article>
-        </div>
-    </div>
-</section>
-
-<!-- ============================================================
-HERITAGE VALUES
-============================================================ -->
-<section id="heritage" class="heritage-section" aria-labelledby="heritage-heading">
-    <div class="heritage-bg" aria-hidden="true"></div>
-    <div class="container">
-        <div class="section-header-block reveal">
-            <span class="section-eyebrow">Our Principles</span>
-            <h2 class="section-heading" id="heritage-heading">The Pillars of Our House</h2>
-            <div class="section-rule centered">
-                <span class="rule-line"></span>
-                <span class="rule-diamond"></span>
-                <span class="rule-line"></span>
-            </div>
+        <div class="hero-scroll" aria-hidden="true">
+          <span>Scroll</span>
+          <span class="line"></span>
         </div>
 
-        <div class="heritage-grid" role="list">
-            <div class="heritage-card reveal" style="--delay:0.05s;" role="listitem">
-                <div class="heritage-icon-wrap">
-                    <svg width="28" height="28" viewBox="0 0 28 28" fill="none" aria-hidden="true">
-                        <path d="M14 2L17 10H25L19 15L21 23L14 18L7 23L9 15L3 10H11L14 2Z" stroke="#D4AF37" stroke-width="1.2" stroke-linejoin="round" fill="none"/>
-                    </svg>
-                </div>
-                <h3 class="heritage-title">Authenticity</h3>
-                <p class="heritage-text">Every piece is individually verified and authenticated. We provide comprehensive provenance documentation for each item, guaranteeing its genuine nature and historical integrity.</p>
-            </div>
+        <div class="hero-corner tl">N · 59.9°</div>
+        <div class="hero-corner tr">E · 10.7°</div>
+        <div class="hero-corner bl">MMXXV</div>
+        <div class="hero-corner br">Vol. I</div>
+      </section>
 
-            <div class="heritage-card reveal" style="--delay:0.12s;" role="listitem">
-                <div class="heritage-icon-wrap">
-                    <svg width="28" height="28" viewBox="0 0 28 28" fill="none" aria-hidden="true">
-                        <path d="M8 20L14 4L20 20M10 15H18" stroke="#D4AF37" stroke-width="1.2" stroke-linecap="round" fill="none"/>
-                        <line x1="14" y1="20" x2="14" y2="24" stroke="#D4AF37" stroke-width="1.2" stroke-linecap="round"/>
-                        <line x1="10" y1="24" x2="18" y2="24" stroke="#D4AF37" stroke-width="1.2" stroke-linecap="round"/>
-                    </svg>
-                </div>
-                <h3 class="heritage-title">Craftsmanship</h3>
-                <p class="heritage-text">We collaborate exclusively with master artisans who uphold centuries-old techniques, ensuring each creation reflects the absolute pinnacle of human skill and devotion to craft.</p>
-            </div>
-
-            <div class="heritage-card reveal" style="--delay:0.19s;" role="listitem">
-                <div class="heritage-icon-wrap">
-                    <svg width="28" height="28" viewBox="0 0 28 28" fill="none" aria-hidden="true">
-                        <polygon points="14,3 17.5,11 26,11 19,16.5 21.5,25 14,20 6.5,25 9,16.5 2,11 10.5,11" stroke="#D4AF37" stroke-width="1.2" stroke-linejoin="round" fill="none"/>
-                    </svg>
-                </div>
-                <h3 class="heritage-title">Quality</h3>
-                <p class="heritage-text">Uncompromising standards govern every decision we make — from raw material selection to final presentation. Only pieces that meet our most exacting criteria enter our collection.</p>
-            </div>
-
-            <div class="heritage-card reveal" style="--delay:0.26s;" role="listitem">
-                <div class="heritage-icon-wrap">
-                    <svg width="28" height="28" viewBox="0 0 28 28" fill="none" aria-hidden="true">
-                        <rect x="8" y="8" width="12" height="16" rx="1" stroke="#D4AF37" stroke-width="1.2" fill="none"/>
-                        <line x1="10" y1="12" x2="18" y2="12" stroke="#D4AF37" stroke-width="1" stroke-linecap="round"/>
-                        <line x1="10" y1="15" x2="18" y2="15" stroke="#D4AF37" stroke-width="1" stroke-linecap="round"/>
-                        <line x1="10" y1="18" x2="15" y2="18" stroke="#D4AF37" stroke-width="1" stroke-linecap="round"/>
-                        <path d="M10 6V8M18 6V8" stroke="#D4AF37" stroke-width="1.2" stroke-linecap="round"/>
-                    </svg>
-                </div>
-                <h3 class="heritage-title">Legacy</h3>
-                <p class="heritage-text">We are custodians of civilizational memory, preserving and celebrating artistic traditions of cultures past. Each acquisition joins an enduring narrative that transcends generations.</p>
-            </div>
+      <!-- ================= MARQUEE ================= -->
+      <div class="marquee" aria-hidden="true">
+        <div class="marquee-track">
+          <span>Sotheby's Provenance</span><span>◆</span>
+          <span>Museum-Grade Craftsmanship</span><span>◆</span>
+          <span>Ethically Sourced Gemstones</span><span>◆</span>
+          <span>Handforged in Scandinavia</span><span>◆</span>
+          <span>Featured in Heritage Quarterly</span><span>◆</span>
+          <span>Since Time Immemorial</span><span>◆</span>
+          <span>Sotheby's Provenance</span><span>◆</span>
+          <span>Museum-Grade Craftsmanship</span><span>◆</span>
+          <span>Ethically Sourced Gemstones</span><span>◆</span>
+          <span>Handforged in Scandinavia</span><span>◆</span>
+          <span>Featured in Heritage Quarterly</span><span>◆</span>
+          <span>Since Time Immemorial</span><span>◆</span>
         </div>
-    </div>
-</section>
+      </div>
 
-<!-- ============================================================
-INTERLUDE — STATISTICS
-============================================================ -->
-<section class="interlude-section" aria-label="Brand statistics">
-    <div class="container">
-        <div class="interlude-inner reveal" role="list">
-            <div class="interlude-stat" role="listitem">
-                <span class="interlude-num" aria-label="Over 10 years">10+</span>
-                <span class="interlude-label">Years of Heritage Curation</span>
-            </div>
-            <div class="interlude-stat" role="listitem">
-                <span class="interlude-num" aria-label="Over 840 pieces">840+</span>
-                <span class="interlude-label">Authenticated Pieces</span>
-            </div>
-            <div class="interlude-stat" role="listitem">
-                <span class="interlude-num" aria-label="38 countries">38</span>
-                <span class="interlude-label">Countries of Origin</span>
-            </div>
-            <div class="interlude-stat" role="listitem">
-                <span class="interlude-num" aria-label="100 percent">100%</span>
-                <span class="interlude-label">Ethically Sourced</span>
-            </div>
-        </div>
-    </div>
-</section>
-
-<!-- ============================================================
-GALLERY SECTION
-============================================================ -->
-<section id="gallery" class="gallery-section" aria-labelledby="gallery-heading">
-    <div class="container">
-        <div class="section-header-block reveal">
-            <span class="section-eyebrow">Visual Archive</span>
-            <h2 class="section-heading" id="gallery-heading">The Gallery</h2>
-            <div class="section-rule centered">
-                <span class="rule-line"></span>
-                <span class="rule-diamond"></span>
-                <span class="rule-line"></span>
-            </div>
+      <!-- ================= LEGACY / STORY ================= -->
+      <section class="section legacy" id="legacy">
+        <div class="section-head">
+          <span class="eyebrow">Chapter I</span>
+          <h2 class="display reveal-up">Our Legacy</h2>
+          <p class="lede reveal-up delay-1">
+            A house built on reverence for the makers who came before us — the smith
+            at the fjord, the lapidary in the Byzantine quarter, the rune-carver at
+            the edge of the world.
+          </p>
         </div>
 
-        <!-- Filter bar -->
-        <div class="gallery-filter-bar reveal" role="group" aria-label="Filter gallery by category">
-            <button class="filter-btn active" data-filter="all" aria-pressed="true">All Works</button>
-            <button class="filter-btn" data-filter="gemstones" aria-pressed="false">Gemstones</button>
-            <button class="filter-btn" data-filter="jewelry" aria-pressed="false">Jewelry</button>
-            <button class="filter-btn" data-filter="viking" aria-pressed="false">Viking</button>
-            <button class="filter-btn" data-filter="medieval" aria-pressed="false">Medieval</button>
-        </div>
-
-        <!-- Masonry grid -->
-        <div class="gallery-masonry" id="gallery-grid" role="list" aria-label="Gallery images">
-            <!-- Gemstone 1 -->
-            <div class="gallery-item" data-category="gemstones" role="listitem">
-                <div class="gallery-item-inner">
-                    <img src="https://images.unsplash.com/photo-1551122089-4e3e72477432?w=520&h=640&fit=crop&q=85"
-                    alt="Natural amethyst crystal formation" class="gallery-img" loading="lazy" width="520" height="640">
-                    <div class="gallery-caption" aria-hidden="true">
-                        <span class="gallery-cat">Gemstones</span>
-                        <h3 class="gallery-name">Amethyst Formation</h3>
-                    </div>
-                    <button class="gallery-expand" aria-label="View Amethyst Formation in full size"
-                    data-src="https://images.unsplash.com/photo-1551122089-4e3e72477432?w=1400&fit=crop&q=92"
-                    data-caption="Amethyst Formation — Gemstones">
-                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#D4AF37" stroke-width="1.5" aria-hidden="true"><path d="M15 3h6v6M9 21H3v-6M21 3l-7 7M3 21l7-7"/></svg>
-                </button>
-            </div>
-        </div>
-
-        <!-- Jewelry 1 -->
-        <div class="gallery-item" data-category="jewelry" role="listitem">
-            <div class="gallery-item-inner">
-                <img src="https://images.unsplash.com/photo-1515562141589-67f0d4e2f4b6?w=520&h=780&fit=crop&q=85"
-                alt="Heritage gold and gemstone necklace detail" class="gallery-img" loading="lazy" width="520" height="780">
-                <div class="gallery-caption" aria-hidden="true">
-                    <span class="gallery-cat">Jewelry</span>
-                    <h3 class="gallery-name">Heritage Gold Necklace</h3>
-                </div>
-                <button class="gallery-expand" aria-label="View Heritage Gold Necklace in full size"
-                data-src="https://images.unsplash.com/photo-1515562141589-67f0d4e2f4b6?w=1400&fit=crop&q=92"
-                data-caption="Heritage Gold Necklace — Jewelry">
-                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#D4AF37" stroke-width="1.5" aria-hidden="true"><path d="M15 3h6v6M9 21H3v-6M21 3l-7 7M3 21l7-7"/></svg>
-            </button>
-        </div>
-    </div>
-
-    <!-- Viking 1 -->
-    <div class="gallery-item" data-category="viking" role="listitem">
-        <div class="gallery-item-inner">
-            <img src="https://images.unsplash.com/photo-1583119022894-919a68a3d0e3?w=520&h=520&fit=crop&q=85"
-            alt="Viking rune stone carving detail" class="gallery-img" loading="lazy" width="520" height="520">
-            <div class="gallery-caption" aria-hidden="true">
-                <span class="gallery-cat">Viking</span>
-                <h3 class="gallery-name">Rune Stone Carving</h3>
-            </div>
-            <button class="gallery-expand" aria-label="View Rune Stone Carving in full size"
-            data-src="https://images.unsplash.com/photo-1583119022894-919a68a3d0e3?w=1400&fit=crop&q=92"
-            data-caption="Rune Stone Carving — Viking Heritage">
-            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#D4AF37" stroke-width="1.5" aria-hidden="true"><path d="M15 3h6v6M9 21H3v-6M21 3l-7 7M3 21l7-7"/></svg>
-        </button>
-    </div>
-</div>
-
-<!-- Medieval 1 -->
-<div class="gallery-item" data-category="medieval" role="listitem">
-    <div class="gallery-item-inner">
-        <img src="https://images.unsplash.com/photo-1461360370896-922624d12a74?w=520&h=640&fit=crop&q=85"
-        alt="Medieval armor and shield artifact" class="gallery-img" loading="lazy" width="520" height="640">
-        <div class="gallery-caption" aria-hidden="true">
-            <span class="gallery-cat">Medieval</span>
-            <h3 class="gallery-name">Armorial Detail</h3>
-        </div>
-        <button class="gallery-expand" aria-label="View Armorial Detail in full size"
-        data-src="https://images.unsplash.com/photo-1461360370896-922624d12a74?w=1400&fit=crop&q=92"
-        data-caption="Armorial Detail — Medieval Relics">
-        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#D4AF37" stroke-width="1.5" aria-hidden="true"><path d="M15 3h6v6M9 21H3v-6M21 3l-7 7M3 21l7-7"/></svg>
-    </button>
-</div>
-</div>
-
-<!-- Gemstone 2 -->
-<div class="gallery-item" data-category="gemstones" role="listitem">
-    <div class="gallery-item-inner">
-        <img src="https://images.unsplash.com/photo-1573408301185-9146fe634ad0?w=520&h=700&fit=crop&q=85"
-        alt="Deep green emerald crystal specimen" class="gallery-img" loading="lazy" width="520" height="700">
-        <div class="gallery-caption" aria-hidden="true">
-            <span class="gallery-cat">Gemstones</span>
-            <h3 class="gallery-name">Emerald Specimen</h3>
-        </div>
-        <button class="gallery-expand" aria-label="View Emerald Specimen in full size"
-        data-src="https://images.unsplash.com/photo-1573408301185-9146fe634ad0?w=1400&fit=crop&q=92"
-        data-caption="Emerald Specimen — Gemstones">
-        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#D4AF37" stroke-width="1.5" aria-hidden="true"><path d="M15 3h6v6M9 21H3v-6M21 3l-7 7M3 21l7-7"/></svg>
-    </button>
-</div>
-</div>
-
-<!-- Jewelry 2 -->
-<div class="gallery-item" data-category="jewelry" role="listitem">
-    <div class="gallery-item-inner">
-        <img src="https://images.unsplash.com/photo-1602751584552-8ba73aad10e1?w=520&h=520&fit=crop&q=85"
-        alt="Antique ring collection detail" class="gallery-img" loading="lazy" width="520" height="520">
-        <div class="gallery-caption" aria-hidden="true">
-            <span class="gallery-cat">Jewelry</span>
-            <h3 class="gallery-name">Antique Ring Collection</h3>
-        </div>
-        <button class="gallery-expand" aria-label="View Antique Ring Collection in full size"
-        data-src="https://images.unsplash.com/photo-1602751584552-8ba73aad10e1?w=1400&fit=crop&q=92"
-        data-caption="Antique Ring Collection — Jewelry">
-        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#D4AF37" stroke-width="1.5" aria-hidden="true"><path d="M15 3h6v6M9 21H3v-6M21 3l-7 7M3 21l7-7"/></svg>
-    </button>
-</div>
-</div>
-
-<!-- Viking 2 -->
-<div class="gallery-item" data-category="viking" role="listitem">
-    <div class="gallery-item-inner">
-        <img src="https://images.unsplash.com/photo-1578662996442-48f60103fc96?w=520&h=620&fit=crop&q=85"
-        alt="Norse ship prow ornament detail" class="gallery-img" loading="lazy" width="520" height="620">
-        <div class="gallery-caption" aria-hidden="true">
-            <span class="gallery-cat">Viking</span>
-            <h3 class="gallery-name">Norse Prow Ornament</h3>
-        </div>
-        <button class="gallery-expand" aria-label="View Norse Prow Ornament in full size"
-        data-src="https://images.unsplash.com/photo-1578662996442-48f60103fc96?w=1400&fit=crop&q=92"
-        data-caption="Norse Prow Ornament — Viking Heritage">
-        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#D4AF37" stroke-width="1.5" aria-hidden="true"><path d="M15 3h6v6M9 21H3v-6M21 3l-7 7M3 21l7-7"/></svg>
-    </button>
-</div>
-</div>
-
-<!-- Medieval 2 -->
-<div class="gallery-item" data-category="medieval" role="listitem">
-    <div class="gallery-item-inner">
-        <img src="https://images.unsplash.com/photo-1590736969955-71cc94901144?w=520&h=520&fit=crop&q=85"
-        alt="Medieval illuminated manuscript page detail" class="gallery-img" loading="lazy" width="520" height="520">
-        <div class="gallery-caption" aria-hidden="true">
-            <span class="gallery-cat">Medieval</span>
-            <h3 class="gallery-name">Illuminated Manuscript</h3>
-        </div>
-        <button class="gallery-expand" aria-label="View Illuminated Manuscript in full size"
-        data-src="https://images.unsplash.com/photo-1590736969955-71cc94901144?w=1400&fit=crop&q=92"
-        data-caption="Illuminated Manuscript — Medieval Relics">
-        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#D4AF37" stroke-width="1.5" aria-hidden="true"><path d="M15 3h6v6M9 21H3v-6M21 3l-7 7M3 21l7-7"/></svg>
-    </button>
-</div>
-</div>
-</div>
-</div>
-</section>
-
-<!-- ===== LIGHTBOX ===== -->
-<div class="lightbox" id="lightbox" role="dialog" aria-modal="true" aria-label="Image Viewer">
-    <div class="lightbox-inner">
-        <button class="lightbox-close" id="lightbox-close" aria-label="Close image viewer">&times;</button>
-        <img src="" alt="" class="lightbox-img" id="lightbox-img">
-        <p class="lightbox-caption" id="lightbox-caption"></p>
-    </div>
-</div>
-
-<!-- ============================================================
-JOURNAL SECTION
-============================================================ -->
-<section id="journal" class="journal-section" aria-labelledby="journal-heading">
-    <div class="container">
-        <div class="section-header-block reveal">
-            <span class="section-eyebrow">Insights &amp; Scholarship</span>
-            <h2 class="section-heading" id="journal-heading">The Journal</h2>
-            <div class="section-rule centered">
-                <span class="rule-line"></span>
-                <span class="rule-diamond"></span>
-                <span class="rule-line"></span>
-            </div>
-        </div>
-
-        <div class="journal-grid" role="list">
-            <!-- Featured article -->
-            <article class="journal-card journal-card-featured reveal" role="listitem">
-                <div class="journal-img-wrap">
-                    <img src="https://images.unsplash.com/photo-1617038220319-276d3cfab638?w=800&h=600&fit=crop&q=85"
-                    alt="Ancient goldsmithing tools and jewelry making process"
-                    class="journal-img" loading="lazy" width="800" height="600">
-                    <div class="journal-img-overlay"></div>
-                    <span class="journal-tag">Heritage</span>
-                </div>
-                <div class="journal-body">
-                    <div class="journal-meta">
-                        <span class="journal-date">15 March 2025</span>
-                        <span class="journal-meta-sep"></span>
-                        <span class="journal-read-time">8 min read</span>
-                    </div>
-                    <h3 class="journal-title">The Enduring Art of Ancient Craftsmanship: Techniques Lost and Rediscovered</h3>
-                    <p class="journal-excerpt">An in-depth exploration of the techniques and devotional practices of master artisans across centuries — and how Runestone Relics works to preserve and revive these extraordinary skills in contemporary creations.</p>
-                    <a href="#" class="journal-link" aria-label="Read: The Enduring Art of Ancient Craftsmanship">
-                        Read Article <span aria-hidden="true">&rarr;</span>
-                    </a>
-                </div>
-            </article>
-
-            <!-- Secondary 1 -->
-            <article class="journal-card reveal" style="--delay:0.1s;" role="listitem">
-                <div class="journal-img-wrap">
-                    <img src="https://images.unsplash.com/photo-1583119022894-919a68a3d0e3?w=600&h=360&fit=crop&q=85"
-                    alt="Viking rune symbols and Norse mythology carved in stone"
-                    class="journal-img" loading="lazy" width="600" height="360">
-                    <div class="journal-img-overlay"></div>
-                    <span class="journal-tag">History</span>
-                </div>
-                <div class="journal-body">
-                    <div class="journal-meta">
-                        <span class="journal-date">28 February 2025</span>
-                        <span class="journal-meta-sep"></span>
-                        <span class="journal-read-time">6 min read</span>
-                    </div>
-                    <h3 class="journal-title">The Living Legacy of Viking Symbol</h3>
-                    <a href="#" class="journal-link" aria-label="Read: The Living Legacy of Viking Symbols">
-                        Read <span aria-hidden="true">&rarr;</span>
-                    </a>
-                </div>
-            </article>
-
-            <!-- Secondary 2 -->
-            <article class="journal-card reveal" style="--delay:0.18s;" role="listitem">
-                <div class="journal-img-wrap">
-                    <img src="https://images.unsplash.com/photo-1551122089-4e3e72477432?w=600&h=360&fit=crop&q=85"
-                    alt="Natural gemstones and crystals arranged for study"
-                    class="journal-img" loading="lazy" width="600" height="360">
-                    <div class="journal-img-overlay"></div>
-                    <span class="journal-tag">Gemology</span>
-                </div>
-                <div class="journal-body">
-                    <div class="journal-meta">
-                        <span class="journal-date">10 January 2025</span>
-                        <span class="journal-meta-sep"></span>
-                        <span class="journal-read-time">5 min read</span>
-                    </div>
-                    <h3 class="journal-title">A Collector's Guide to Natural Gemstones</h3>
-                    <a href="#" class="journal-link" aria-label="Read: A Collector's Guide to Natural Gemstones">
-                        Read <span aria-hidden="true">&rarr;</span>
-                    </a>
-                </div>
-            </article>
-        </div>
-    </div>
-</section>
-
-<!-- ============================================================
-MANIFESTO
-============================================================ -->
-<section class="manifesto-section" aria-label="Brand manifesto">
-    <div class="manifesto-bg" aria-hidden="true"></div>
-    <div class="container">
-        <div class="manifesto-inner reveal">
-            <span class="manifesto-quote-mark" aria-hidden="true">&ldquo;</span>
-            <blockquote class="manifesto-text">
-                True craftsmanship <em>transcends</em> time.
-            </blockquote>
-            <div class="manifesto-attribution">
-                <span class="manifesto-line" aria-hidden="true"></span>
-                <cite class="manifesto-author">Runestone Relics</cite>
-                <span class="manifesto-line" aria-hidden="true"></span>
-            </div>
-        </div>
-    </div>
-</section>
-
-<!-- ============================================================
-NEWSLETTER
-============================================================ -->
-<section class="newsletter-section" aria-labelledby="newsletter-heading">
-    <div class="container">
-        <div class="newsletter-inner reveal">
-            <span class="section-eyebrow">Private Correspondence</span>
-            <h2 class="newsletter-heading" id="newsletter-heading">Join Our Inner Circle</h2>
-            <div class="section-rule centered">
-                <span class="rule-line"></span>
-                <span class="rule-diamond"></span>
-                <span class="rule-line"></span>
-            </div>
-            <p class="newsletter-sub">
-                Receive exclusive previews of incoming collections, scholarly articles on heritage craftsmanship,
-                and private invitations to viewing events. Enter the world of Runestone Relics.
+        <div class="legacy-grid">
+          <article class="legacy-card reveal-up">
+            <div class="lc-num">I.</div>
+            <h3>Heritage</h3>
+            <p>
+              Every relic we curate carries an unbroken thread — from the hand that
+              first shaped it to the collector who guards it now. We do not sell
+              objects. We entrust legacies.
             </p>
-
-            <!-- Form -->
-            <form class="newsletter-form" id="newsletter-form" novalidate aria-label="Newsletter subscription form">
-                <div class="newsletter-field-group">
-                    <label for="newsletter-email" class="skip-link">Email address</label>
-                    <input type="email" id="newsletter-email" name="email" class="newsletter-input"
-                    placeholder="Your email address" required autocomplete="email"
-                    aria-required="true" aria-describedby="newsletter-legal-text">
-                    <button type="submit" class="newsletter-submit" aria-label="Subscribe to newsletter">
-                        Subscribe
-                    </button>
-                </div>
-                <p class="newsletter-legal" id="newsletter-legal-text">
-                    By subscribing you consent to receive editorial communications from Runestone Relics.
-                    We respect your privacy and you may unsubscribe at any time.
-                </p>
-            </form>
-
-            <!-- Success state -->
-            <div class="newsletter-success" id="newsletter-success" role="status" aria-live="polite">
-                <div class="success-check" aria-hidden="true">
-                    <svg width="18" height="18" viewBox="0 0 18 18" fill="none"><path d="M3 9l4 4 8-8" stroke="#D4AF37" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
-                </div>
-                <p class="success-text">Welcome to the circle.</p>
-                <p class="success-sub">You will receive our first correspondence shortly.</p>
-            </div>
-
-            <!-- Trust signals -->
-            <div class="newsletter-trust" aria-label="Trust assurances">
-                <span class="trust-item">
-                    <svg class="trust-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
-                    No Spam
-                </span>
-                <span class="trust-item">
-                    <svg class="trust-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><rect x="3" y="11" width="18" height="11" rx="2" ry="2"/><path d="M7 11v-4a5 5 0 0110 0v4"/></svg>
-                    Privacy Protected
-                </span>
-                <span class="trust-item">
-                    <svg class="trust-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M18 6L6 18M6 6l12 12"/></svg>
-                    Unsubscribe Anytime
-                </span>
-            </div>
+          </article>
+          <article class="legacy-card reveal-up delay-1">
+            <div class="lc-num">II.</div>
+            <h3>Craftsmanship</h3>
+            <p>
+              Forged in fire, chased in gold, polished by patience. Our master
+              artisans practice methods unchanged since the Iron Age — because
+              some things were perfected long ago.
+            </p>
+          </article>
+          <article class="legacy-card reveal-up delay-2">
+            <div class="lc-num">III.</div>
+            <h3>Legacy</h3>
+            <p>
+              To wear a Runestone Relic is to inherit a story older than any
+              nation. It is to become the next chapter in a saga carved in stone
+              and gold.
+            </p>
+          </article>
         </div>
-    </div>
-</section>
+      </section>
 
-</main>
-
-<!-- ============================================================
-FOOTER
-============================================================ -->
-<footer class="footer" role="contentinfo">
-    <div class="container">
-        <div class="footer-main">
-            <!-- Brand -->
-            <div class="footer-col footer-brand">
-                <img src="images/logo.png" alt="Runestone Relics" class="footer-brand-logo" width="88" height="32"
-                loading="lazy" onerror="this.style.display='none';">
-                <span class="footer-wordmark">Runestone Relics</span>
-                <span class="footer-tagline">Timeless Heritage &bull; Crafted Beauty</span>
-                <p class="footer-brand-desc">
-                    Purveyors of rare gemstones, handcrafted heritage jewelry, Viking artifacts, and medieval relics.
-                    Where ancient legacy meets contemporary elegance. Est. MMXIV.
-                </p>
-                <div class="footer-social-row" aria-label="Social media links">
-                    <a href="#" class="footer-social-btn" aria-label="Follow us on Instagram">
-                        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="5"/><circle cx="17.5" cy="6.5" r="1.5" fill="currentColor" stroke="none"/></svg>
-                    </a>
-                    <a href="#" class="footer-social-btn" aria-label="Follow us on Pinterest">
-                        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><circle cx="12" cy="12" r="10"/><path d="M8 14.5c-1-2-0.5-4.5 1-6s4-2 5-1 1.5 3 0 5-2.5 2-3 0"/></svg>
-                    </a>
-                    <a href="#" class="footer-social-btn" aria-label="Follow us on Twitter">
-                        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M23 3a10.9 10.9 0 01-3.14 1.53 4.48 4.48 0 00-7.86 3v1A10.66 10.66 0 013 4s-4 9 5 13a11.64 11.64 0 01-7 2c9 5 20 0 20-11.5a4.5 4.5 0 00-.08-.83A7.72 7.72 0 0023 3z"/></svg>
-                    </a>
-                    <a href="#" class="footer-social-btn" aria-label="Follow us on Facebook">
-                        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"/></svg>
-                    </a>
-                </div>
-            </div>
-
-            <!-- Navigate -->
-            <div class="footer-col">
-                <h3 class="footer-col-heading">Navigate</h3>
-                <nav aria-label="Footer navigation">
-                    <ul class="footer-col-links">
-                        <li><a href="#hero" class="footer-col-link">Home</a></li>
-                        <li><a href="#collections" class="footer-col-link">Collections</a></li>
-                        <li><a href="#heritage" class="footer-col-link">Heritage</a></li>
-                        <li><a href="#gallery" class="footer-col-link">Gallery</a></li>
-                        <li><a href="#journal" class="footer-col-link">Journal</a></li>
-                    </ul>
-                </nav>
-            </div>
-
-            <!-- Collections -->
-            <div class="footer-col">
-                <h3 class="footer-col-heading">Collections</h3>
-                <ul class="footer-col-links">
-                    <li><a href="#collections" class="footer-col-link">Crystals &amp; Gemstones</a></li>
-                    <li><a href="#collections" class="footer-col-link">Handcrafted Jewelry</a></li>
-                    <li><a href="#collections" class="footer-col-link">Viking Heritage</a></li>
-                    <li><a href="#collections" class="footer-col-link">Medieval Relics</a></li>
-                </ul>
-            </div>
-
-            <!-- About -->
-            <div class="footer-col">
-                <h3 class="footer-col-heading">About</h3>
-                <ul class="footer-col-links">
-                    <li><a href="#story" class="footer-col-link">Our Story</a></li>
-                    <li><a href="#journal" class="footer-col-link">Journal</a></li>
-                    <li><a href="#heritage" class="footer-col-link">Authenticity</a></li>
-                    <li><a href="#" class="footer-col-link">Care &amp; Provenance</a></li>
-                </ul>
-            </div>
+      <!-- ================= FEATURED COLLECTIONS ================= -->
+      <section class="section collections" id="collections">
+        <div class="section-head">
+          <span class="eyebrow">Chapter II</span>
+          <h2 class="display reveal-up">Featured Collections</h2>
+          <p class="lede reveal-up delay-1">
+            Four archives. Four ages. Each piece hand-selected for provenance,
+            rarity, and the silence it commands in a room.
+          </p>
         </div>
 
-        <!-- Bottom bar -->
-        <div class="footer-bottom">
-            <p class="footer-copyright">&copy; Runestone Relics &mdash; All Rights Reserved</p>
-            <div class="footer-legal-links">
-                <a href="#" class="footer-legal-link">Privacy Policy</a>
-                <a href="#" class="footer-legal-link">Terms of Service</a>
-                <a href="#" class="footer-legal-link">Accessibility</a>
+        <div class="collections-grid">
+          <a href="#gallery" class="col-card reveal-up" style="--img:url('https://images.pexels.com/photos/34703308/pexels-photo-34703308.jpeg?auto=compress&cs=tinysrgb&h=1200&w=1600')">
+            <div class="col-img" role="img" aria-label="Amethyst geode"></div>
+            <div class="col-body">
+              <span class="col-index">01 — Naturalia</span>
+              <h3>Crystals &amp; Gemstones</h3>
+              <p>Museum-grade specimens drawn from the earth's oldest veins.</p>
+              <span class="col-cta">View Archive <em>→</em></span>
             </div>
+          </a>
+
+          <a href="#gallery" class="col-card reveal-up delay-1" style="--img:url('https://images.pexels.com/photos/32988525/pexels-photo-32988525.jpeg?auto=compress&cs=tinysrgb&h=1200&w=1600')">
+            <div class="col-img" role="img" aria-label="Emerald and diamond necklace"></div>
+            <div class="col-body">
+              <span class="col-index">02 — Atelier</span>
+              <h3>Handcrafted Jewelry</h3>
+              <p>Goldsmithing in the tradition of the great European ateliers.</p>
+              <span class="col-cta">View Archive <em>→</em></span>
+            </div>
+          </a>
+
+          <a href="#gallery" class="col-card tall reveal-up delay-2" style="--img:url('https://images.pexels.com/photos/10068861/pexels-photo-10068861.jpeg?auto=compress&cs=tinysrgb&h=1400&w=1200')">
+            <div class="col-img" role="img" aria-label="Viking warrior in armor"></div>
+            <div class="col-body">
+              <span class="col-index">03 — Nordica</span>
+              <h3>The Viking Collection</h3>
+              <p>Runes, silver, and the iron-song of the Northern seas.</p>
+              <span class="col-cta">View Archive <em>→</em></span>
+            </div>
+          </a>
+
+          <a href="#gallery" class="col-card reveal-up delay-3" style="--img:url('https://images.pexels.com/photos/14645000/pexels-photo-14645000.jpeg?auto=compress&cs=tinysrgb&h=1200&w=1600')">
+            <div class="col-img" role="img" aria-label="Medieval swords and armor"></div>
+            <div class="col-body">
+              <span class="col-index">04 — Militaria</span>
+              <h3>Medieval Artifacts</h3>
+              <p>Relics of chivalry — steel, leather, and cathedral silver.</p>
+              <span class="col-cta">View Archive <em>→</em></span>
+            </div>
+          </a>
         </div>
-    </div>
-</footer>
+      </section>
 
-<!-- ============================================================
-JAVASCRIPT V3.0 — LUXURY PERFORMANCE
-============================================================ -->
-<script>
-    (function() {
-        'use strict';
+      <!-- ================= CRAFTSMANSHIP ================= -->
+      <section class="section craft" id="craft">
+        <div class="craft-grid">
+          <figure class="craft-image reveal-up">
+            <img loading="lazy" src="https://images.pexels.com/photos/1383766/pexels-photo-1383766.jpeg?auto=compress&cs=tinysrgb&h=1400&w=1000" alt="Detail of an aged medieval sword hilt, showing centuries of craftsmanship" />
+            <figcaption>Hilt · Northern Europe · c. 11th century</figcaption>
+          </figure>
 
-        /* === UTILITY === */
-        function qs(sel, ctx) { return (ctx || document).querySelector(sel); }
+          <div class="craft-copy">
+            <span class="eyebrow reveal-up">Chapter III</span>
+            <h2 class="display reveal-up delay-1">The Discipline<br/>of the Hand.</h2>
+            <p class="reveal-up delay-2">
+              Nothing at Runestone Relics is manufactured. Every gemstone is cut by
+              lapidaries who trained under the last living masters of Idar-Oberstein.
+              Every ring is chased, engraved, and stone-set in a single atelier by
+              a single pair of hands.
+            </p>
+            <ul class="craft-list">
+              <li class="reveal-up delay-2"><em>◆</em><span><strong>Authenticity.</strong> Provenance vetted by an independent council of curators.</span></li>
+              <li class="reveal-up delay-3"><em>◆</em><span><strong>Artistry.</strong> Techniques preserved from Iron Age, Byzantine and Gothic ateliers.</span></li>
+              <li class="reveal-up delay-3"><em>◆</em><span><strong>Quality.</strong> Only 1 in 400 specimens surveyed enters the archive.</span></li>
+            </ul>
+            <a href="#gallery" class="btn btn-outline magnetic reveal-up delay-3" data-magnetic>
+              <span>Enter the Atelier</span><em class="btn-arrow">→</em>
+            </a>
+          </div>
+        </div>
+      </section>
 
-        function qsa(sel, ctx) { return Array.from((ctx || document).querySelectorAll(sel)); }
+      <!-- ================= TIMELINE ================= -->
+      <section class="section timeline" id="timeline">
+        <div class="section-head">
+          <span class="eyebrow">Chapter IV</span>
+          <h2 class="display reveal-up">A Thread Across Ages</h2>
+          <p class="lede reveal-up delay-1">
+            Four thousand years of makers, seekers and keepers — bound by a single
+            devotion to beauty that outlives us.
+          </p>
+        </div>
 
-        /* ============================================================
-        PRELOADER
-        ============================================================ */
-        var preloader = qs('#preloader');
-        var preloaderBar = qs('#preloader-bar');
+        <ol class="tl-list">
+          <li class="tl-item reveal-up">
+            <div class="tl-year">— 2000 BC</div>
+            <div class="tl-body">
+              <h3>The Ancient Era</h3>
+              <p>Lapis from Afghanistan, gold from Nubia. The first artisans learn that stone remembers what men forget.</p>
+            </div>
+          </li>
+          <li class="tl-item reveal-up delay-1">
+            <div class="tl-year">793 — 1066</div>
+            <div class="tl-body">
+              <h3>The Viking Age</h3>
+              <p>Silver arm-rings and rune-carved amulets sail from the fjords to Constantinople. The North speaks in metal.</p>
+            </div>
+          </li>
+          <li class="tl-item reveal-up delay-2">
+            <div class="tl-year">1100 — 1500</div>
+            <div class="tl-body">
+              <h3>The Medieval Era</h3>
+              <p>Cathedrals rise. Reliquaries are gilded. The lapidary and the smith become the chroniclers of faith and dynasty.</p>
+            </div>
+          </li>
+          <li class="tl-item reveal-up delay-3">
+            <div class="tl-year">MMXXV</div>
+            <div class="tl-body">
+              <h3>The Modern Keeper</h3>
+              <p>Runestone Relics inherits the discipline of the makers before us — and entrusts these artifacts to a new generation of collectors.</p>
+            </div>
+          </li>
+        </ol>
+      </section>
 
-        // Simulate progress
-        var progress = 0;
-        if (preloaderBar) {
-            var interval = setInterval(function() {
-                progress += Math.random() * 12 + 4;
-                if (progress > 100) progress = 100;
-                preloaderBar.style.width = progress + '%';
-                if (progress >= 100) clearInterval(interval);
-            }, 160);
-        }
+      <!-- ================= VALUES ================= -->
+      <section class="section values">
+        <div class="section-head">
+          <span class="eyebrow">Chapter V</span>
+          <h2 class="display reveal-up">Heritage Values</h2>
+        </div>
+        <div class="values-grid">
+          <div class="value-card reveal-up">
+            <div class="value-icon"><svg viewBox="0 0 40 40"><path d="M20 4 L34 10 V22 C34 30 27 35 20 37 C13 35 6 30 6 22 V10 Z" fill="none" stroke="currentColor" stroke-width="1.2"/><path d="M14 20 L18 24 L26 16" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round"/></svg></div>
+            <h3>Authenticity</h3>
+            <p>Every relic accompanied by a hand-signed certificate of provenance.</p>
+          </div>
+          <div class="value-card reveal-up delay-1">
+            <div class="value-icon"><svg viewBox="0 0 40 40"><circle cx="20" cy="20" r="14" fill="none" stroke="currentColor" stroke-width="1.2"/><path d="M20 8 V32 M8 20 H32 M12 12 L28 28 M28 12 L12 28" stroke="currentColor" stroke-width="1" fill="none"/></svg></div>
+            <h3>Craftsmanship</h3>
+            <p>Made slowly, made once. Never reproduced, never replicated.</p>
+          </div>
+          <div class="value-card reveal-up delay-2">
+            <div class="value-icon"><svg viewBox="0 0 40 40"><path d="M20 6 L24 16 L34 17 L26 24 L28 34 L20 29 L12 34 L14 24 L6 17 L16 16 Z" fill="none" stroke="currentColor" stroke-width="1.2" stroke-linejoin="round"/></svg></div>
+            <h3>Quality</h3>
+            <p>Only the top percentile of surveyed specimens enters the archive.</p>
+          </div>
+          <div class="value-card reveal-up delay-3">
+            <div class="value-icon"><svg viewBox="0 0 40 40"><path d="M8 34 V14 L20 6 L32 14 V34" fill="none" stroke="currentColor" stroke-width="1.2"/><path d="M14 34 V22 H26 V34" fill="none" stroke="currentColor" stroke-width="1.2"/></svg></div>
+            <h3>Legacy</h3>
+            <p>Objects meant to be inherited — a story you pass, not consume.</p>
+          </div>
+        </div>
+      </section>
 
-        window.addEventListener('load', function() {
-            setTimeout(function() {
-                if (preloaderBar) preloaderBar.style.width = '100%';
-                setTimeout(function() {
-                    if (preloader) preloader.classList.add('loaded');
-                    initHeroAnimation();
-                    initReveal();
-                }, 400);
-            }, 600);
-        });
+      <!-- ================= GALLERY ================= -->
+      <section class="section gallery" id="gallery">
+        <div class="section-head">
+          <span class="eyebrow">Chapter VI</span>
+          <h2 class="display reveal-up">The Archive</h2>
+          <p class="lede reveal-up delay-1">A curated visual index. Click any piece to enter.</p>
+        </div>
 
-        /* ============================================================
-        HERO STAGGER ANIMATION
-        ============================================================ */
-        function initHeroAnimation() {
-            var items = qsa('.hero-item');
-            items.forEach(function(el, i) {
-                setTimeout(function() {
-                    el.classList.add('visible');
-                }, 200 + i * 140);
-            });
-        }
+        <div class="gallery-filters" role="tablist" aria-label="Gallery filters">
+          <button class="gf active" data-filter="all" role="tab" aria-selected="true">All</button>
+          <button class="gf" data-filter="gemstones" role="tab">Gemstones</button>
+          <button class="gf" data-filter="jewelry" role="tab">Jewelry</button>
+          <button class="gf" data-filter="viking" role="tab">Viking</button>
+          <button class="gf" data-filter="medieval" role="tab">Medieval</button>
+        </div>
 
-        /* ============================================================
-        REVEAL ON SCROLL (Intersection Observer)
-        ============================================================ */
-        function initReveal() {
-            var reveals = qsa('.reveal');
-            if (!('IntersectionObserver' in window)) {
-                reveals.forEach(function(el) { el.classList.add('visible'); });
-                return;
-            }
-            var observer = new IntersectionObserver(function(entries) {
-                entries.forEach(function(entry) {
-                    if (entry.isIntersecting) {
-                        var el = entry.target;
-                        var delay = parseFloat(el.style.getPropertyValue('--delay')) || 0;
-                        setTimeout(function() {
-                            el.classList.add('visible');
-                        }, delay * 1000);
-                        observer.unobserve(el);
-                    }
-                });
-            }, {
-                threshold: 0.12,
-                rootMargin: '0px 0px -40px 0px'
-            });
-            reveals.forEach(function(el) { observer.observe(el); });
-        }
+        <div class="masonry" id="masonry">
+          <figure class="m-item" data-cat="gemstones">
+            <img loading="lazy" src="https://images.pexels.com/photos/34703308/pexels-photo-34703308.jpeg?auto=compress&cs=tinysrgb&h=900&w=700" alt="Amethyst geode specimen" />
+            <figcaption><span>Amethyst Geode</span><em>Naturalia · No. 001</em></figcaption>
+          </figure>
+          <figure class="m-item" data-cat="jewelry">
+            <img loading="lazy" src="https://images.pexels.com/photos/17068456/pexels-photo-17068456.jpeg?auto=compress&cs=tinysrgb&h=900&w=700" alt="Emerald and diamond rings" />
+            <figcaption><span>Emerald Trilogy</span><em>Atelier · No. 014</em></figcaption>
+          </figure>
+          <figure class="m-item" data-cat="viking">
+            <img loading="lazy" src="https://images.pexels.com/photos/10068857/pexels-photo-10068857.jpeg?auto=compress&cs=tinysrgb&h=900&w=700" alt="Warrior in helmet holding a sword" />
+            <figcaption><span>Silvered Helm</span><em>Nordica · No. 022</em></figcaption>
+          </figure>
+          <figure class="m-item" data-cat="medieval">
+            <img loading="lazy" src="https://images.pexels.com/photos/14644992/pexels-photo-14644992.jpeg?auto=compress&cs=tinysrgb&h=900&w=700" alt="Knight armor on display" />
+            <figcaption><span>Full Plate Harness</span><em>Militaria · No. 031</em></figcaption>
+          </figure>
+          <figure class="m-item" data-cat="gemstones">
+            <img loading="lazy" src="https://images.pexels.com/photos/8926390/pexels-photo-8926390.jpeg?auto=compress&cs=tinysrgb&h=900&w=700" alt="Amethyst crystal cluster" />
+            <figcaption><span>Cluster Specimen</span><em>Naturalia · No. 007</em></figcaption>
+          </figure>
+          <figure class="m-item" data-cat="jewelry">
+            <img loading="lazy" src="https://images.pexels.com/photos/28179316/pexels-photo-28179316.jpeg?auto=compress&cs=tinysrgb&h=900&w=700" alt="Stacked gold rings" />
+            <figcaption><span>Ancient Gold Rings</span><em>Atelier · No. 019</em></figcaption>
+          </figure>
+          <figure class="m-item" data-cat="viking">
+            <img loading="lazy" src="https://images.pexels.com/photos/34019082/pexels-photo-34019082.jpeg?auto=compress&cs=tinysrgb&h=900&w=700" alt="Prehistoric rock carving of a ship" />
+            <figcaption><span>Ship Petroglyph</span><em>Nordica · No. 004</em></figcaption>
+          </figure>
+          <figure class="m-item" data-cat="medieval">
+            <img loading="lazy" src="https://images.pexels.com/photos/33889077/pexels-photo-33889077.jpeg?auto=compress&cs=tinysrgb&h=900&w=700" alt="Historic armory display" />
+            <figcaption><span>The Armory</span><em>Militaria · No. 040</em></figcaption>
+          </figure>
+          <figure class="m-item" data-cat="jewelry">
+            <img loading="lazy" src="https://images.pexels.com/photos/15838171/pexels-photo-15838171.jpeg?auto=compress&cs=tinysrgb&h=900&w=700" alt="Ouroboros snake rings" />
+            <figcaption><span>Ouroboros Band</span><em>Atelier · No. 026</em></figcaption>
+          </figure>
+          <figure class="m-item" data-cat="gemstones">
+            <img loading="lazy" src="https://images.pexels.com/photos/19895205/pexels-photo-19895205.jpeg?auto=compress&cs=tinysrgb&h=900&w=700" alt="Emerald cut diamond on velvet" />
+            <figcaption><span>Emerald-Cut Stone</span><em>Naturalia · No. 012</em></figcaption>
+          </figure>
+          <figure class="m-item" data-cat="viking">
+            <img loading="lazy" src="https://images.pexels.com/photos/9500889/pexels-photo-9500889.jpeg?auto=compress&cs=tinysrgb&h=900&w=700" alt="Rune stone in a field" />
+            <figcaption><span>Standing Rune-Stone</span><em>Nordica · No. 009</em></figcaption>
+          </figure>
+          <figure class="m-item" data-cat="medieval">
+            <img loading="lazy" src="https://images.pexels.com/photos/9366111/pexels-photo-9366111.jpeg?auto=compress&cs=tinysrgb&h=900&w=700" alt="Weathered carved stone" />
+            <figcaption><span>Chapter Stone</span><em>Militaria · No. 044</em></figcaption>
+          </figure>
+        </div>
+      </section>
 
-        /* ============================================================
-        NAVIGATION — Scroll behaviour & active state
-        ============================================================ */
-        var navbar = qs('#navbar');
-        var navLinks = qsa('.nav-link[data-section]');
-        var sections = qsa('section[id]');
+      <!-- ================= JOURNAL ================= -->
+      <section class="section journal" id="journal">
+        <div class="section-head">
+          <span class="eyebrow">Chapter VII</span>
+          <h2 class="display reveal-up">The Journal</h2>
+          <p class="lede reveal-up delay-1">Essays from our curators, artisans and historians.</p>
+        </div>
 
-        function throttle(fn, ms) {
-            var last = 0;
-            return function() {
-                var now = Date.now();
-                if (now - last >= ms) { last = now;
-                    fn.apply(this, arguments); }
-            };
-        }
+        <div class="journal-grid">
+          <article class="j-card reveal-up">
+            <div class="j-image"><img loading="lazy" src="https://images.pexels.com/photos/28179316/pexels-photo-28179316.jpeg?auto=compress&cs=tinysrgb&h=900&w=1200" alt="Gold rings on a dark surface"/></div>
+            <div class="j-meta">Essay · 9 min read</div>
+            <h3>The Return of Ancient Craftsmanship</h3>
+            <p>Why the slow disciplines of the pre-industrial atelier are quietly reclaiming the world of luxury.</p>
+            <span class="j-more">Read Essay <em>→</em></span>
+          </article>
+          <article class="j-card reveal-up delay-1">
+            <div class="j-image"><img loading="lazy" src="https://images.pexels.com/photos/34019082/pexels-photo-34019082.jpeg?auto=compress&cs=tinysrgb&h=900&w=1200" alt="Ancient petroglyph of a viking ship"/></div>
+            <div class="j-meta">History · 12 min read</div>
+            <h3>Reading the Runes: A Field Guide to Viking Symbolism</h3>
+            <p>From Algiz to Yggdrasil — a curator's introduction to the visual language of the North.</p>
+            <span class="j-more">Read Essay <em>→</em></span>
+          </article>
+          <article class="j-card reveal-up delay-2">
+            <div class="j-image"><img loading="lazy" src="https://images.pexels.com/photos/6757423/pexels-photo-6757423.jpeg?auto=compress&cs=tinysrgb&h=900&w=1200" alt="Amethyst crystal macro"/></div>
+            <div class="j-meta">Guide · 7 min read</div>
+            <h3>A Collector's Guide to Natural Gemstones</h3>
+            <p>How to distinguish the museum-grade specimen from the merely beautiful.</p>
+            <span class="j-more">Read Essay <em>→</em></span>
+          </article>
+        </div>
+      </section>
 
-        var handleScroll = throttle(function() {
-            var scrollY = window.pageYOffset;
+      <!-- ================= QUOTE ================= -->
+      <section class="section quote-section">
+        <div class="quote-inner">
+          <span class="q-mark" aria-hidden="true">"</span>
+          <blockquote class="q-text reveal-up">
+            <span>True</span> <span>craftsmanship</span> <span>transcends</span> <span>time.</span>
+          </blockquote>
+          <cite class="q-cite reveal-up delay-2">— The Curator's Note, Vol. I</cite>
+        </div>
+      </section>
 
-            if (navbar) {
-                navbar.classList.toggle('scrolled', scrollY > 60);
-            }
+      <!-- ================= NEWSLETTER ================= -->
+      <section class="section newsletter" id="newsletter">
+        <div class="nl-panel">
+          <div class="nl-copy">
+            <span class="eyebrow">The Correspondence</span>
+            <h2 class="display reveal-up">Enter the Private Archive</h2>
+            <p class="reveal-up delay-1">
+              A quiet dispatch, four times a year. New acquisitions, private
+              viewings and essays from our curators — reserved for our
+              correspondents.
+            </p>
+          </div>
+          <form class="nl-form" id="newsletterForm" novalidate>
+            <label class="sr" for="nlEmail">Email address</label>
+            <input id="nlEmail" name="email" type="email" required autocomplete="email" placeholder="your@address.com" />
+            <button type="submit" class="btn btn-gold magnetic" data-magnetic>
+              <span>Subscribe</span><em class="btn-arrow">→</em>
+            </button>
+            <p class="nl-note" id="nlNote">By subscribing you agree to our discreet correspondence policy.</p>
+          </form>
+        </div>
+      </section>
 
-            var offset = 120;
-            sections.forEach(function(section) {
-                var top = section.offsetTop - offset;
-                var bottom = top + section.offsetHeight;
-                var id = section.getAttribute('id');
-                if (scrollY >= top && scrollY < bottom) {
-                    navLinks.forEach(function(link) {
-                        var isMatch = link.getAttribute('data-section') === id;
-                        link.classList.toggle('active', isMatch);
-                    });
-                }
-            });
+    </main>
 
-            // Parallax hero atmosphere
-            var heroAtmo = qs('#hero-atmosphere');
-            if (heroAtmo && scrollY <= window.innerHeight) {
-                heroAtmo.style.transform = 'translateY(' + (scrollY * 0.28) + 'px)';
-            }
-        }, 16);
+    <!-- ================= FOOTER ================= -->
+    <footer class="footer">
+      <div class="footer-top">
+        <div class="f-brand">
+          <div class="f-logo">
+            <svg viewBox="0 0 40 40" aria-hidden="true"><path d="M20 3 L34 12 L34 28 L20 37 L6 28 L6 12 Z" fill="none" stroke="currentColor" stroke-width="1.2"/><path d="M20 10 L20 30 M20 14 L27 19 M20 22 L14 26" stroke="currentColor" stroke-width="1.2" fill="none" stroke-linecap="round"/></svg>
+            <div>
+              <div class="fl-1">Runestone Relics</div>
+              <div class="fl-2">Timeless Heritage · Crafted Beauty</div>
+            </div>
+          </div>
+          <p class="f-story">
+            A luxury heritage house founded to preserve the artistry of the ancient
+            world — the smiths, lapidaries and rune-carvers whose work outlived
+            empires. We do not sell; we entrust.
+          </p>
+        </div>
 
-        window.addEventListener('scroll', handleScroll, { passive: true });
+        <nav class="f-col" aria-label="The House">
+          <h4>The House</h4>
+          <a href="#legacy">Our Legacy</a>
+          <a href="#craft">Craftsmanship</a>
+          <a href="#timeline">Heritage</a>
+          <a href="#journal">Journal</a>
+        </nav>
+        <nav class="f-col" aria-label="Archive">
+          <h4>Archive</h4>
+          <a href="#collections">Gemstones</a>
+          <a href="#collections">Jewelry</a>
+          <a href="#collections">Viking</a>
+          <a href="#collections">Medieval</a>
+        </nav>
+        <nav class="f-col" aria-label="Correspondence">
+          <h4>Correspondence</h4>
+          <a href="#newsletter">The Dispatch</a>
+          <a href="#" aria-label="Instagram">Instagram</a>
+          <a href="#" aria-label="Pinterest">Pinterest</a>
+          <a href="#" aria-label="Behance">Behance</a>
+        </nav>
+      </div>
 
-        /* ============================================================
-        MOBILE MENU
-        ============================================================ */
-        var toggle = qs('#navbar-toggle');
-        var overlay = qs('#mobile-overlay');
-        var mobileLinks = qsa('.mobile-nav-link');
+      <div class="footer-bottom">
+        <div>© <span id="year"></span> Runestone Relics. All rights reserved.</div>
+        <div class="f-legal">
+          <a href="#">Provenance Policy</a>
+          <a href="#">Terms of Custodianship</a>
+          <a href="#">Privacy</a>
+        </div>
+      </div>
 
-        function closeMobileMenu() {
-            if (!toggle || !overlay) return;
-            toggle.classList.remove('active');
-            overlay.classList.remove('active');
-            toggle.setAttribute('aria-expanded', 'false');
-            toggle.setAttribute('aria-label', 'Open navigation menu');
-            document.body.style.overflow = '';
-        }
+      <div class="footer-wordmark" aria-hidden="true">RUNESTONE&nbsp;·&nbsp;RELICS</div>
+    </footer>
 
-        if (toggle && overlay) {
-            toggle.addEventListener('click', function() {
-                var isOpen = toggle.classList.toggle('active');
-                overlay.classList.toggle('active', isOpen);
-                toggle.setAttribute('aria-expanded', isOpen ? 'true' : 'false');
-                toggle.setAttribute('aria-label', isOpen ? 'Close navigation menu' :
-                    'Open navigation menu');
-                document.body.style.overflow = isOpen ? 'hidden' : '';
-            });
-
-            mobileLinks.forEach(function(link) {
-                link.addEventListener('click', closeMobileMenu);
-            });
-
-            overlay.addEventListener('click', function(e) {
-                if (e.target === overlay) closeMobileMenu();
-            });
-        }
-
-        /* ============================================================
-        GALLERY FILTER
-        ============================================================ */
-        var filterBtns = qsa('.filter-btn');
-        var galleryItems = qsa('.gallery-item');
-
-        filterBtns.forEach(function(btn) {
-            btn.addEventListener('click', function() {
-                var filter = this.getAttribute('data-filter');
-
-                filterBtns.forEach(function(b) {
-                    b.classList.remove('active');
-                    b.setAttribute('aria-pressed', 'false');
-                });
-                this.classList.add('active');
-                this.setAttribute('aria-pressed', 'true');
-
-                galleryItems.forEach(function(item) {
-                    var cat = item.getAttribute('data-category');
-                    var show = filter === 'all' || cat === filter;
-                    item.classList.toggle('hidden', !show);
-                    item.style.display = show ? '' : 'none';
-                });
-            });
-        });
-
-        /* ============================================================
-        LIGHTBOX
-        ============================================================ */
-        var lightbox = qs('#lightbox');
-        var lbImg = qs('#lightbox-img');
-        var lbCaption = qs('#lightbox-caption');
-        var lbClose = qs('#lightbox-close');
-        var lastFocus = null;
-
-        function openLightbox(src, caption) {
-            if (!lightbox || !lbImg) return;
-            lastFocus = document.activeElement;
-            lbImg.src = src;
-            lbImg.alt = caption || '';
-            if (lbCaption) lbCaption.textContent = caption || '';
-            lightbox.classList.add('open');
-            requestAnimationFrame(function() {
-                lightbox.style.opacity = '1';
-                lightbox.style.visibility = 'visible';
-            });
-            document.body.style.overflow = 'hidden';
-            if (lbClose) lbClose.focus();
-        }
-
-        function closeLightbox() {
-            if (!lightbox) return;
-            lightbox.style.opacity = '0';
-            lightbox.style.visibility = 'hidden';
-            setTimeout(function() {
-                lightbox.classList.remove('open');
-                if (lbImg) lbImg.src = '';
-            }, 400);
-            document.body.style.overflow = '';
-            if (lastFocus) lastFocus.focus();
-        }
-
-        // Open via expand buttons
-        qsa('.gallery-expand').forEach(function(btn) {
-            btn.addEventListener('click', function(e) {
-                e.stopPropagation();
-                openLightbox(
-                    this.getAttribute('data-src'),
-                    this.getAttribute('data-caption')
-                );
-            });
-        });
-
-        // Also open on image click
-        qsa('.gallery-item-inner').forEach(function(inner) {
-            inner.addEventListener('click', function() {
-                var btn = this.querySelector('.gallery-expand');
-                if (btn) {
-                    openLightbox(
-                        btn.getAttribute('data-src'),
-                        btn.getAttribute('data-caption')
-                    );
-                }
-            });
-        });
-
-        if (lbClose) lbClose.addEventListener('click', closeLightbox);
-        if (lightbox) {
-            lightbox.addEventListener('click', function(e) {
-                if (e.target === lightbox) {
-                    closeLightbox();
-                }
-            });
-        }
-
-        document.addEventListener('keydown', function(e) {
-            if (e.key === 'Escape') {
-                if (lightbox && lightbox.style.visibility === 'visible') closeLightbox();
-                if (toggle && toggle.classList.contains('active')) closeMobileMenu();
-            }
-        });
-
-        /* ============================================================
-        NEWSLETTER FORM
-        ============================================================ */
-        var form = qs('#newsletter-form');
-        var emailInput = qs('#newsletter-email');
-        var successDiv = qs('#newsletter-success');
-
-        if (form && emailInput) {
-            form.addEventListener('submit', function(e) {
-                e.preventDefault();
-
-                var email = emailInput.value.trim();
-                if (!email || !email.includes('@') || !email.includes('.')) {
-                    emailInput.style.borderColor = '#D4AF37';
-                    emailInput.style.boxShadow = '0 0 0 2px rgba(212,175,55,0.2)';
-                    setTimeout(function() {
-                        emailInput.style.borderColor = '';
-                        emailInput.style.boxShadow = '';
-                    }, 2000);
-                    return;
-                }
-
-                if (successDiv) {
-                    successDiv.classList.add('show');
-                }
-                form.style.display = 'none';
-
-                setTimeout(function() {
-                    if (successDiv) successDiv.classList.remove('show');
-                    if (form) {
-                        form.style.display = '';
-                        emailInput.value = '';
-                    }
-                }, 8000);
-            });
-        }
-
-        /* ============================================================
-        FLOATING PARTICLES — GPU-accelerated
-        ============================================================ */
-        (function() {
-            var canvas = qs('#particles-canvas');
-            if (!canvas) return;
-            var ctx = canvas.getContext('2d');
-            if (!ctx) return;
-
-            var W = 0,
-                H = 0;
-            var particles = [];
-            var COUNT = 0;
-            var animId;
-            var isVisible = true;
-
-            function setSize() {
-                W = canvas.width = window.innerWidth;
-                H = canvas.height = window.innerHeight;
-            }
-
-            function Particle() { this.init(); }
-            Particle.prototype.init = function() {
-                this.x = Math.random() * W;
-                this.y = Math.random() * H;
-                this.r = Math.random() * 1.5 + 0.3;
-                this.vx = (Math.random() - 0.5) * 0.25;
-                this.vy = (Math.random() - 0.5) * 0.25 - 0.1;
-                this.a = Math.random() * 0.35 + 0.03;
-                this.da = (Math.random() - 0.5) * 0.003;
-                this.life = 0;
-                this.maxLife = 400 + Math.random() * 400;
-            };
-            Particle.prototype.update = function() {
-                this.x += this.vx;
-                this.y += this.vy;
-                this.a += this.da;
-                this.life++;
-                if (this.a < 0.02) this.da = Math.abs(this.da);
-                if (this.a > 0.45) this.da = -Math.abs(this.da);
-                if (this.x < -5 || this.x > W + 5 || this.y < -5 || this.y > H + 5 || this.life > this.maxLife) {
-                    this.init();
-                }
-            };
-            Particle.prototype.draw = function() {
-                ctx.beginPath();
-                ctx.arc(this.x, this.y, this.r, 0, Math.PI * 2);
-                ctx.fillStyle = 'rgba(212,175,55,' + this.a + ')';
-                ctx.fill();
-                if (this.r > 1) {
-                    ctx.beginPath();
-                    ctx.arc(this.x, this.y, this.r * 2.5, 0, Math.PI * 2);
-                    ctx.fillStyle = 'rgba(212,175,55,' + (this.a * 0.08) + ')';
-                    ctx.fill();
-                }
-            };
-
-            function build() {
-                COUNT = Math.min(40, Math.floor(W / 36));
-                particles = [];
-                for (var i = 0; i < COUNT; i++) particles.push(new Particle());
-            }
-
-            function loop() {
-                ctx.clearRect(0, 0, W, H);
-                for (var i = 0; i < particles.length; i++) {
-                    particles[i].update();
-                    particles[i].draw();
-                }
-                animId = requestAnimationFrame(loop);
-            }
-
-            function initParticles() {
-                setSize();
-                build();
-                if (animId) cancelAnimationFrame(animId);
-                loop();
-            }
-
-            initParticles();
-
-            var resizeTimer;
-            window.addEventListener('resize', function() {
-                clearTimeout(resizeTimer);
-                resizeTimer = setTimeout(function() {
-                    setSize();
-                    build();
-                }, 200);
-            });
-
-            // Pause when hidden
-            document.addEventListener('visibilitychange', function() {
-                if (document.hidden) {
-                    isVisible = false;
-                    if (animId) cancelAnimationFrame(animId);
-                } else {
-                    isVisible = true;
-                    loop();
-                }
-            });
-        })();
-
-        /* ============================================================
-        KEYBOARD NAV: close mobile on Escape (already handled above)
-        ============================================================ */
-
-        console.log('Runestone Relics V3.0 — Heritage Luxury');
-    })();
-</script>
-
-</body>
+    <script src="script.js"></script>
+  </body>
 </html>

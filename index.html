@@ -252,10 +252,19 @@ button{ font-family:var(--ui); cursor:pointer; }
   .footer-inner{ grid-template-columns:1fr 1fr; }
   .timeline{ padding:0 10px; }
 }
-/* Touch devices: no hover exists, so keep captions/overlays visible by default */
+/* Touch devices: no hover exists, so keep captions/overlays visible by default,
+   and replace the hover-zoom effect with a scroll-triggered reveal instead */
 @media (hover:none), (pointer:coarse){
   .coll-overlay p{ opacity:1; transform:translateY(0); }
   .g-overlay{ opacity:1; background:linear-gradient(180deg, transparent 25%, rgba(5,5,5,0.88)); }
+
+  .coll-card svg, .coll-card img, .g-item svg, .g-item img{
+    transform:scale(1.18); opacity:0.65;
+    transition:transform 1.1s var(--ease), opacity 1.1s var(--ease);
+  }
+  .coll-card.in svg, .coll-card.in img, .g-item.in svg, .g-item.in img{
+    transform:scale(1); opacity:1;
+  }
 }
 
 @media (max-width:720px){
